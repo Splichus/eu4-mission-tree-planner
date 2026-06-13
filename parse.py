@@ -243,6 +243,99 @@ def is_mission(block):
     # silently dropped real missions. icon is the reliable per-mission marker.
     return isinstance(block, list) and first(block, "icon") is not None
 
+# ---------- flag-based mutual exclusivity (branch choices) ----------
+# Model a series' `potential` as a boolean expression over has_country_flag atoms,
+# treating every non-flag condition as freely satisfiable (the player can meet it).
+# Series gated by conflicting flags (chose_X vs denied_X) are mutually exclusive, so
+# only the largest reachable path can be completed in a single playthrough.
+def build_item(k, v):
+    kl = k.lower() if isinstance(k, str) else k
+    if kl == 'has_country_flag' and isinstance(v, str):
+        return ['flag', v.strip('"')]
+    if isinstance(v, list):
+        if kl == 'not':
+            inner = build_block(v)
+            return ['not', inner] if inner is not None else None
+        if kl == 'or':
+            subs = [build_item(k2, v2) for (k2, v2) in v]
+            if any(s is None for s in subs):
+                return None  # an OR branch is freely satisfiable -> whole OR is
+            subs = [s for s in subs if s is not None]
+            if not subs:
+                return None
+            return ['or', subs] if len(subs) > 1 else subs[0]
+        return build_block(v)  # AND / scope block
+    return None  # non-flag leaf condition: not a flag constraint
+
+def build_block(block):
+    parts = [build_item(k, v) for (k, v) in block]
+    parts = [p for p in parts if p is not None]
+    if not parts:
+        return None
+    return parts[0] if len(parts) == 1 else ['and', parts]
+
+def flags_in(e):
+    if e is None:
+        return set()
+    t = e[0]
+    if t == 'flag':
+        return {e[1]}
+    if t == 'not':
+        return flags_in(e[1])
+    if t in ('and', 'or'):
+        out = set()
+        for s in e[1]:
+            out |= flags_in(s)
+        return out
+    return set()
+
+def eval_expr(e, assign):
+    if e is None:
+        return True
+    t = e[0]
+    if t == 'flag':
+        return assign.get(e[1], False)
+    if t == 'not':
+        return not eval_expr(e[1], assign)
+    if t == 'and':
+        return all(eval_expr(s, assign) for s in e[1])
+    if t == 'or':
+        return any(eval_expr(s, assign) for s in e[1])
+    return True
+
+def completable_missions(items):
+    """items: list of (n_missions, flag_expr). Max missions completable in one
+    playthrough; flag-gated series sharing flags are treated as one exclusion group."""
+    n = len(items)
+    flagsets = [flags_in(e) for (_, e) in items]
+    parent = list(range(n))
+    def find(x):
+        while parent[x] != x:
+            parent[x] = parent[parent[x]]; x = parent[x]
+        return x
+    flag_to = {}
+    for i, fs in enumerate(flagsets):
+        for f in fs:
+            flag_to.setdefault(f, []).append(i)
+    for f, idxs in flag_to.items():
+        for j in idxs[1:]:
+            parent[find(j)] = find(idxs[0])
+    groups = defaultdict(list)
+    for i in range(n):
+        groups[find(i)].append(i)
+    total = 0
+    for idxs in groups.values():
+        gflags = sorted(set().union(*[flagsets[i] for i in idxs])) if idxs else []
+        if not gflags or len(gflags) > 16:  # no flags, or too many to enumerate
+            total += sum(items[i][0] for i in idxs)
+            continue
+        best = 0
+        for mask in range(1 << len(gflags)):
+            assign = {gflags[b]: bool((mask >> b) & 1) for b in range(len(gflags))}
+            best = max(best, sum(items[i][0] for i in idxs if eval_expr(items[i][1], assign)))
+        total += best
+    return total
+
 SERIES_KEYWORDS = {'slot','generic','ai','potential','has_country_shield','has_country_flag','potential_on_load'}
 
 # ---------- main parse ----------
@@ -275,17 +368,19 @@ for path in glob.glob(os.path.join(EU4, "missions", "*.txt")):
                 rweight[x] += 1
             for x in s:
                 sweight[x] += 1
+        fexpr = build_block(pot) if isinstance(pot, list) else None
         series_list.append({
             'file': fname, 'series': sname, 'legacy': legacy,
             'tags': sorted(tags), 'dlc': sorted(dlcs),
             'n_missions': len(missions),
             'regions': sorted(regions), 'supers': sorted(supers),
             'rweight': dict(rweight), 'sweight': dict(sweight),
+            'flags': sorted(flags_in(fexpr)), '_expr': fexpr,
         })
 
 # aggregate per tag (active, tag-locked only)
 nation = defaultdict(lambda: {'missions':0,'regions':set(),'supers':set(),'series':[],'dlc':set(),
-                              'rweight':defaultdict(int),'sweight':defaultdict(int)})
+                              'rweight':defaultdict(int),'sweight':defaultdict(int),'items':[]})
 for s in series_list:
     if s['legacy']:
         continue
@@ -293,6 +388,7 @@ for s in series_list:
         continue  # generic / non-tag-locked
     for tag in s['tags']:
         nation[tag]['missions'] += s['n_missions']
+        nation[tag]['items'].append((s['n_missions'], s['_expr']))
         nation[tag]['regions'] |= set(s['regions'])
         nation[tag]['supers'] |= set(s['supers'])
         nation[tag]['series'].append(s['series'])
@@ -305,7 +401,8 @@ for s in series_list:
 out = {}
 for tag, d in nation.items():
     out[tag] = {
-        'name': cname(tag), 'missions': d['missions'],
+        'name': cname(tag), 'missions': completable_missions(d['items']),
+        'blueprint': d['missions'],
         'regions': sorted(d['regions']), 'supers': sorted(d['supers']),
         'n_series': len(d['series']), 'dlc': sorted(d['dlc']),
         'rweight': dict(d['rweight']), 'sweight': dict(d['sweight']),
@@ -314,6 +411,8 @@ for tag, d in nation.items():
 
 with open('nations.json', 'w') as f:
     json.dump(out, f, indent=1)
+for s in series_list:
+    s.pop('_expr', None)
 with open('series.json', 'w') as f:
     json.dump(series_list, f, indent=1)
 

@@ -136,14 +136,14 @@
     <p><b>Source.</b> Parsed directly from <code>missions/*.txt</code> and <code>map/{area,region,superregion}.txt</code>
        in your EU4 install, with all DLC enabled. Legacy pre-DLC mission trees (hidden because you own the newer DLC) are excluded.</p>
     <ul>
-      <li><b>Missions</b> = total missions across every active, tag-locked mission series that nation's tag can see.</li>
+      <li><b>Missions</b> = the count you can actually <i>finish in one playthrough</i> (the headline number). Some trees have <b>mutually-exclusive branches</b> — a choice that sets a flag and locks the other path (e.g. Poland's Lithuania personal-union fork: 47 defined, but only 41 completable). The headline counts only the largest reachable path; the <b>"of N"</b> shows the full <i>defined</i> total (the blueprint) when it's larger. This is exact when the branch is gated explicitly; for nations with deeply nested event-driven choices (the Teutonic Order is the extreme: 73 vs 108 defined) it's an upper bound.</li>
       <li><b>Core regions</b> = regions targeted by ≥ 4 of the nation's missions (a real objective; drops regions a tree only brushes incidentally). Used for conflict detection.</li>
       <li><b>A "clean" matchup</b> = (1) zero shared <i>core</i> regions, (2) no shared mission series (not the same lineage/formable chain — so you'll never see e.g. Castile vs Spain), and (3) similar size (smaller/larger ≥ 0.72, or within 12 missions).</li>
       <li><b>Overlap</b> = number of regions both footprints touch <i>at all</i> (incl. peripheral/sea zones). 0 = fully disjoint.</li>
       <li><b><span class="tag F">F</span> = formable</b>: you must form the nation in-game before its tree unlocks — a time cost, not a 1444 start.</li>
       <li><b>Well-characterised</b> = both sides have ≥2 detected core regions (a confidence filter; nomadic/colonial trees like the Hordes or Portugal spread too thin to pin down and may give looser "non-conflicting" claims).</li>
     </ul>
-    <p><b>Size ≠ difficulty.</b> The files encode mission <i>count</i> (a good race-length proxy) but not how <i>hard</i> a tree is. Judge difficulty yourselves. A few nations (e.g. Mughals, Ming) use unusual <code>potential</code> patterns and are under-counted here.</p>
+    <p><b>Size ≠ difficulty.</b> The files encode mission <i>count</i> (a good race-length proxy) but not how <i>hard</i> a tree is. Judge difficulty yourselves. The mission counts are validated against the game files — parsed count equals the raw mission-icon count in every one of the 228 files.</p>
   </details>
 
   <footer>Generated from your local EU4 files · <span id="genstats"></span></footer>
@@ -233,7 +233,7 @@ function renderNations(){
     <tr>
       <td>${c.name} ${tagF(c.formable)}${c.aliases.length?` <span class="tag" title="Identical tree">+${c.aliases.length}</span>`:''}</td>
       <td><span class="tag">${c.tag}</span></td>
-      <td class="num">${c.missions}</td>
+      <td class="num">${c.missions}${c.blueprint>c.missions?` <span class="tag" title="${c.blueprint} defined incl. mutually-exclusive branches you can't all complete in one game">of ${c.blueprint}</span>`:''}</td>
       <td><span class="${pillCls(c.tier)}">${c.tier}</span></td>
       <td class="theater">${cap(c.theater)}</td>
       <td class="num">${c.ncore}</td>
