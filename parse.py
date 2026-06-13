@@ -243,15 +243,35 @@ def is_mission(block):
     # silently dropped real missions. icon is the reliable per-mission marker.
     return isinstance(block, list) and first(block, "icon") is not None
 
-# ---------- flag-based mutual exclusivity (branch choices) ----------
-# Model a series' `potential` as a boolean expression over has_country_flag atoms,
-# treating every non-flag condition as freely satisfiable (the player can meet it).
-# Series gated by conflicting flags (chose_X vs denied_X) are mutually exclusive, so
-# only the largest reachable path can be completed in a single playthrough.
+# ---------- mutual-exclusivity model (branch choices) ----------
+# Model a series' `potential` as a boolean expression over *atoms* that encode the
+# mutually-exclusive choices a single playthrough can't all satisfy:
+#   cf:<flag>            -- has_country_flag (branch choices set by missions/events)
+#   tag:<TAG>            -- the country tag (constant: true only for the tag analysed)
+#   is/was_<origin>_nation -- steppe formation origin (Mongol/Tatar/Moghulistan)
+# Everything else is treated as freely satisfiable. The completable count is the max
+# over all valid atom assignments (free country flags x one formation origin).
+# Origin scripted-trigger tag membership (from common/scripted_triggers):
+MONGOL_TAGS = {"OIR","KHA","KRC","HMI","SYG","KSD","KLK","ZUN"}
+TATAR_TAGS  = {"GOL","CRI","NOG","KAZ","SIB","BSH","AST","QAS","KLM","CHH"}
+MOGH_TAGS   = {"KAS","CHG","SHY","BUK","KZH","KOK","KHI"}
+ORIGIN_ATOMS = {"is_mongol_nation","is_tatar_nation","is_moghulistan_nation",
+                "was_mongol_nation","was_tatar_nation","was_moghulistan_nation"}
+WAS_ATOMS = {"was_mongol_nation","was_tatar_nation","was_moghulistan_nation"}
+
 def build_item(k, v):
     kl = k.lower() if isinstance(k, str) else k
     if kl == 'has_country_flag' and isinstance(v, str):
-        return ['flag', v.strip('"')]
+        return ['flag', 'cf:' + v.strip('"')]
+    if kl == 'tag' and isinstance(v, str):
+        x = v.strip('"')
+        # Only the 4 steppe formables need `tag` as a hard exclusive atom (their origin
+        # else-defaults: GLH->Tatar, YUA->Mongol). Every other tag is freely satisfiable
+        # (you can FORM tags) so flavor pairs like tag=POL/NOT tag=PLC aren't broken.
+        return ['flag', 'tag:' + x] if x in STEPPE_FORMABLES else None
+    if kl in ORIGIN_ATOMS:
+        atom = ['flag', kl]
+        return ['not', atom] if (isinstance(v, str) and v.strip('"').lower() == 'no') else atom
     if isinstance(v, list):
         if kl == 'not':
             inner = build_block(v)
@@ -265,11 +285,40 @@ def build_item(k, v):
                 return None
             return ['or', subs] if len(subs) > 1 else subs[0]
         return build_block(v)  # AND / scope block
-    return None  # non-flag leaf condition: not a flag constraint
+    return None  # leaf condition we don't model: freely satisfiable
+
+def _ifelse(lim, body, els):
+    # if {limit=lim body} [else {els}]  ==  (lim AND body) OR (NOT lim AND els_or_true)
+    if lim is None:
+        return body  # limit always satisfiable -> then-branch always taken
+    then = ['and', [lim, body]] if body is not None else lim
+    elsepart = ['not', lim] if els is None else ['and', [['not', lim], els]]
+    return ['or', [then, elsepart]]
 
 def build_block(block):
-    parts = [build_item(k, v) for (k, v) in block]
-    parts = [p for p in parts if p is not None]
+    parts = []
+    i, n = 0, len(block)
+    while i < n:
+        k, v = block[i]
+        kl = k.lower() if isinstance(k, str) else k
+        if kl == 'if' and isinstance(v, list):
+            lim = None; bodyitems = []
+            for (k2, v2) in v:
+                if (k2.lower() if isinstance(k2, str) else k2) == 'limit' and isinstance(v2, list):
+                    lim = build_block(v2)
+                else:
+                    bodyitems.append((k2, v2))
+            body = build_block(bodyitems)
+            els = None
+            if i + 1 < n and isinstance(block[i+1][0], str) and block[i+1][0].lower() == 'else' \
+               and isinstance(block[i+1][1], list):
+                els = build_block(block[i+1][1]); i += 1
+            ie = _ifelse(lim, body, els)
+            if ie is not None: parts.append(ie)
+        else:
+            it = build_item(k, v)
+            if it is not None: parts.append(it)
+        i += 1
     if not parts:
         return None
     return parts[0] if len(parts) == 1 else ['and', parts]
@@ -289,12 +338,21 @@ def flags_in(e):
         return out
     return set()
 
+STEPPE_FORMABLES = {"MGE", "YUA", "ILK", "GLH"}
+
 def eval_expr(e, assign):
     if e is None:
         return True
     t = e[0]
     if t == 'flag':
-        return assign.get(e[1], False)
+        name = e[1]
+        if name in assign:
+            return assign[name]
+        # tag:<X> not pinned -> treat as achievable (you can FORM other tags). Only the
+        # steppe formables are pinned in `base` (mutually-exclusive origin defaults).
+        if name.startswith('tag:'):
+            return True
+        return False
     if t == 'not':
         return not eval_expr(e[1], assign)
     if t == 'and':
@@ -303,21 +361,21 @@ def eval_expr(e, assign):
         return any(eval_expr(s, assign) for s in e[1])
     return True
 
-def completable_missions(items):
-    """items: list of (n_missions, flag_expr). Max missions completable in one
-    playthrough; flag-gated series sharing flags are treated as one exclusion group."""
+def _flag_total(items, base):
+    """Max missions over free country-flag (cf:) assignments, with `base` fixing
+    tag/origin atoms. Series sharing a cf: flag form one exclusion group."""
     n = len(items)
-    flagsets = [flags_in(e) for (_, e) in items]
+    free = [sorted(a for a in flags_in(e) if a.startswith('cf:')) for (_, e) in items]
     parent = list(range(n))
     def find(x):
         while parent[x] != x:
             parent[x] = parent[parent[x]]; x = parent[x]
         return x
-    flag_to = {}
-    for i, fs in enumerate(flagsets):
+    f2i = {}
+    for i, fs in enumerate(free):
         for f in fs:
-            flag_to.setdefault(f, []).append(i)
-    for f, idxs in flag_to.items():
+            f2i.setdefault(f, []).append(i)
+    for f, idxs in f2i.items():
         for j in idxs[1:]:
             parent[find(j)] = find(idxs[0])
     groups = defaultdict(list)
@@ -325,16 +383,51 @@ def completable_missions(items):
         groups[find(i)].append(i)
     total = 0
     for idxs in groups.values():
-        gflags = sorted(set().union(*[flagsets[i] for i in idxs])) if idxs else []
-        if not gflags or len(gflags) > 16:  # no flags, or too many to enumerate
-            total += sum(items[i][0] for i in idxs)
+        gf = sorted(set().union(*[set(free[i]) for i in idxs])) if idxs else []
+        if not gf or len(gf) > 16:
+            a = dict(base)
+            total += sum(items[i][0] for i in idxs if eval_expr(items[i][1], a))
             continue
         best = 0
-        for mask in range(1 << len(gflags)):
-            assign = {gflags[b]: bool((mask >> b) & 1) for b in range(len(gflags))}
-            best = max(best, sum(items[i][0] for i in idxs if eval_expr(items[i][1], assign)))
+        for mask in range(1 << len(gf)):
+            a = dict(base)
+            for b in range(len(gf)):
+                a[gf[b]] = bool((mask >> b) & 1)
+            best = max(best, sum(items[i][0] for i in idxs if eval_expr(items[i][1], a)))
         total += best
     return total
+
+def completable_missions(items, tag):
+    """Max missions completable in one playthrough for `tag`: free country-flag
+    branches x exactly one formation origin (Mongol/Tatar/Moghulistan/none)."""
+    consts = {'is_mongol_nation': tag in MONGOL_TAGS,
+              'is_tatar_nation': tag in TATAR_TAGS,
+              'is_moghulistan_nation': tag in MOGH_TAGS}
+    atoms = set()
+    for _, e in items:
+        atoms |= flags_in(e)
+    use_origin = any(a in ORIGIN_ATOMS for a in atoms)
+    if not use_origin:
+        origins = [{}]
+    elif tag in TATAR_TAGS:
+        origins = [{'was_tatar_nation': True}]
+    elif tag in MONGOL_TAGS:
+        origins = [{'was_mongol_nation': True}]
+    elif tag in MOGH_TAGS:
+        origins = [{'was_moghulistan_nation': True}]
+    else:  # formable / other: pick one origin (or none) -> take the best
+        origins = [{'was_mongol_nation': True}, {'was_tatar_nation': True},
+                   {'was_moghulistan_nation': True}, {}]
+    best = 0
+    for orig in origins:
+        base = dict(consts)
+        for w in WAS_ATOMS:
+            base[w] = orig.get(w, False)
+        base['tag:' + tag] = True
+        for f in STEPPE_FORMABLES:        # pin the 4 steppe formables (exclusive origin defaults)
+            base['tag:' + f] = (f == tag)
+        best = max(best, _flag_total(items, base))
+    return best
 
 SERIES_KEYWORDS = {'slot','generic','ai','potential','has_country_shield','has_country_flag','potential_on_load'}
 
@@ -401,7 +494,7 @@ for s in series_list:
 out = {}
 for tag, d in nation.items():
     out[tag] = {
-        'name': cname(tag), 'missions': completable_missions(d['items']),
+        'name': cname(tag), 'missions': completable_missions(d['items'], tag),
         'blueprint': d['missions'],
         'regions': sorted(d['regions']), 'supers': sorted(d['supers']),
         'n_series': len(d['series']), 'dlc': sorted(d['dlc']),
