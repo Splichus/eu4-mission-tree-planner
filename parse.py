@@ -238,7 +238,10 @@ def is_legacy(pot):
     return False
 
 def is_mission(block):
-    return isinstance(block, list) and first(block, "position") is not None
+    # Every mission node has an 'icon' (its grid image). 'position' is NOT always
+    # present (some Golden Century / older missions omit it), so keying off position
+    # silently dropped real missions. icon is the reliable per-mission marker.
+    return isinstance(block, list) and first(block, "icon") is not None
 
 SERIES_KEYWORDS = {'slot','generic','ai','potential','has_country_shield','has_country_flag','potential_on_load'}
 

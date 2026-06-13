@@ -44,7 +44,7 @@
  },
  "RUM": {
   "name": "R\u00fbm",
-  "missions": 72,
+  "missions": 85,
   "regions": [
    "anatolia_region",
    "arabia_region",
@@ -52,6 +52,7 @@
    "carpathia_region",
    "caucasia_region",
    "central_asia_region",
+   "crimea_region",
    "egypt_region",
    "khorasan_region",
    "maghreb_region",
@@ -70,24 +71,25 @@
    "King of Kings"
   ],
   "rweight": {
-   "mashriq_region": 13,
+   "mashriq_region": 15,
    "persia_region": 19,
-   "arabia_region": 3,
-   "anatolia_region": 8,
+   "arabia_region": 5,
+   "anatolia_region": 9,
    "caucasia_region": 2,
    "khorasan_region": 2,
    "central_asia_region": 2,
-   "balkan_region": 2,
-   "carpathia_region": 1,
+   "balkan_region": 5,
+   "carpathia_region": 3,
+   "crimea_region": 1,
    "egypt_region": 1,
-   "maghreb_region": 1
+   "maghreb_region": 3
   },
   "sweight": {
-   "near_east_superregion": 22,
+   "near_east_superregion": 26,
    "persia_superregion": 21,
    "tartary_superregion": 2,
-   "eastern_europe_superregion": 3,
-   "africa_superregion": 1
+   "eastern_europe_superregion": 9,
+   "africa_superregion": 3
   },
   "series": [
    "aq_qoyunlu_fifth",
@@ -111,7 +113,7 @@
  },
  "MNG": {
   "name": "Ming",
-  "missions": 31,
+  "missions": 32,
   "regions": [
    "east_indian_ocean_region",
    "indo_china_region",
@@ -138,7 +140,7 @@
    "Mandate of Heaven"
   ],
   "rweight": {
-   "north_china_region": 6,
+   "north_china_region": 7,
    "manchuria_region": 1,
    "tibet_region": 1,
    "east_indian_ocean_region": 1,
@@ -149,9 +151,9 @@
    "japan_region": 1
   },
   "sweight": {
-   "india_superregion": 1,
    "persia_superregion": 1,
-   "china_superregion": 8,
+   "india_superregion": 1,
+   "china_superregion": 9,
    "far_east_superregion": 3,
    "tartary_superregion": 1,
    "indian_pacific_sea_superregion": 1,
@@ -453,7 +455,7 @@
  },
  "QNG": {
   "name": "Qing",
-  "missions": 52,
+  "missions": 54,
   "regions": [
    "burma_region",
    "korea_region",
@@ -481,13 +483,13 @@
    "tibet_region": 1,
    "manchuria_region": 6,
    "burma_region": 1,
-   "south_china_region": 5,
+   "south_china_region": 6,
    "xinan_region": 2,
    "korea_region": 2
   },
   "sweight": {
    "tartary_superregion": 2,
-   "china_superregion": 11,
+   "china_superregion": 12,
    "far_east_superregion": 8,
    "east_indies_superregion": 1
   },
@@ -530,8 +532,8 @@
    "Mandate of Heaven"
   ],
   "rweight": {
-   "north_china_region": 9,
    "xinan_region": 3,
+   "north_china_region": 9,
    "south_china_region": 6
   },
   "sweight": {
@@ -568,8 +570,8 @@
    "Mandate of Heaven"
   ],
   "rweight": {
-   "north_china_region": 9,
    "xinan_region": 3,
+   "north_china_region": 9,
    "south_china_region": 6
   },
   "sweight": {
@@ -606,8 +608,8 @@
    "Mandate of Heaven"
   ],
   "rweight": {
-   "north_china_region": 9,
    "xinan_region": 3,
+   "north_china_region": 9,
    "south_china_region": 6
   },
   "sweight": {
@@ -644,8 +646,8 @@
    "Mandate of Heaven"
   ],
   "rweight": {
-   "north_china_region": 9,
    "xinan_region": 3,
+   "north_china_region": 9,
    "south_china_region": 6
   },
   "sweight": {
@@ -682,8 +684,8 @@
    "Mandate of Heaven"
   ],
   "rweight": {
-   "north_china_region": 9,
    "xinan_region": 3,
+   "north_china_region": 9,
    "south_china_region": 6
   },
   "sweight": {
@@ -720,8 +722,8 @@
    "Mandate of Heaven"
   ],
   "rweight": {
-   "north_china_region": 9,
    "xinan_region": 3,
+   "north_china_region": 9,
    "south_china_region": 6
   },
   "sweight": {
@@ -758,8 +760,8 @@
    "Mandate of Heaven"
   ],
   "rweight": {
-   "north_china_region": 9,
    "xinan_region": 3,
+   "north_china_region": 9,
    "south_china_region": 6
   },
   "sweight": {
@@ -796,8 +798,8 @@
    "Mandate of Heaven"
   ],
   "rweight": {
-   "north_china_region": 9,
    "xinan_region": 3,
+   "north_china_region": 9,
    "south_china_region": 6
   },
   "sweight": {
@@ -834,8 +836,8 @@
    "Mandate of Heaven"
   ],
   "rweight": {
-   "north_china_region": 9,
    "xinan_region": 3,
+   "north_china_region": 9,
    "south_china_region": 6
   },
   "sweight": {
@@ -872,8 +874,8 @@
    "Mandate of Heaven"
   ],
   "rweight": {
-   "north_china_region": 9,
    "xinan_region": 3,
+   "north_china_region": 9,
    "south_china_region": 6
   },
   "sweight": {
@@ -910,8 +912,8 @@
    "Mandate of Heaven"
   ],
   "rweight": {
-   "north_china_region": 9,
    "xinan_region": 3,
+   "north_china_region": 9,
    "south_china_region": 6
   },
   "sweight": {
@@ -948,8 +950,8 @@
    "Mandate of Heaven"
   ],
   "rweight": {
-   "north_china_region": 9,
    "xinan_region": 3,
+   "north_china_region": 9,
    "south_china_region": 6
   },
   "sweight": {
@@ -986,8 +988,8 @@
    "Mandate of Heaven"
   ],
   "rweight": {
-   "north_china_region": 9,
    "xinan_region": 3,
+   "north_china_region": 9,
    "south_china_region": 6
   },
   "sweight": {
@@ -1024,8 +1026,8 @@
    "Mandate of Heaven"
   ],
   "rweight": {
-   "north_china_region": 9,
    "xinan_region": 3,
+   "north_china_region": 9,
    "south_china_region": 6
   },
   "sweight": {
@@ -1062,8 +1064,8 @@
    "Mandate of Heaven"
   ],
   "rweight": {
-   "north_china_region": 9,
    "xinan_region": 3,
+   "north_china_region": 9,
    "south_china_region": 6
   },
   "sweight": {
@@ -1100,8 +1102,8 @@
    "Mandate of Heaven"
   ],
   "rweight": {
-   "north_china_region": 9,
    "xinan_region": 3,
+   "north_china_region": 9,
    "south_china_region": 6
   },
   "sweight": {
@@ -1138,8 +1140,8 @@
    "Mandate of Heaven"
   ],
   "rweight": {
-   "north_china_region": 9,
    "xinan_region": 3,
+   "north_china_region": 9,
    "south_china_region": 6
   },
   "sweight": {
@@ -1176,8 +1178,8 @@
    "Mandate of Heaven"
   ],
   "rweight": {
-   "north_china_region": 9,
    "xinan_region": 3,
+   "north_china_region": 9,
    "south_china_region": 6
   },
   "sweight": {
@@ -1214,8 +1216,8 @@
    "Mandate of Heaven"
   ],
   "rweight": {
-   "north_china_region": 9,
    "xinan_region": 3,
+   "north_china_region": 9,
    "south_china_region": 6
   },
   "sweight": {
@@ -1252,8 +1254,8 @@
    "Mandate of Heaven"
   ],
   "rweight": {
-   "north_china_region": 9,
    "xinan_region": 3,
+   "north_china_region": 9,
    "south_china_region": 6
   },
   "sweight": {
@@ -1273,83 +1275,338 @@
    "ming_missions_5_b"
   ]
  },
+ "ALS": {
+  "name": "Strasbourg",
+  "missions": 4,
+  "regions": [
+   "south_german_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 1,
+  "dlc": [],
+  "rweight": {
+   "south_german_region": 3
+  },
+  "sweight": {
+   "europe_superregion": 3
+  },
+  "series": [
+   "swabian_group_1"
+  ]
+ },
+ "AUG": {
+  "name": "Augsburg",
+  "missions": 4,
+  "regions": [
+   "south_german_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 1,
+  "dlc": [],
+  "rweight": {
+   "south_german_region": 3
+  },
+  "sweight": {
+   "europe_superregion": 3
+  },
+  "series": [
+   "swabian_group_1"
+  ]
+ },
+ "BAD": {
+  "name": "Baden",
+  "missions": 4,
+  "regions": [
+   "south_german_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 1,
+  "dlc": [],
+  "rweight": {
+   "south_german_region": 3
+  },
+  "sweight": {
+   "europe_superregion": 3
+  },
+  "series": [
+   "swabian_group_1"
+  ]
+ },
+ "DWT": {
+  "name": "Donauw\u00f6rth",
+  "missions": 4,
+  "regions": [
+   "south_german_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 1,
+  "dlc": [],
+  "rweight": {
+   "south_german_region": 3
+  },
+  "sweight": {
+   "europe_superregion": 3
+  },
+  "series": [
+   "swabian_group_1"
+  ]
+ },
+ "KNZ": {
+  "name": "Konstanz",
+  "missions": 4,
+  "regions": [
+   "south_german_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 1,
+  "dlc": [],
+  "rweight": {
+   "south_german_region": 3
+  },
+  "sweight": {
+   "europe_superregion": 3
+  },
+  "series": [
+   "swabian_group_1"
+  ]
+ },
+ "MEM": {
+  "name": "Memmingen",
+  "missions": 4,
+  "regions": [
+   "south_german_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 1,
+  "dlc": [],
+  "rweight": {
+   "south_german_region": 3
+  },
+  "sweight": {
+   "europe_superregion": 3
+  },
+  "series": [
+   "swabian_group_1"
+  ]
+ },
+ "MLH": {
+  "name": "Mulhouse",
+  "missions": 4,
+  "regions": [
+   "south_german_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 1,
+  "dlc": [],
+  "rweight": {
+   "south_german_region": 3
+  },
+  "sweight": {
+   "europe_superregion": 3
+  },
+  "series": [
+   "swabian_group_1"
+  ]
+ },
  "SWA": {
   "name": "Swabia",
-  "missions": 3,
+  "missions": 12,
   "regions": [
    "balkan_region",
+   "italy_region",
+   "mashriq_region",
+   "north_german_region",
    "south_german_region"
   ],
   "supers": [
    "eastern_europe_superregion",
-   "europe_superregion"
+   "europe_superregion",
+   "near_east_superregion"
   ],
-  "n_series": 2,
+  "n_series": 3,
   "dlc": [],
   "rweight": {
-   "south_german_region": 1,
-   "balkan_region": 1
+   "south_german_region": 5,
+   "italy_region": 4,
+   "north_german_region": 1,
+   "balkan_region": 1,
+   "mashriq_region": 1
   },
   "sweight": {
-   "europe_superregion": 1,
-   "eastern_europe_superregion": 1
+   "europe_superregion": 8,
+   "eastern_europe_superregion": 1,
+   "near_east_superregion": 1
   },
   "series": [
+   "swabian_group_1",
    "swabian_group_2",
    "swabian_group_3"
   ]
  },
+ "ULM": {
+  "name": "Ulm",
+  "missions": 4,
+  "regions": [
+   "south_german_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 1,
+  "dlc": [],
+  "rweight": {
+   "south_german_region": 3
+  },
+  "sweight": {
+   "europe_superregion": 3
+  },
+  "series": [
+   "swabian_group_1"
+  ]
+ },
+ "WUR": {
+  "name": "Wurttemberg",
+  "missions": 4,
+  "regions": [
+   "south_german_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 1,
+  "dlc": [],
+  "rweight": {
+   "south_german_region": 3
+  },
+  "sweight": {
+   "europe_superregion": 3
+  },
+  "series": [
+   "swabian_group_1"
+  ]
+ },
  "ANN": {
   "name": "Annam",
-  "missions": 2,
-  "regions": [],
-  "supers": [],
-  "n_series": 2,
+  "missions": 19,
+  "regions": [
+   "indo_china_region",
+   "japan_region",
+   "south_china_region"
+  ],
+  "supers": [
+   "china_superregion",
+   "east_indies_superregion",
+   "far_east_superregion"
+  ],
+  "n_series": 5,
   "dlc": [
    "Leviathan"
   ],
-  "rweight": {},
-  "sweight": {},
+  "rweight": {
+   "south_china_region": 1,
+   "indo_china_region": 9,
+   "japan_region": 1
+  },
+  "sweight": {
+   "china_superregion": 2,
+   "east_indies_superregion": 10,
+   "far_east_superregion": 1
+  },
   "series": [
    "mnd_dai_1",
-   "mnd_dai_3"
+   "mnd_dai_2",
+   "mnd_dai_3",
+   "mnd_dai_4",
+   "mnd_dai_5"
   ]
  },
  "DAI": {
   "name": "Dai Viet",
-  "missions": 2,
-  "regions": [],
-  "supers": [],
-  "n_series": 2,
+  "missions": 19,
+  "regions": [
+   "indo_china_region",
+   "japan_region",
+   "south_china_region"
+  ],
+  "supers": [
+   "china_superregion",
+   "east_indies_superregion",
+   "far_east_superregion"
+  ],
+  "n_series": 5,
   "dlc": [
    "Leviathan"
   ],
-  "rweight": {},
-  "sweight": {},
+  "rweight": {
+   "south_china_region": 1,
+   "indo_china_region": 9,
+   "japan_region": 1
+  },
+  "sweight": {
+   "china_superregion": 2,
+   "east_indies_superregion": 10,
+   "far_east_superregion": 1
+  },
   "series": [
    "mnd_dai_1",
-   "mnd_dai_3"
+   "mnd_dai_2",
+   "mnd_dai_3",
+   "mnd_dai_4",
+   "mnd_dai_5"
   ]
  },
  "TOK": {
   "name": "Tonkin",
-  "missions": 2,
-  "regions": [],
-  "supers": [],
-  "n_series": 2,
+  "missions": 19,
+  "regions": [
+   "indo_china_region",
+   "japan_region",
+   "south_china_region"
+  ],
+  "supers": [
+   "china_superregion",
+   "east_indies_superregion",
+   "far_east_superregion"
+  ],
+  "n_series": 5,
   "dlc": [
    "Leviathan"
   ],
-  "rweight": {},
-  "sweight": {},
+  "rweight": {
+   "south_china_region": 1,
+   "indo_china_region": 9,
+   "japan_region": 1
+  },
+  "sweight": {
+   "china_superregion": 2,
+   "east_indies_superregion": 10,
+   "far_east_superregion": 1
+  },
   "series": [
    "mnd_dai_1",
-   "mnd_dai_3"
+   "mnd_dai_2",
+   "mnd_dai_3",
+   "mnd_dai_4",
+   "mnd_dai_5"
   ]
  },
  "CAS": {
   "name": "Castile",
-  "missions": 51,
+  "missions": 52,
   "regions": [
    "british_isles_region",
    "caribbean_sea_region",
@@ -1394,8 +1651,8 @@
    "british_isles_region": 1,
    "france_region": 2,
    "mediterrenean_region": 1,
-   "peru_region": 2,
    "upper_peru_region": 2,
+   "peru_region": 2,
    "caribbean_sea_region": 1,
    "colombia_region": 1,
    "italy_region": 3,
@@ -1406,8 +1663,8 @@
    "mexico_region": 2,
    "southeast_america_region": 1,
    "mississippi_region": 1,
-   "guinea_region": 1,
    "west_african_sea_region": 1,
+   "guinea_region": 1,
    "moluccas_region": 2
   },
   "sweight": {
@@ -1437,7 +1694,7 @@
  },
  "SPA": {
   "name": "Spain",
-  "missions": 75,
+  "missions": 77,
   "regions": [
    "anatolia_region",
    "balkan_region",
@@ -1489,12 +1746,12 @@
    "mediterrenean_region": 3,
    "italy_region": 7,
    "france_region": 5,
-   "anatolia_region": 2,
-   "egypt_region": 2,
-   "balkan_region": 3,
    "mashriq_region": 1,
-   "peru_region": 2,
+   "anatolia_region": 2,
+   "balkan_region": 3,
+   "egypt_region": 2,
    "upper_peru_region": 2,
+   "peru_region": 2,
    "caribbean_sea_region": 1,
    "colombia_region": 1,
    "low_countries_region": 2,
@@ -1504,16 +1761,16 @@
    "mexico_region": 2,
    "southeast_america_region": 1,
    "mississippi_region": 1,
-   "guinea_region": 1,
    "west_african_sea_region": 1,
+   "guinea_region": 1,
    "moluccas_region": 2
   },
   "sweight": {
    "europe_superregion": 30,
    "africa_superregion": 5,
    "south_european_sea_superregion": 3,
-   "near_east_superregion": 3,
    "eastern_europe_superregion": 3,
+   "near_east_superregion": 3,
    "andes_superregion": 2,
    "south_america_superregion": 1,
    "east_american_sea_superregion": 1,
@@ -1542,7 +1799,7 @@
  },
  "ARA": {
   "name": "Aragon",
-  "missions": 24,
+  "missions": 25,
   "regions": [
    "anatolia_region",
    "balkan_region",
@@ -1569,18 +1826,18 @@
    "iberia_region": 10,
    "mediterrenean_region": 2,
    "italy_region": 4,
-   "anatolia_region": 2,
-   "egypt_region": 2,
-   "france_region": 3,
-   "balkan_region": 3,
    "mashriq_region": 1,
+   "france_region": 3,
+   "anatolia_region": 2,
+   "balkan_region": 3,
+   "egypt_region": 2,
    "maghreb_region": 2
   },
   "sweight": {
    "europe_superregion": 15,
    "south_european_sea_superregion": 2,
-   "near_east_superregion": 3,
    "eastern_europe_superregion": 3,
+   "near_east_superregion": 3,
    "africa_superregion": 2
   },
   "series": [
@@ -1632,8 +1889,8 @@
   "rweight": {
    "italy_region": 12,
    "egypt_region": 3,
-   "south_africa_region": 1,
    "east_africa_region": 1,
+   "south_africa_region": 1,
    "arabia_region": 1,
    "malaya_region": 1,
    "south_china_sea_region": 1,
@@ -1644,8 +1901,8 @@
    "anatolia_region": 2,
    "mashriq_region": 1,
    "caribbean_sea_region": 1,
-   "arabian_sea_region": 2,
-   "west_african_sea_region": 1
+   "west_african_sea_region": 1,
+   "arabian_sea_region": 2
   },
   "sweight": {
    "europe_superregion": 12,
@@ -1752,10 +2009,10 @@
    "guinea_region": 6,
    "south_africa_region": 3,
    "north_atlantic_region": 3,
-   "northeast_america_region": 2,
    "canada_region": 4,
-   "southeast_america_region": 2,
    "hudson_bay_region": 2,
+   "northeast_america_region": 2,
+   "southeast_america_region": 2,
    "carribeans_region": 1,
    "arabian_sea_region": 1,
    "east_indian_ocean_region": 2,
@@ -1764,25 +2021,25 @@
    "deccan_region": 2,
    "south_china_sea_region": 2,
    "bengal_region": 2,
-   "low_countries_region": 2,
    "south_german_region": 2,
+   "low_countries_region": 2,
    "hindusthan_region": 1,
    "baltic_sea_region": 2,
    "poland_region": 2,
-   "south_west_pacific_region": 1,
-   "random_new_world_region": 1,
-   "south_east_pacific_region": 1,
-   "north_east_pacific_region": 1,
    "north_west_pacific_region": 1,
-   "pacific_south_america_region": 1,
    "south_indian_ocean_region": 1,
+   "east_china_sea_region": 1,
    "west_african_sea_region": 1,
+   "south_east_pacific_region": 1,
    "south_atlantic_region": 1,
+   "random_new_world_region": 1,
+   "pacific_south_america_region": 1,
+   "north_east_pacific_region": 1,
+   "south_west_pacific_region": 1,
    "atlantic_south_america_region": 1,
    "west_indian_ocean_region": 1,
-   "east_china_sea_region": 1,
-   "rio_grande_region": 1,
    "california_region": 1,
+   "rio_grande_region": 1,
    "colombia_region": 1,
    "niger_region": 2,
    "sahel_region": 1
@@ -1790,18 +2047,18 @@
   "sweight": {
    "europe_superregion": 72,
    "eastern_europe_superregion": 19,
-   "southern_africa_superregion": 4,
    "africa_superregion": 6,
+   "southern_africa_superregion": 4,
    "north_european_sea_superregion": 3,
    "north_america_superregion": 4,
    "central_america_superregion": 2,
    "indian_pacific_sea_superregion": 3,
-   "india_superregion": 7,
    "east_african_sea_superregion": 2,
-   "west_african_sea_superregion": 1,
-   "north_pacific_sea_superregion": 1,
-   "east_american_sea_superregion": 1,
+   "india_superregion": 7,
    "west_american_sea_superregion": 1,
+   "north_pacific_sea_superregion": 1,
+   "west_african_sea_superregion": 1,
+   "east_american_sea_superregion": 1,
    "south_america_superregion": 1
   },
   "series": [
@@ -1890,9 +2147,10 @@
  },
  "GOT": {
   "name": "Gotland",
-  "missions": 49,
+  "missions": 63,
   "regions": [
    "arabian_sea_region",
+   "atlantic_south_america_region",
    "balkan_region",
    "baltic_region",
    "baltic_sea_region",
@@ -1909,25 +2167,33 @@
    "north_german_region",
    "russia_region",
    "scandinavia_region",
+   "west_african_sea_region",
    "west_india_region"
   ],
   "supers": [
    "africa_superregion",
    "central_america_superregion",
    "east_african_sea_superregion",
+   "east_american_sea_superregion",
    "eastern_europe_superregion",
    "europe_superregion",
    "india_superregion",
    "indian_pacific_sea_superregion",
    "near_east_superregion",
    "north_european_sea_superregion",
-   "south_european_sea_superregion"
+   "south_european_sea_superregion",
+   "west_african_sea_superregion"
   ],
-  "n_series": 13,
+  "n_series": 16,
   "dlc": [
+   "Golden Century",
    "Lions of the North"
   ],
   "rweight": {
+   "west_african_sea_region": 1,
+   "atlantic_south_america_region": 1,
+   "mediterrenean_region": 4,
+   "carribeans_region": 5,
    "arabian_sea_region": 1,
    "east_indian_ocean_region": 1,
    "west_india_region": 1,
@@ -1936,27 +2202,27 @@
    "north_german_region": 4,
    "north_atlantic_region": 2,
    "russia_region": 3,
-   "carribeans_region": 3,
    "british_isles_region": 1,
    "maghreb_region": 2,
    "low_countries_region": 1,
    "italy_region": 2,
-   "mediterrenean_region": 3,
    "baltic_region": 3,
-   "egypt_region": 1,
    "mashriq_region": 1,
-   "balkan_region": 1
+   "balkan_region": 1,
+   "egypt_region": 1
   },
   "sweight": {
+   "south_european_sea_superregion": 4,
+   "west_african_sea_superregion": 1,
+   "east_american_sea_superregion": 1,
+   "central_america_superregion": 5,
    "indian_pacific_sea_superregion": 1,
-   "india_superregion": 1,
    "east_african_sea_superregion": 1,
+   "india_superregion": 1,
    "europe_superregion": 13,
    "north_european_sea_superregion": 5,
    "eastern_europe_superregion": 6,
-   "central_america_superregion": 3,
    "africa_superregion": 2,
-   "south_european_sea_superregion": 3,
    "near_east_superregion": 1
   },
   "series": [
@@ -1972,6 +2238,9 @@
    "got_republic_slot_1",
    "got_republic_slot_2",
    "got_republic_slot_3",
+   "pirate_1",
+   "pirate_2",
+   "pirate_3",
    "pirate_5"
   ]
  },
@@ -2020,10 +2289,12 @@
  },
  "GEN": {
   "name": "Genoa",
-  "missions": 7,
+  "missions": 21,
   "regions": [
+   "anatolia_region",
    "balkan_region",
    "egypt_region",
+   "iberia_region",
    "italy_region",
    "maghreb_region",
    "mashriq_region",
@@ -2036,72 +2307,86 @@
    "near_east_superregion",
    "south_european_sea_superregion"
   ],
-  "n_series": 5,
+  "n_series": 7,
   "dlc": [
    "Emperor"
   ],
   "rweight": {
-   "maghreb_region": 3,
+   "italy_region": 8,
+   "mediterrenean_region": 4,
+   "maghreb_region": 4,
+   "iberia_region": 2,
    "egypt_region": 2,
-   "italy_region": 2,
-   "mediterrenean_region": 1,
-   "balkan_region": 1,
+   "balkan_region": 3,
+   "anatolia_region": 1,
    "mashriq_region": 1
   },
   "sweight": {
-   "africa_superregion": 3,
-   "near_east_superregion": 2,
-   "europe_superregion": 2,
-   "south_european_sea_superregion": 1,
-   "eastern_europe_superregion": 1
+   "europe_superregion": 9,
+   "south_european_sea_superregion": 4,
+   "africa_superregion": 4,
+   "near_east_superregion": 3,
+   "eastern_europe_superregion": 3
   },
   "series": [
+   "emp_gen_missions_general",
    "emp_gen_missions_general_2",
    "emp_gen_missions_western_med",
    "emp_gen_missions_western_med_2",
    "genoa_africa_slot_2",
+   "genoa_europe_slot",
    "genoa_missions_africa"
   ]
  },
  "TER": {
   "name": "Ternate",
-  "missions": 1,
+  "missions": 6,
   "regions": [
+   "moluccas_region",
    "south_china_sea_region"
   ],
   "supers": [
+   "east_indies_superregion",
    "indian_pacific_sea_superregion"
   ],
-  "n_series": 1,
+  "n_series": 2,
   "dlc": [],
   "rweight": {
-   "south_china_sea_region": 1
+   "south_china_sea_region": 1,
+   "moluccas_region": 1
   },
   "sweight": {
-   "indian_pacific_sea_superregion": 1
+   "indian_pacific_sea_superregion": 1,
+   "east_indies_superregion": 1
   },
   "series": [
+   "spice_1",
    "spice_2"
   ]
  },
  "TID": {
   "name": "Tidore",
-  "missions": 1,
+  "missions": 6,
   "regions": [
+   "moluccas_region",
    "south_china_sea_region"
   ],
   "supers": [
+   "east_indies_superregion",
    "indian_pacific_sea_superregion"
   ],
-  "n_series": 1,
+  "n_series": 2,
   "dlc": [],
   "rweight": {
-   "south_china_sea_region": 1
+   "south_china_sea_region": 1,
+   "moluccas_region": 1
   },
   "sweight": {
-   "indian_pacific_sea_superregion": 1
+   "indian_pacific_sea_superregion": 1,
+   "east_indies_superregion": 1
   },
   "series": [
+   "spice_1",
    "spice_2"
   ]
  },
@@ -2152,10 +2437,10 @@
    "scandinavia_region": 13,
    "north_german_region": 5,
    "north_atlantic_region": 1,
-   "northeast_america_region": 2,
    "canada_region": 2,
-   "southeast_america_region": 2,
    "hudson_bay_region": 2,
+   "northeast_america_region": 2,
+   "southeast_america_region": 2,
    "baltic_region": 2,
    "russia_region": 1,
    "guinea_region": 1,
@@ -2169,8 +2454,8 @@
    "south_china_sea_region": 1,
    "bengal_region": 1,
    "british_isles_region": 3,
-   "low_countries_region": 1,
-   "south_german_region": 1
+   "south_german_region": 1,
+   "low_countries_region": 1
   },
   "sweight": {
    "europe_superregion": 20,
@@ -2181,8 +2466,8 @@
    "southern_africa_superregion": 1,
    "central_america_superregion": 1,
    "indian_pacific_sea_superregion": 2,
-   "india_superregion": 4,
-   "east_african_sea_superregion": 1
+   "east_african_sea_superregion": 1,
+   "india_superregion": 4
   },
   "series": [
    "dan_caribbeans_mission_slot",
@@ -2402,8 +2687,8 @@
    "japan_region": 1,
    "north_atlantic_region": 1,
    "british_isles_region": 1,
-   "malaya_region": 1,
    "indonesia_region": 2,
+   "malaya_region": 1,
    "south_china_region": 1,
    "scandinavia_region": 1,
    "north_german_region": 3,
@@ -2466,6 +2751,102 @@
    "NED_5"
   ]
  },
+ "MOL": {
+  "name": "Moldavia",
+  "missions": 9,
+  "regions": [
+   "balkan_region",
+   "carpathia_region"
+  ],
+  "supers": [
+   "eastern_europe_superregion"
+  ],
+  "n_series": 2,
+  "dlc": [],
+  "rweight": {
+   "balkan_region": 2,
+   "carpathia_region": 3
+  },
+  "sweight": {
+   "eastern_europe_superregion": 5
+  },
+  "series": [
+   "romanian_missions_1",
+   "romanian_missions_5"
+  ]
+ },
+ "RMN": {
+  "name": "Romania",
+  "missions": 9,
+  "regions": [
+   "balkan_region",
+   "carpathia_region"
+  ],
+  "supers": [
+   "eastern_europe_superregion"
+  ],
+  "n_series": 2,
+  "dlc": [],
+  "rweight": {
+   "balkan_region": 2,
+   "carpathia_region": 3
+  },
+  "sweight": {
+   "eastern_europe_superregion": 5
+  },
+  "series": [
+   "romanian_missions_1",
+   "romanian_missions_5"
+  ]
+ },
+ "TRA": {
+  "name": "Transylvania",
+  "missions": 9,
+  "regions": [
+   "balkan_region",
+   "carpathia_region"
+  ],
+  "supers": [
+   "eastern_europe_superregion"
+  ],
+  "n_series": 2,
+  "dlc": [],
+  "rweight": {
+   "balkan_region": 2,
+   "carpathia_region": 3
+  },
+  "sweight": {
+   "eastern_europe_superregion": 5
+  },
+  "series": [
+   "romanian_missions_1",
+   "romanian_missions_5"
+  ]
+ },
+ "WAL": {
+  "name": "Wallachia",
+  "missions": 9,
+  "regions": [
+   "balkan_region",
+   "carpathia_region"
+  ],
+  "supers": [
+   "eastern_europe_superregion"
+  ],
+  "n_series": 2,
+  "dlc": [],
+  "rweight": {
+   "balkan_region": 2,
+   "carpathia_region": 3
+  },
+  "sweight": {
+   "eastern_europe_superregion": 5
+  },
+  "series": [
+   "romanian_missions_1",
+   "romanian_missions_5"
+  ]
+ },
  "TRE": {
   "name": "Trebizond",
   "missions": 25,
@@ -2489,8 +2870,8 @@
   ],
   "rweight": {
    "crimea_region": 3,
-   "mediterrenean_region": 2,
    "anatolia_region": 10,
+   "mediterrenean_region": 2,
    "balkan_region": 1,
    "caucasia_region": 2,
    "mashriq_region": 2
@@ -2507,6 +2888,195 @@
    "woc_trebizond_fourth",
    "woc_trebizond_second",
    "woc_trebizond_third"
+  ]
+ },
+ "HSE": {
+  "name": "Hsenwi",
+  "missions": 2,
+  "regions": [
+   "burma_region"
+  ],
+  "supers": [
+   "east_indies_superregion"
+  ],
+  "n_series": 1,
+  "dlc": [],
+  "rweight": {
+   "burma_region": 1
+  },
+  "sweight": {
+   "east_indies_superregion": 1
+  },
+  "series": [
+   "shan_1"
+  ]
+ },
+ "HSI": {
+  "name": "Hsipaw",
+  "missions": 2,
+  "regions": [
+   "burma_region"
+  ],
+  "supers": [
+   "east_indies_superregion"
+  ],
+  "n_series": 1,
+  "dlc": [],
+  "rweight": {
+   "burma_region": 1
+  },
+  "sweight": {
+   "east_indies_superregion": 1
+  },
+  "series": [
+   "shan_1"
+  ]
+ },
+ "KAL": {
+  "name": "Kale",
+  "missions": 2,
+  "regions": [
+   "burma_region"
+  ],
+  "supers": [
+   "east_indies_superregion"
+  ],
+  "n_series": 1,
+  "dlc": [],
+  "rweight": {
+   "burma_region": 1
+  },
+  "sweight": {
+   "east_indies_superregion": 1
+  },
+  "series": [
+   "shan_1"
+  ]
+ },
+ "MKA": {
+  "name": "Mong Kawng",
+  "missions": 2,
+  "regions": [
+   "burma_region"
+  ],
+  "supers": [
+   "east_indies_superregion"
+  ],
+  "n_series": 1,
+  "dlc": [],
+  "rweight": {
+   "burma_region": 1
+  },
+  "sweight": {
+   "east_indies_superregion": 1
+  },
+  "series": [
+   "shan_1"
+  ]
+ },
+ "MMA": {
+  "name": "Mong Mao",
+  "missions": 2,
+  "regions": [
+   "burma_region"
+  ],
+  "supers": [
+   "east_indies_superregion"
+  ],
+  "n_series": 1,
+  "dlc": [],
+  "rweight": {
+   "burma_region": 1
+  },
+  "sweight": {
+   "east_indies_superregion": 1
+  },
+  "series": [
+   "shan_1"
+  ]
+ },
+ "MNI": {
+  "name": "Mong Nai",
+  "missions": 2,
+  "regions": [
+   "burma_region"
+  ],
+  "supers": [
+   "east_indies_superregion"
+  ],
+  "n_series": 1,
+  "dlc": [],
+  "rweight": {
+   "burma_region": 1
+  },
+  "sweight": {
+   "east_indies_superregion": 1
+  },
+  "series": [
+   "shan_1"
+  ]
+ },
+ "MPA": {
+  "name": "Mong Pai",
+  "missions": 2,
+  "regions": [
+   "burma_region"
+  ],
+  "supers": [
+   "east_indies_superregion"
+  ],
+  "n_series": 1,
+  "dlc": [],
+  "rweight": {
+   "burma_region": 1
+  },
+  "sweight": {
+   "east_indies_superregion": 1
+  },
+  "series": [
+   "shan_1"
+  ]
+ },
+ "MYA": {
+  "name": "Mong Yang",
+  "missions": 2,
+  "regions": [
+   "burma_region"
+  ],
+  "supers": [
+   "east_indies_superregion"
+  ],
+  "n_series": 1,
+  "dlc": [],
+  "rweight": {
+   "burma_region": 1
+  },
+  "sweight": {
+   "east_indies_superregion": 1
+  },
+  "series": [
+   "shan_1"
+  ]
+ },
+ "SST": {
+  "name": "Shan",
+  "missions": 2,
+  "regions": [
+   "burma_region"
+  ],
+  "supers": [
+   "east_indies_superregion"
+  ],
+  "n_series": 1,
+  "dlc": [],
+  "rweight": {
+   "burma_region": 1
+  },
+  "sweight": {
+   "east_indies_superregion": 1
+  },
+  "series": [
+   "shan_1"
   ]
  },
  "ITA": {
@@ -2548,8 +3118,8 @@
    "british_isles_region": 1,
    "italy_region": 11,
    "south_german_region": 4,
-   "low_countries_region": 2,
    "north_german_region": 2,
+   "low_countries_region": 2,
    "balkan_region": 3,
    "anatolia_region": 2,
    "maghreb_region": 3,
@@ -2566,8 +3136,8 @@
    "eastern_europe_superregion": 3,
    "near_east_superregion": 6,
    "africa_superregion": 4,
-   "india_superregion": 1,
    "east_african_sea_superregion": 1,
+   "india_superregion": 1,
    "south_european_sea_superregion": 2
   },
   "series": [
@@ -2634,8 +3204,8 @@
    "british_isles_region": 1,
    "italy_region": 18,
    "south_german_region": 5,
-   "low_countries_region": 2,
    "north_german_region": 2,
+   "low_countries_region": 2,
    "balkan_region": 23,
    "anatolia_region": 9,
    "maghreb_region": 4,
@@ -2655,8 +3225,8 @@
    "eastern_europe_superregion": 24,
    "near_east_superregion": 20,
    "africa_superregion": 5,
-   "india_superregion": 1,
    "east_african_sea_superregion": 1,
+   "india_superregion": 1,
    "south_european_sea_superregion": 3,
    "persia_superregion": 1
   },
@@ -2704,58 +3274,102 @@
  },
  "NOV": {
   "name": "Novgorod",
-  "missions": 1,
+  "missions": 16,
   "regions": [
-   "russia_region"
+   "baltic_region",
+   "baltic_sea_region",
+   "north_atlantic_region",
+   "north_german_region",
+   "russia_region",
+   "ruthenia_region",
+   "scandinavia_region",
+   "ural_region"
   ],
   "supers": [
-   "eastern_europe_superregion"
+   "eastern_europe_superregion",
+   "europe_superregion",
+   "north_european_sea_superregion"
   ],
-  "n_series": 1,
+  "n_series": 5,
   "dlc": [
    "Third Rome"
   ],
   "rweight": {
-   "russia_region": 1
+   "ural_region": 3,
+   "russia_region": 9,
+   "ruthenia_region": 1,
+   "baltic_region": 2,
+   "baltic_sea_region": 1,
+   "north_german_region": 1,
+   "north_atlantic_region": 3,
+   "scandinavia_region": 4
   },
   "sweight": {
-   "eastern_europe_superregion": 1
+   "eastern_europe_superregion": 12,
+   "north_european_sea_superregion": 4,
+   "europe_superregion": 5
   },
   "series": [
-   "tr_novgorod_2"
+   "tr_novgorod_1",
+   "tr_novgorod_2",
+   "tr_novgorod_3",
+   "tr_novgorod_4",
+   "tr_novgorod_5"
   ]
  },
  "MOR": {
   "name": "Morocco",
-  "missions": 2,
+  "missions": 27,
   "regions": [
+   "british_isles_region",
+   "caribbean_sea_region",
+   "guinea_region",
+   "iberia_region",
    "maghreb_region",
-   "mediterrenean_region"
+   "mediterrenean_region",
+   "niger_region",
+   "sahel_region",
+   "scandinavia_region"
   ],
   "supers": [
    "africa_superregion",
+   "east_american_sea_superregion",
+   "europe_superregion",
    "south_european_sea_superregion"
   ],
-  "n_series": 2,
+  "n_series": 6,
   "dlc": [
    "Golden Century"
   ],
   "rweight": {
-   "mediterrenean_region": 1,
-   "maghreb_region": 1
+   "maghreb_region": 6,
+   "sahel_region": 5,
+   "niger_region": 3,
+   "guinea_region": 2,
+   "mediterrenean_region": 3,
+   "iberia_region": 4,
+   "scandinavia_region": 2,
+   "british_isles_region": 1,
+   "caribbean_sea_region": 1
   },
   "sweight": {
-   "south_european_sea_superregion": 1,
-   "africa_superregion": 1
+   "africa_superregion": 12,
+   "south_european_sea_superregion": 3,
+   "europe_superregion": 6,
+   "east_american_sea_superregion": 1
   },
   "series": [
+   "berber_3",
+   "gc_morocco_1",
    "gc_morocco_2",
-   "gc_morocco_4"
+   "gc_morocco_3",
+   "gc_morocco_4",
+   "gc_morocco_5"
   ]
  },
  "MAS": {
   "name": "Madyas",
-  "missions": 3,
+  "missions": 4,
   "regions": [
    "indonesia_region",
    "moluccas_region"
@@ -2792,8 +3406,8 @@
    "Origins"
   ],
   "rweight": {
-   "sahel_region": 3,
    "niger_region": 4,
+   "sahel_region": 3,
    "guinea_region": 1
   },
   "sweight": {
@@ -3100,99 +3714,278 @@
    "kok_persia_religious_direction_mission"
   ]
  },
+ "BAN": {
+  "name": "Banten",
+  "missions": 9,
+  "regions": [
+   "indonesia_region",
+   "malaya_region"
+  ],
+  "supers": [
+   "east_indies_superregion"
+  ],
+  "n_series": 2,
+  "dlc": [],
+  "rweight": {
+   "indonesia_region": 3,
+   "malaya_region": 2
+  },
+  "sweight": {
+   "east_indies_superregion": 5
+  },
+  "series": [
+   "sun_1",
+   "sun_2"
+  ]
+ },
+ "CRB": {
+  "name": "Cirebon",
+  "missions": 9,
+  "regions": [
+   "indonesia_region",
+   "malaya_region"
+  ],
+  "supers": [
+   "east_indies_superregion"
+  ],
+  "n_series": 2,
+  "dlc": [],
+  "rweight": {
+   "indonesia_region": 3,
+   "malaya_region": 2
+  },
+  "sweight": {
+   "east_indies_superregion": 5
+  },
+  "series": [
+   "sun_1",
+   "sun_2"
+  ]
+ },
+ "SUN": {
+  "name": "Sunda",
+  "missions": 9,
+  "regions": [
+   "indonesia_region",
+   "malaya_region"
+  ],
+  "supers": [
+   "east_indies_superregion"
+  ],
+  "n_series": 2,
+  "dlc": [],
+  "rweight": {
+   "indonesia_region": 3,
+   "malaya_region": 2
+  },
+  "sweight": {
+   "east_indies_superregion": 5
+  },
+  "series": [
+   "sun_1",
+   "sun_2"
+  ]
+ },
  "GUJ": {
   "name": "Gujarat",
-  "missions": 8,
+  "missions": 56,
   "regions": [
+   "arabia_region",
+   "bengal_region",
+   "coromandel_region",
    "deccan_region",
    "east_africa_region",
+   "east_indian_ocean_region",
    "hindusthan_region",
+   "horn_of_africa_region",
+   "khorasan_region",
+   "malaya_region",
+   "persia_region",
    "south_africa_region",
    "west_india_region"
   ],
   "supers": [
+   "africa_superregion",
+   "east_indies_superregion",
    "india_superregion",
+   "indian_pacific_sea_superregion",
+   "near_east_superregion",
+   "persia_superregion",
    "southern_africa_superregion"
   ],
-  "n_series": 5,
+  "n_series": 16,
   "dlc": [
    "Dharma"
   ],
   "rweight": {
-   "west_india_region": 6,
-   "hindusthan_region": 1,
-   "south_africa_region": 1,
-   "east_africa_region": 1,
-   "deccan_region": 1
+   "west_india_region": 18,
+   "arabia_region": 3,
+   "khorasan_region": 1,
+   "persia_region": 1,
+   "hindusthan_region": 9,
+   "east_africa_region": 2,
+   "horn_of_africa_region": 2,
+   "south_africa_region": 3,
+   "deccan_region": 5,
+   "malaya_region": 1,
+   "bengal_region": 2,
+   "coromandel_region": 1,
+   "east_indian_ocean_region": 1
   },
   "sweight": {
-   "india_superregion": 7,
-   "southern_africa_superregion": 1
+   "india_superregion": 28,
+   "persia_superregion": 1,
+   "near_east_superregion": 3,
+   "africa_superregion": 2,
+   "southern_africa_superregion": 3,
+   "east_indies_superregion": 1,
+   "indian_pacific_sea_superregion": 1
   },
   "series": [
+   "gen_hindu",
+   "gen_indian_muslim",
+   "gen_indian_sikh",
+   "gen_north_india_2",
+   "gen_north_india_4",
+   "gen_south_india_2",
+   "gen_south_india_4",
    "gen_south_india_5",
    "guj_into_africa",
    "guj_malwa_focus",
    "guj_maritime_conquest",
-   "guj_rajputana_conquest"
+   "guj_mercantile",
+   "guj_mercantile_and_industry",
+   "guj_minor_industry",
+   "guj_rajputana_conquest",
+   "guj_rajputana_frontier_series"
   ]
  },
  "MAJ": {
   "name": "Majapahit",
-  "missions": 5,
+  "missions": 30,
   "regions": [
+   "burma_region",
+   "indo_china_region",
+   "indonesia_region",
    "malaya_region",
+   "moluccas_region",
    "south_china_sea_region"
   ],
   "supers": [
    "east_indies_superregion",
    "indian_pacific_sea_superregion"
   ],
-  "n_series": 3,
+  "n_series": 6,
   "dlc": [
    "Leviathan"
   ],
   "rweight": {
-   "malaya_region": 1,
-   "south_china_sea_region": 1
+   "malaya_region": 7,
+   "south_china_sea_region": 3,
+   "indonesia_region": 9,
+   "indo_china_region": 2,
+   "burma_region": 1,
+   "moluccas_region": 3
   },
   "sweight": {
-   "indian_pacific_sea_superregion": 1,
-   "east_indies_superregion": 1
+   "indian_pacific_sea_superregion": 3,
+   "east_indies_superregion": 13
   },
   "series": [
+   "indonesians_3",
+   "indonesians_4",
    "mnd_maj_1",
    "mnd_maj_2",
-   "mnd_maj_3"
+   "mnd_maj_3",
+   "mnd_maj_4"
+  ]
+ },
+ "STY": {
+  "name": "Styria",
+  "missions": 2,
+  "regions": [
+   "south_german_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 1,
+  "dlc": [],
+  "rweight": {
+   "south_german_region": 1
+  },
+  "sweight": {
+   "europe_superregion": 1
+  },
+  "series": [
+   "hab_reform_austria"
+  ]
+ },
+ "TIR": {
+  "name": "Tirol",
+  "missions": 2,
+  "regions": [
+   "south_german_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 1,
+  "dlc": [],
+  "rweight": {
+   "south_german_region": 1
+  },
+  "sweight": {
+   "europe_superregion": 1
+  },
+  "series": [
+   "hab_reform_austria"
   ]
  },
  "PEG": {
   "name": "Pegu",
-  "missions": 2,
+  "missions": 16,
   "regions": [
-   "indo_china_region"
+   "bengal_region",
+   "burma_region",
+   "coromandel_region",
+   "indo_china_region",
+   "malaya_region",
+   "south_china_sea_region"
   ],
   "supers": [
-   "east_indies_superregion"
+   "east_indies_superregion",
+   "india_superregion",
+   "indian_pacific_sea_superregion"
   ],
-  "n_series": 2,
+  "n_series": 5,
   "dlc": [
    "Leviathan"
   ],
   "rweight": {
-   "indo_china_region": 1
+   "burma_region": 7,
+   "malaya_region": 2,
+   "south_china_sea_region": 1,
+   "bengal_region": 1,
+   "indo_china_region": 2,
+   "coromandel_region": 1
   },
   "sweight": {
-   "east_indies_superregion": 1
+   "east_indies_superregion": 10,
+   "indian_pacific_sea_superregion": 1,
+   "india_superregion": 2
   },
   "series": [
+   "mnd_pegu_1",
+   "mnd_pegu_2",
    "mnd_pegu_3",
-   "mnd_pegu_4"
+   "mnd_pegu_4",
+   "mnd_pegu_5"
   ]
  },
  "ZAN": {
   "name": "Kilwa",
-  "missions": 24,
+  "missions": 37,
   "regions": [
    "arabian_sea_region",
    "central_africa_region",
@@ -3221,39 +4014,41 @@
    "southern_africa_superregion",
    "west_african_sea_superregion"
   ],
-  "n_series": 7,
+  "n_series": 9,
   "dlc": [
    "Origins"
   ],
   "rweight": {
-   "south_africa_region": 4,
-   "east_africa_region": 6,
+   "south_africa_region": 7,
+   "east_africa_region": 9,
    "kongo_region": 1,
    "central_africa_region": 2,
    "persia_region": 1,
    "horn_of_africa_region": 1,
-   "arabian_sea_region": 2,
+   "arabian_sea_region": 3,
+   "south_china_sea_region": 4,
    "west_india_region": 1,
    "west_african_sea_region": 1,
-   "south_china_sea_region": 4,
    "south_atlantic_region": 1,
    "west_indian_ocean_region": 1,
    "south_china_region": 1,
-   "malaya_region": 1,
-   "indonesia_region": 1
+   "indonesia_region": 1,
+   "malaya_region": 1
   },
   "sweight": {
-   "southern_africa_superregion": 10,
+   "southern_africa_superregion": 13,
    "persia_superregion": 1,
    "africa_superregion": 1,
-   "east_african_sea_superregion": 2,
+   "east_african_sea_superregion": 3,
+   "indian_pacific_sea_superregion": 4,
    "india_superregion": 1,
    "west_african_sea_superregion": 1,
-   "indian_pacific_sea_superregion": 4,
    "china_superregion": 1,
    "east_indies_superregion": 1
   },
   "series": [
+   "east_african_diplomatic_slot",
+   "east_african_militar_slot",
    "east_african_trade_slot1",
    "east_african_trade_slot2",
    "kilwa_asia_trade_missions_slot",
@@ -3265,23 +4060,34 @@
  },
  "DTT": {
   "name": "Dithmarschen",
-  "missions": 1,
+  "missions": 11,
   "regions": [
-   "north_german_region"
+   "low_countries_region",
+   "north_german_region",
+   "russia_region",
+   "scandinavia_region",
+   "south_german_region"
   ],
   "supers": [
+   "eastern_europe_superregion",
    "europe_superregion"
   ],
-  "n_series": 1,
+  "n_series": 2,
   "dlc": [],
   "rweight": {
-   "north_german_region": 1
+   "north_german_region": 4,
+   "scandinavia_region": 1,
+   "low_countries_region": 1,
+   "south_german_region": 1,
+   "russia_region": 1
   },
   "sweight": {
-   "europe_superregion": 1
+   "europe_superregion": 6,
+   "eastern_europe_superregion": 1
   },
   "series": [
-   "peasants_1"
+   "peasants_1",
+   "peasants_2"
   ]
  },
  "LAI": {
@@ -3515,9 +4321,360 @@
    "tongan_missions"
   ]
  },
+ "BLG": {
+  "name": "Bologna",
+  "missions": 8,
+  "regions": [
+   "italy_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 2,
+  "dlc": [],
+  "rweight": {
+   "italy_region": 1
+  },
+  "sweight": {
+   "europe_superregion": 1
+  },
+  "series": [
+   "italian_minor_group_1",
+   "italian_minor_group_3"
+  ]
+ },
+ "FER": {
+  "name": "Ferrara",
+  "missions": 8,
+  "regions": [
+   "italy_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 2,
+  "dlc": [],
+  "rweight": {
+   "italy_region": 1
+  },
+  "sweight": {
+   "europe_superregion": 1
+  },
+  "series": [
+   "italian_minor_group_1",
+   "italian_minor_group_3"
+  ]
+ },
+ "LUC": {
+  "name": "Lucca",
+  "missions": 8,
+  "regions": [
+   "italy_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 2,
+  "dlc": [],
+  "rweight": {
+   "italy_region": 1
+  },
+  "sweight": {
+   "europe_superregion": 1
+  },
+  "series": [
+   "italian_minor_group_1",
+   "italian_minor_group_3"
+  ]
+ },
+ "MAN": {
+  "name": "Mantua",
+  "missions": 8,
+  "regions": [
+   "italy_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 2,
+  "dlc": [],
+  "rweight": {
+   "italy_region": 1
+  },
+  "sweight": {
+   "europe_superregion": 1
+  },
+  "series": [
+   "italian_minor_group_1",
+   "italian_minor_group_3"
+  ]
+ },
+ "MFA": {
+  "name": "Montferrat",
+  "missions": 8,
+  "regions": [
+   "italy_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 2,
+  "dlc": [],
+  "rweight": {
+   "italy_region": 1
+  },
+  "sweight": {
+   "europe_superregion": 1
+  },
+  "series": [
+   "italian_minor_group_1",
+   "italian_minor_group_3"
+  ]
+ },
+ "MOD": {
+  "name": "Modena",
+  "missions": 8,
+  "regions": [
+   "italy_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 2,
+  "dlc": [],
+  "rweight": {
+   "italy_region": 1
+  },
+  "sweight": {
+   "europe_superregion": 1
+  },
+  "series": [
+   "italian_minor_group_1",
+   "italian_minor_group_3"
+  ]
+ },
+ "PAR": {
+  "name": "Parma",
+  "missions": 8,
+  "regions": [
+   "italy_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 2,
+  "dlc": [],
+  "rweight": {
+   "italy_region": 1
+  },
+  "sweight": {
+   "europe_superregion": 1
+  },
+  "series": [
+   "italian_minor_group_1",
+   "italian_minor_group_3"
+  ]
+ },
+ "PDV": {
+  "name": "Padua",
+  "missions": 8,
+  "regions": [
+   "italy_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 2,
+  "dlc": [],
+  "rweight": {
+   "italy_region": 1
+  },
+  "sweight": {
+   "europe_superregion": 1
+  },
+  "series": [
+   "italian_minor_group_1",
+   "italian_minor_group_3"
+  ]
+ },
+ "PGA": {
+  "name": "Perugia",
+  "missions": 8,
+  "regions": [
+   "italy_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 2,
+  "dlc": [],
+  "rweight": {
+   "italy_region": 1
+  },
+  "sweight": {
+   "europe_superregion": 1
+  },
+  "series": [
+   "italian_minor_group_1",
+   "italian_minor_group_3"
+  ]
+ },
+ "PIS": {
+  "name": "Pisa",
+  "missions": 8,
+  "regions": [
+   "italy_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 2,
+  "dlc": [],
+  "rweight": {
+   "italy_region": 1
+  },
+  "sweight": {
+   "europe_superregion": 1
+  },
+  "series": [
+   "italian_minor_group_1",
+   "italian_minor_group_3"
+  ]
+ },
+ "SIE": {
+  "name": "Siena",
+  "missions": 8,
+  "regions": [
+   "italy_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 2,
+  "dlc": [],
+  "rweight": {
+   "italy_region": 1
+  },
+  "sweight": {
+   "europe_superregion": 1
+  },
+  "series": [
+   "italian_minor_group_1",
+   "italian_minor_group_3"
+  ]
+ },
+ "SPL": {
+  "name": "Spoleto",
+  "missions": 8,
+  "regions": [
+   "italy_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 2,
+  "dlc": [],
+  "rweight": {
+   "italy_region": 1
+  },
+  "sweight": {
+   "europe_superregion": 1
+  },
+  "series": [
+   "italian_minor_group_1",
+   "italian_minor_group_3"
+  ]
+ },
+ "SZO": {
+  "name": "Saluzzo",
+  "missions": 8,
+  "regions": [
+   "italy_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 2,
+  "dlc": [],
+  "rweight": {
+   "italy_region": 1
+  },
+  "sweight": {
+   "europe_superregion": 1
+  },
+  "series": [
+   "italian_minor_group_1",
+   "italian_minor_group_3"
+  ]
+ },
+ "URB": {
+  "name": "Urbino",
+  "missions": 8,
+  "regions": [
+   "italy_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 2,
+  "dlc": [],
+  "rweight": {
+   "italy_region": 1
+  },
+  "sweight": {
+   "europe_superregion": 1
+  },
+  "series": [
+   "italian_minor_group_1",
+   "italian_minor_group_3"
+  ]
+ },
+ "VRN": {
+  "name": "Verona",
+  "missions": 8,
+  "regions": [
+   "italy_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 2,
+  "dlc": [],
+  "rweight": {
+   "italy_region": 1
+  },
+  "sweight": {
+   "europe_superregion": 1
+  },
+  "series": [
+   "italian_minor_group_1",
+   "italian_minor_group_3"
+  ]
+ },
+ "SUK": {
+  "name": "Sukhothai",
+  "missions": 3,
+  "regions": [
+   "indo_china_region"
+  ],
+  "supers": [
+   "east_indies_superregion"
+  ],
+  "n_series": 1,
+  "dlc": [],
+  "rweight": {
+   "indo_china_region": 3
+  },
+  "sweight": {
+   "east_indies_superregion": 3
+  },
+  "series": [
+   "suk_1"
+  ]
+ },
  "TUR": {
   "name": "Ottomans",
-  "missions": 86,
+  "missions": 99,
   "regions": [
    "anatolia_region",
    "arabia_region",
@@ -3559,36 +4716,36 @@
    "Domination"
   ],
   "rweight": {
-   "mashriq_region": 6,
+   "mashriq_region": 8,
    "egypt_region": 6,
-   "balkan_region": 15,
-   "anatolia_region": 6,
-   "carpathia_region": 4,
+   "balkan_region": 18,
+   "anatolia_region": 7,
+   "carpathia_region": 6,
    "south_german_region": 1,
    "italy_region": 3,
    "mediterrenean_region": 1,
    "iberia_region": 2,
-   "maghreb_region": 5,
+   "maghreb_region": 7,
    "arabian_sea_region": 1,
    "west_india_region": 2,
-   "arabia_region": 5,
+   "arabia_region": 7,
    "horn_of_africa_region": 1,
    "east_indian_ocean_region": 1,
-   "south_china_sea_region": 1,
    "east_china_sea_region": 1,
-   "crimea_region": 2,
+   "south_china_sea_region": 1,
+   "crimea_region": 3,
    "caucasia_region": 3,
    "persia_region": 3,
    "central_asia_region": 1
   },
   "sweight": {
-   "near_east_superregion": 19,
-   "eastern_europe_superregion": 19,
+   "eastern_europe_superregion": 25,
+   "near_east_superregion": 23,
    "europe_superregion": 5,
    "south_european_sea_superregion": 1,
-   "africa_superregion": 6,
-   "india_superregion": 2,
+   "africa_superregion": 8,
    "east_african_sea_superregion": 1,
+   "india_superregion": 2,
    "indian_pacific_sea_superregion": 1,
    "north_pacific_sea_superregion": 1,
    "persia_superregion": 6,
@@ -3656,7 +4813,7 @@
  },
  "SCO": {
   "name": "Scotland",
-  "missions": 6,
+  "missions": 18,
   "regions": [
    "british_isles_region",
    "colombia_region",
@@ -3668,24 +4825,26 @@
    "north_european_sea_superregion",
    "south_america_superregion"
   ],
-  "n_series": 3,
+  "n_series": 5,
   "dlc": [
    "Rule Britannia"
   ],
   "rweight": {
-   "british_isles_region": 3,
+   "british_isles_region": 10,
    "north_atlantic_region": 1,
    "colombia_region": 1,
-   "scandinavia_region": 1
+   "scandinavia_region": 2
   },
   "sweight": {
-   "europe_superregion": 3,
+   "europe_superregion": 11,
    "north_european_sea_superregion": 1,
    "south_america_superregion": 1
   },
   "series": [
+   "sco_rb_adm_missions",
    "sco_rb_colonial",
    "sco_rb_colonial_2",
+   "sco_rb_conquest_missions",
    "sco_rb_conquest_missions_2"
   ]
  },
@@ -3870,20 +5029,26 @@
  },
  "JAP": {
   "name": "Japan",
-  "missions": 58,
+  "missions": 75,
   "regions": [
+   "east_china_sea_region",
    "east_siberia_region",
+   "indo_china_region",
    "japan_region",
    "korea_region",
    "manchuria_region",
    "north_china_region",
+   "oceanea_region",
    "south_china_region",
    "south_china_sea_region"
   ],
   "supers": [
    "china_superregion",
+   "east_indies_superregion",
    "far_east_superregion",
    "indian_pacific_sea_superregion",
+   "north_pacific_sea_superregion",
+   "oceania_superregion",
    "tartary_superregion"
   ],
   "n_series": 23,
@@ -3892,19 +5057,25 @@
    "Mandate of Heaven"
   ],
   "rweight": {
-   "manchuria_region": 2,
-   "japan_region": 15,
+   "japan_region": 18,
+   "manchuria_region": 3,
    "east_siberia_region": 1,
    "korea_region": 2,
    "north_china_region": 10,
-   "south_china_region": 6,
-   "south_china_sea_region": 1
+   "indo_china_region": 1,
+   "south_china_region": 8,
+   "oceanea_region": 1,
+   "east_china_sea_region": 1,
+   "south_china_sea_region": 2
   },
   "sweight": {
-   "far_east_superregion": 16,
+   "far_east_superregion": 19,
    "tartary_superregion": 1,
-   "china_superregion": 13,
-   "indian_pacific_sea_superregion": 1
+   "china_superregion": 15,
+   "east_indies_superregion": 1,
+   "oceania_superregion": 1,
+   "indian_pacific_sea_superregion": 2,
+   "north_pacific_sea_superregion": 1
   },
   "series": [
    "DOM_japanse_missions_1",
@@ -4168,8 +5339,9 @@
  },
  "TDO": {
   "name": "Tondo",
-  "missions": 4,
+  "missions": 5,
   "regions": [
+   "indonesia_region",
    "moluccas_region",
    "north_china_region"
   ],
@@ -4181,19 +5353,380 @@
   "dlc": [],
   "rweight": {
    "moluccas_region": 2,
+   "indonesia_region": 1,
    "north_china_region": 1
   },
   "sweight": {
-   "east_indies_superregion": 2,
+   "east_indies_superregion": 3,
    "china_superregion": 1
   },
   "series": [
    "tdo_1"
   ]
  },
+ "ALE": {
+  "name": "Alen\u00e7on",
+  "missions": 4,
+  "regions": [
+   "france_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 1,
+  "dlc": [],
+  "rweight": {
+   "france_region": 2
+  },
+  "sweight": {
+   "europe_superregion": 2
+  },
+  "series": [
+   "french_minor_missions"
+  ]
+ },
+ "AMG": {
+  "name": "Armagnac",
+  "missions": 4,
+  "regions": [
+   "france_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 1,
+  "dlc": [],
+  "rweight": {
+   "france_region": 2
+  },
+  "sweight": {
+   "europe_superregion": 2
+  },
+  "series": [
+   "french_minor_missions"
+  ]
+ },
+ "AUV": {
+  "name": "Auvergne",
+  "missions": 4,
+  "regions": [
+   "france_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 1,
+  "dlc": [],
+  "rweight": {
+   "france_region": 2
+  },
+  "sweight": {
+   "europe_superregion": 2
+  },
+  "series": [
+   "french_minor_missions"
+  ]
+ },
+ "BER": {
+  "name": "Berry",
+  "missions": 4,
+  "regions": [
+   "france_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 1,
+  "dlc": [],
+  "rweight": {
+   "france_region": 2
+  },
+  "sweight": {
+   "europe_superregion": 2
+  },
+  "series": [
+   "french_minor_missions"
+  ]
+ },
+ "BOU": {
+  "name": "Bourbonnais",
+  "missions": 4,
+  "regions": [
+   "france_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 1,
+  "dlc": [],
+  "rweight": {
+   "france_region": 2
+  },
+  "sweight": {
+   "europe_superregion": 2
+  },
+  "series": [
+   "french_minor_missions"
+  ]
+ },
+ "CHP": {
+  "name": "Champagne",
+  "missions": 4,
+  "regions": [
+   "france_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 1,
+  "dlc": [],
+  "rweight": {
+   "france_region": 2
+  },
+  "sweight": {
+   "europe_superregion": 2
+  },
+  "series": [
+   "french_minor_missions"
+  ]
+ },
+ "DAU": {
+  "name": "Dauphine",
+  "missions": 4,
+  "regions": [
+   "france_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 1,
+  "dlc": [],
+  "rweight": {
+   "france_region": 2
+  },
+  "sweight": {
+   "europe_superregion": 2
+  },
+  "series": [
+   "french_minor_missions"
+  ]
+ },
+ "FOI": {
+  "name": "Foix",
+  "missions": 4,
+  "regions": [
+   "france_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 1,
+  "dlc": [],
+  "rweight": {
+   "france_region": 2
+  },
+  "sweight": {
+   "europe_superregion": 2
+  },
+  "series": [
+   "french_minor_missions"
+  ]
+ },
+ "GUY": {
+  "name": "Gascony",
+  "missions": 4,
+  "regions": [
+   "france_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 1,
+  "dlc": [],
+  "rweight": {
+   "france_region": 2
+  },
+  "sweight": {
+   "europe_superregion": 2
+  },
+  "series": [
+   "french_minor_missions"
+  ]
+ },
+ "NEV": {
+  "name": "Nevers",
+  "missions": 4,
+  "regions": [
+   "france_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 1,
+  "dlc": [],
+  "rweight": {
+   "france_region": 2
+  },
+  "sweight": {
+   "europe_superregion": 2
+  },
+  "series": [
+   "french_minor_missions"
+  ]
+ },
+ "NRM": {
+  "name": "Normandy",
+  "missions": 4,
+  "regions": [
+   "france_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 1,
+  "dlc": [],
+  "rweight": {
+   "france_region": 2
+  },
+  "sweight": {
+   "europe_superregion": 2
+  },
+  "series": [
+   "french_minor_missions"
+  ]
+ },
+ "ORL": {
+  "name": "Orleans",
+  "missions": 4,
+  "regions": [
+   "france_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 1,
+  "dlc": [],
+  "rweight": {
+   "france_region": 2
+  },
+  "sweight": {
+   "europe_superregion": 2
+  },
+  "series": [
+   "french_minor_missions"
+  ]
+ },
+ "PIC": {
+  "name": "Picardy",
+  "missions": 4,
+  "regions": [
+   "france_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 1,
+  "dlc": [],
+  "rweight": {
+   "france_region": 2
+  },
+  "sweight": {
+   "europe_superregion": 2
+  },
+  "series": [
+   "french_minor_missions"
+  ]
+ },
+ "TOU": {
+  "name": "Toulouse",
+  "missions": 4,
+  "regions": [
+   "france_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 1,
+  "dlc": [],
+  "rweight": {
+   "france_region": 2
+  },
+  "sweight": {
+   "europe_superregion": 2
+  },
+  "series": [
+   "french_minor_missions"
+  ]
+ },
+ "LXA": {
+  "name": "Lan Xang",
+  "missions": 10,
+  "regions": [
+   "indo_china_region"
+  ],
+  "supers": [
+   "east_indies_superregion"
+  ],
+  "n_series": 2,
+  "dlc": [],
+  "rweight": {
+   "indo_china_region": 6
+  },
+  "sweight": {
+   "east_indies_superregion": 6
+  },
+  "series": [
+   "lxa_1",
+   "lxa_2"
+  ]
+ },
+ "BRU": {
+  "name": "Brunswick",
+  "missions": 5,
+  "regions": [
+   "north_german_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 2,
+  "dlc": [],
+  "rweight": {
+   "north_german_region": 4
+  },
+  "sweight": {
+   "europe_superregion": 4
+  },
+  "series": [
+   "hannoverian_group_1",
+   "hannoverian_group_3"
+  ]
+ },
+ "CLB": {
+  "name": "Calenberg",
+  "missions": 5,
+  "regions": [
+   "north_german_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 2,
+  "dlc": [],
+  "rweight": {
+   "north_german_region": 4
+  },
+  "sweight": {
+   "europe_superregion": 4
+  },
+  "series": [
+   "hannoverian_group_1",
+   "hannoverian_group_3"
+  ]
+ },
  "HAN": {
   "name": "Hanover",
-  "missions": 4,
+  "missions": 9,
   "regions": [
    "british_isles_region",
    "north_atlantic_region",
@@ -4203,198 +5736,249 @@
    "europe_superregion",
    "north_european_sea_superregion"
   ],
-  "n_series": 3,
+  "n_series": 4,
   "dlc": [],
   "rweight": {
-   "north_german_region": 1,
+   "north_german_region": 5,
    "north_atlantic_region": 1,
-   "british_isles_region": 1
+   "british_isles_region": 2
   },
   "sweight": {
-   "europe_superregion": 2,
+   "europe_superregion": 6,
    "north_european_sea_superregion": 1
   },
   "series": [
+   "hannoverian_group_1",
    "hannoverian_group_2",
    "hannoverian_group_3",
    "hannoverian_group_4"
   ]
  },
- "BRU": {
-  "name": "Brunswick",
-  "missions": 1,
-  "regions": [
-   "north_german_region"
-  ],
-  "supers": [
-   "europe_superregion"
-  ],
-  "n_series": 1,
-  "dlc": [],
-  "rweight": {
-   "north_german_region": 1
-  },
-  "sweight": {
-   "europe_superregion": 1
-  },
-  "series": [
-   "hannoverian_group_3"
-  ]
- },
- "CLB": {
-  "name": "Calenberg",
-  "missions": 1,
-  "regions": [
-   "north_german_region"
-  ],
-  "supers": [
-   "europe_superregion"
-  ],
-  "n_series": 1,
-  "dlc": [],
-  "rweight": {
-   "north_german_region": 1
-  },
-  "sweight": {
-   "europe_superregion": 1
-  },
-  "series": [
-   "hannoverian_group_3"
-  ]
- },
  "LUN": {
   "name": "L\u00fcneburg",
-  "missions": 1,
+  "missions": 5,
   "regions": [
    "north_german_region"
   ],
   "supers": [
    "europe_superregion"
   ],
-  "n_series": 1,
+  "n_series": 2,
   "dlc": [],
   "rweight": {
-   "north_german_region": 1
+   "north_german_region": 4
   },
   "sweight": {
-   "europe_superregion": 1
+   "europe_superregion": 4
   },
   "series": [
+   "hannoverian_group_1",
    "hannoverian_group_3"
   ]
  },
  "NAP": {
   "name": "Naples",
-  "missions": 4,
+  "missions": 17,
   "regions": [
+   "balkan_region",
+   "iberia_region",
    "italy_region",
-   "maghreb_region"
+   "maghreb_region",
+   "mashriq_region"
   ],
   "supers": [
    "africa_superregion",
-   "europe_superregion"
+   "eastern_europe_superregion",
+   "europe_superregion",
+   "near_east_superregion"
   ],
-  "n_series": 3,
+  "n_series": 5,
   "dlc": [
    "Emperor"
   ],
   "rweight": {
-   "italy_region": 2,
+   "italy_region": 7,
+   "balkan_region": 2,
+   "mashriq_region": 1,
+   "iberia_region": 2,
    "maghreb_region": 1
   },
   "sweight": {
-   "europe_superregion": 2,
+   "europe_superregion": 8,
+   "eastern_europe_superregion": 2,
+   "near_east_superregion": 1,
    "africa_superregion": 1
   },
   "series": [
    "emp_naples_1",
    "emp_naples_2",
-   "emp_naples_4"
+   "emp_naples_3",
+   "emp_naples_4",
+   "emp_naples_5"
   ]
  },
  "TTS": {
   "name": "Two Sicilies",
-  "missions": 4,
+  "missions": 17,
   "regions": [
+   "balkan_region",
+   "iberia_region",
    "italy_region",
-   "maghreb_region"
+   "maghreb_region",
+   "mashriq_region"
   ],
   "supers": [
    "africa_superregion",
-   "europe_superregion"
+   "eastern_europe_superregion",
+   "europe_superregion",
+   "near_east_superregion"
   ],
-  "n_series": 3,
+  "n_series": 5,
   "dlc": [
    "Emperor"
   ],
   "rweight": {
-   "italy_region": 2,
+   "italy_region": 7,
+   "balkan_region": 2,
+   "mashriq_region": 1,
+   "iberia_region": 2,
    "maghreb_region": 1
   },
   "sweight": {
-   "europe_superregion": 2,
+   "europe_superregion": 8,
+   "eastern_europe_superregion": 2,
+   "near_east_superregion": 1,
    "africa_superregion": 1
   },
   "series": [
    "emp_naples_1",
    "emp_naples_2",
-   "emp_naples_4"
+   "emp_naples_3",
+   "emp_naples_4",
+   "emp_naples_5"
   ]
  },
  "BHA": {
   "name": "Bharat",
-  "missions": 1,
+  "missions": 15,
   "regions": [
-   "indo_china_region"
+   "arabian_sea_region",
+   "bengal_region",
+   "burma_region",
+   "coromandel_region",
+   "deccan_region",
+   "hindusthan_region",
+   "indo_china_region",
+   "khorasan_region",
+   "malaya_region",
+   "persia_region",
+   "west_india_region"
   ],
   "supers": [
-   "east_indies_superregion"
+   "east_african_sea_superregion",
+   "east_indies_superregion",
+   "india_superregion",
+   "persia_superregion"
   ],
-  "n_series": 1,
+  "n_series": 5,
   "dlc": [
    "Dharma"
   ],
   "rweight": {
-   "indo_china_region": 1
+   "west_india_region": 1,
+   "khorasan_region": 1,
+   "persia_region": 1,
+   "hindusthan_region": 1,
+   "arabian_sea_region": 1,
+   "bengal_region": 2,
+   "deccan_region": 1,
+   "coromandel_region": 1,
+   "indo_china_region": 1,
+   "burma_region": 1,
+   "malaya_region": 1
   },
   "sweight": {
-   "east_indies_superregion": 1
+   "india_superregion": 7,
+   "persia_superregion": 2,
+   "east_african_sea_superregion": 1,
+   "east_indies_superregion": 3
   },
   "series": [
-   "hin_slot_4"
+   "hin_slot_1",
+   "hin_slot_2",
+   "hin_slot_3",
+   "hin_slot_4",
+   "hin_slot_5"
   ]
  },
  "HIN": {
   "name": "Hindustan",
-  "missions": 2,
+  "missions": 50,
   "regions": [
+   "arabian_sea_region",
+   "bengal_region",
+   "burma_region",
+   "coromandel_region",
    "deccan_region",
-   "indo_china_region"
+   "east_indian_ocean_region",
+   "hindusthan_region",
+   "indo_china_region",
+   "khorasan_region",
+   "malaya_region",
+   "persia_region",
+   "west_india_region"
   ],
   "supers": [
+   "east_african_sea_superregion",
    "east_indies_superregion",
-   "india_superregion"
+   "india_superregion",
+   "indian_pacific_sea_superregion",
+   "persia_superregion"
   ],
-  "n_series": 2,
+  "n_series": 13,
   "dlc": [
    "Dharma"
   ],
   "rweight": {
+   "west_india_region": 5,
+   "khorasan_region": 1,
+   "persia_region": 1,
+   "hindusthan_region": 9,
+   "arabian_sea_region": 1,
+   "bengal_region": 4,
+   "deccan_region": 5,
+   "coromandel_region": 2,
    "indo_china_region": 1,
-   "deccan_region": 1
+   "burma_region": 1,
+   "malaya_region": 1,
+   "east_indian_ocean_region": 1
   },
   "sweight": {
-   "east_indies_superregion": 1,
-   "india_superregion": 1
+   "india_superregion": 20,
+   "persia_superregion": 2,
+   "east_african_sea_superregion": 1,
+   "east_indies_superregion": 3,
+   "indian_pacific_sea_superregion": 1
   },
   "series": [
+   "gen_hindu",
+   "gen_indian_muslim",
+   "gen_indian_sikh",
+   "gen_north_india_2",
+   "gen_north_india_4",
+   "gen_south_india_2",
+   "gen_south_india_4",
    "gen_south_india_5",
-   "hin_slot_4"
+   "hin_slot_1",
+   "hin_slot_2",
+   "hin_slot_3",
+   "hin_slot_4",
+   "hin_slot_5"
   ]
  },
  "KOL": {
   "name": "Cologne",
-  "missions": 3,
+  "missions": 6,
   "regions": [
    "north_german_region"
   ],
@@ -4404,10 +5988,10 @@
   "n_series": 3,
   "dlc": [],
   "rweight": {
-   "north_german_region": 2
+   "north_german_region": 4
   },
   "sweight": {
-   "europe_superregion": 2
+   "europe_superregion": 4
   },
   "series": [
    "bishop_elector_group_2",
@@ -4417,7 +6001,7 @@
  },
  "MAI": {
   "name": "Mainz",
-  "missions": 3,
+  "missions": 5,
   "regions": [
    "north_german_region"
   ],
@@ -4427,10 +6011,10 @@
   "n_series": 3,
   "dlc": [],
   "rweight": {
-   "north_german_region": 2
+   "north_german_region": 3
   },
   "sweight": {
-   "europe_superregion": 2
+   "europe_superregion": 3
   },
   "series": [
    "bishop_elector_group_2",
@@ -4440,7 +6024,7 @@
  },
  "TRI": {
   "name": "Trier",
-  "missions": 3,
+  "missions": 5,
   "regions": [
    "north_german_region"
   ],
@@ -4450,10 +6034,10 @@
   "n_series": 3,
   "dlc": [],
   "rweight": {
-   "north_german_region": 2
+   "north_german_region": 3
   },
   "sweight": {
-   "europe_superregion": 2
+   "europe_superregion": 3
   },
   "series": [
    "bishop_elector_group_2",
@@ -4463,16 +6047,21 @@
  },
  "POR": {
   "name": "Portugal",
-  "missions": 35,
+  "missions": 41,
   "regions": [
    "arabia_region",
    "atlantic_south_america_region",
+   "brazil_region",
    "burma_region",
    "coromandel_region",
    "deccan_region",
    "east_africa_region",
+   "east_china_sea_region",
+   "guinea_region",
    "horn_of_africa_region",
    "iberia_region",
+   "japan_region",
+   "kongo_region",
    "maghreb_region",
    "malaya_region",
    "mediterrenean_region",
@@ -4487,52 +6076,64 @@
    "east_american_sea_superregion",
    "east_indies_superregion",
    "europe_superregion",
+   "far_east_superregion",
    "india_superregion",
    "indian_pacific_sea_superregion",
    "near_east_superregion",
+   "north_pacific_sea_superregion",
    "persia_superregion",
+   "south_america_superregion",
    "south_european_sea_superregion",
    "southern_africa_superregion",
    "west_african_sea_superregion"
   ],
-  "n_series": 10,
+  "n_series": 11,
   "dlc": [
    "Domination",
    "Golden Century"
   ],
   "rweight": {
+   "brazil_region": 1,
    "coromandel_region": 2,
    "burma_region": 1,
    "maghreb_region": 2,
+   "guinea_region": 2,
+   "kongo_region": 1,
+   "west_african_sea_region": 1,
    "atlantic_south_america_region": 1,
    "mediterrenean_region": 2,
-   "west_african_sea_region": 1,
    "deccan_region": 2,
    "west_india_region": 1,
    "iberia_region": 4,
-   "south_africa_region": 3,
    "east_africa_region": 2,
+   "south_africa_region": 3,
    "horn_of_africa_region": 1,
    "malaya_region": 2,
    "south_china_sea_region": 2,
+   "east_china_sea_region": 1,
+   "japan_region": 1,
    "persia_region": 1,
    "arabia_region": 1
   },
   "sweight": {
+   "south_america_superregion": 1,
    "india_superregion": 5,
    "east_indies_superregion": 3,
-   "africa_superregion": 3,
-   "east_american_sea_superregion": 1,
+   "africa_superregion": 5,
+   "southern_africa_superregion": 5,
    "south_european_sea_superregion": 2,
    "west_african_sea_superregion": 1,
+   "east_american_sea_superregion": 1,
    "europe_superregion": 4,
-   "southern_africa_superregion": 4,
    "indian_pacific_sea_superregion": 2,
+   "north_pacific_sea_superregion": 1,
+   "far_east_superregion": 1,
    "persia_superregion": 1,
    "near_east_superregion": 1
   },
   "series": [
    "gc_por_1",
+   "gc_por_2",
    "gc_por_2_b",
    "gc_por_2_c",
    "gc_por_3",
@@ -4546,46 +6147,78 @@
  },
  "KHM": {
   "name": "Khmer",
-  "missions": 1,
-  "regions": [],
-  "supers": [
-   "china_superregion"
+  "missions": 19,
+  "regions": [
+   "burma_region",
+   "indo_china_region",
+   "indonesia_region"
   ],
-  "n_series": 1,
+  "supers": [
+   "china_superregion",
+   "east_indies_superregion"
+  ],
+  "n_series": 5,
   "dlc": [
    "Leviathan"
   ],
-  "rweight": {},
+  "rweight": {
+   "indo_china_region": 11,
+   "indonesia_region": 1,
+   "burma_region": 1
+  },
   "sweight": {
-   "china_superregion": 1
+   "east_indies_superregion": 13,
+   "china_superregion": 2
   },
   "series": [
-   "mnd_khmer_4"
+   "mnd_khmer_1",
+   "mnd_khmer_2",
+   "mnd_khmer_3",
+   "mnd_khmer_4",
+   "mnd_khmer_5"
   ]
  },
  "ATJ": {
   "name": "Aceh",
-  "missions": 1,
-  "regions": [],
-  "supers": [],
-  "n_series": 1,
+  "missions": 8,
+  "regions": [
+   "malaya_region"
+  ],
+  "supers": [
+   "east_indies_superregion"
+  ],
+  "n_series": 2,
   "dlc": [],
-  "rweight": {},
-  "sweight": {},
+  "rweight": {
+   "malaya_region": 4
+  },
+  "sweight": {
+   "east_indies_superregion": 4
+  },
   "series": [
+   "atj_1",
    "atj_2"
   ]
  },
  "PSA": {
   "name": "Pasai",
-  "missions": 1,
-  "regions": [],
-  "supers": [],
-  "n_series": 1,
+  "missions": 8,
+  "regions": [
+   "malaya_region"
+  ],
+  "supers": [
+   "east_indies_superregion"
+  ],
+  "n_series": 2,
   "dlc": [],
-  "rweight": {},
-  "sweight": {},
+  "rweight": {
+   "malaya_region": 4
+  },
+  "sweight": {
+   "east_indies_superregion": 4
+  },
   "series": [
+   "atj_1",
    "atj_2"
   ]
  },
@@ -4622,14 +6255,14 @@
   ],
   "rweight": {
    "italy_region": 7,
-   "balkan_region": 2,
    "russia_region": 1,
+   "balkan_region": 2,
    "south_german_region": 2,
    "mashriq_region": 1,
    "north_china_region": 1,
    "south_china_region": 1,
-   "caucasia_region": 1,
    "anatolia_region": 1,
+   "caucasia_region": 1,
    "horn_of_africa_region": 1,
    "japan_region": 1,
    "ruthenia_region": 1,
@@ -4654,7 +6287,7 @@
  },
  "AVA": {
   "name": "Ava",
-  "missions": 10,
+  "missions": 18,
   "regions": [
    "bengal_region",
    "burma_region",
@@ -4673,15 +6306,15 @@
    "Dharma"
   ],
   "rweight": {
-   "burma_region": 4,
-   "indo_china_region": 2,
+   "burma_region": 9,
+   "indo_china_region": 4,
    "malaya_region": 1,
    "bengal_region": 2,
    "coromandel_region": 1,
    "xinan_region": 1
   },
   "sweight": {
-   "east_indies_superregion": 6,
+   "east_indies_superregion": 13,
    "india_superregion": 3,
    "china_superregion": 1
   },
@@ -4695,7 +6328,7 @@
  },
  "BPR": {
   "name": "Prome",
-  "missions": 10,
+  "missions": 18,
   "regions": [
    "bengal_region",
    "burma_region",
@@ -4714,15 +6347,15 @@
    "Dharma"
   ],
   "rweight": {
-   "burma_region": 4,
-   "indo_china_region": 2,
+   "burma_region": 9,
+   "indo_china_region": 4,
    "malaya_region": 1,
    "bengal_region": 2,
    "coromandel_region": 1,
    "xinan_region": 1
   },
   "sweight": {
-   "east_indies_superregion": 6,
+   "east_indies_superregion": 13,
    "india_superregion": 3,
    "china_superregion": 1
   },
@@ -4736,7 +6369,7 @@
  },
  "TAU": {
   "name": "Taungu",
-  "missions": 10,
+  "missions": 18,
   "regions": [
    "bengal_region",
    "burma_region",
@@ -4755,15 +6388,15 @@
    "Dharma"
   ],
   "rweight": {
-   "burma_region": 4,
-   "indo_china_region": 2,
+   "burma_region": 9,
+   "indo_china_region": 4,
    "malaya_region": 1,
    "bengal_region": 2,
    "coromandel_region": 1,
    "xinan_region": 1
   },
   "sweight": {
-   "east_indies_superregion": 6,
+   "east_indies_superregion": 13,
    "india_superregion": 3,
    "china_superregion": 1
   },
@@ -4795,8 +6428,8 @@
    "Origins"
   ],
   "rweight": {
-   "guinea_region": 2,
    "niger_region": 2,
+   "guinea_region": 2,
    "kongo_region": 3,
    "central_africa_region": 2,
    "west_african_sea_region": 1
@@ -4843,16 +6476,16 @@
    "france_region": 8,
    "iberia_region": 2,
    "italy_region": 2,
-   "north_german_region": 1,
    "south_german_region": 1,
+   "north_german_region": 1,
    "low_countries_region": 1,
    "north_atlantic_region": 2,
    "american_east_coast_region": 1
   },
   "sweight": {
    "europe_superregion": 19,
-   "east_american_sea_superregion": 1,
-   "north_european_sea_superregion": 2
+   "north_european_sea_superregion": 2,
+   "east_american_sea_superregion": 1
   },
   "series": [
    "ave_row_3",
@@ -4917,14 +6550,14 @@
    "deccan_region": 2,
    "west_india_region": 2,
    "italy_region": 3,
-   "balkan_region": 1,
    "anatolia_region": 1,
+   "balkan_region": 1,
    "bengal_region": 2,
-   "north_german_region": 1,
    "south_german_region": 1,
+   "north_german_region": 1,
    "low_countries_region": 2,
-   "south_africa_region": 2,
    "east_africa_region": 1,
+   "south_africa_region": 2,
    "australia_region": 1,
    "north_atlantic_region": 2,
    "american_east_coast_region": 1
@@ -4936,8 +6569,8 @@
    "eastern_europe_superregion": 1,
    "southern_africa_superregion": 2,
    "oceania_superregion": 1,
-   "east_american_sea_superregion": 1,
-   "north_european_sea_superregion": 2
+   "north_european_sea_superregion": 2,
+   "east_american_sea_superregion": 1
   },
   "series": [
    "ave_row_3",
@@ -5004,13 +6637,13 @@
    "deccan_region": 2,
    "west_india_region": 2,
    "italy_region": 1,
+   "anatolia_region": 1,
    "iberia_region": 1,
    "balkan_region": 1,
-   "anatolia_region": 1,
    "bengal_region": 2,
    "low_countries_region": 1,
-   "south_africa_region": 2,
    "east_africa_region": 1,
+   "south_africa_region": 2,
    "australia_region": 1,
    "north_atlantic_region": 2,
    "american_east_coast_region": 1
@@ -5022,8 +6655,8 @@
    "eastern_europe_superregion": 1,
    "southern_africa_superregion": 2,
    "oceania_superregion": 1,
-   "east_american_sea_superregion": 1,
-   "north_european_sea_superregion": 2
+   "north_european_sea_superregion": 2,
+   "east_american_sea_superregion": 1
   },
   "series": [
    "eng_row_slot_1",
@@ -5086,6 +6719,32 @@
    "lubeck_missions_5"
   ]
  },
+ "CHA": {
+  "name": "Champa",
+  "missions": 8,
+  "regions": [
+   "indo_china_region",
+   "malaya_region",
+   "moluccas_region"
+  ],
+  "supers": [
+   "east_indies_superregion"
+  ],
+  "n_series": 2,
+  "dlc": [],
+  "rweight": {
+   "indo_china_region": 4,
+   "malaya_region": 1,
+   "moluccas_region": 1
+  },
+  "sweight": {
+   "east_indies_superregion": 6
+  },
+  "series": [
+   "cha_1",
+   "cha_2"
+  ]
+ },
  "HAU": {
   "name": "Hausa",
   "missions": 10,
@@ -5128,8 +6787,8 @@
   ],
   "rweight": {
    "niger_region": 4,
-   "guinea_region": 1,
-   "sahel_region": 1
+   "sahel_region": 1,
+   "guinea_region": 1
   },
   "sweight": {
    "africa_superregion": 4
@@ -5143,52 +6802,58 @@
  },
  "AJU": {
   "name": "Ajuuraan",
-  "missions": 24,
+  "missions": 38,
   "regions": [
    "anatolia_region",
    "arabian_sea_region",
    "balkan_region",
    "east_china_sea_region",
+   "east_indian_ocean_region",
    "horn_of_africa_region",
    "indo_china_region",
    "malaya_region",
    "south_africa_region",
-   "south_china_sea_region"
+   "south_china_sea_region",
+   "west_india_region"
   ],
   "supers": [
    "africa_superregion",
    "east_african_sea_superregion",
    "east_indies_superregion",
    "eastern_europe_superregion",
+   "india_superregion",
    "indian_pacific_sea_superregion",
    "near_east_superregion",
    "north_pacific_sea_superregion",
    "southern_africa_superregion"
   ],
-  "n_series": 6,
+  "n_series": 9,
   "dlc": [
    "Origins"
   ],
   "rweight": {
-   "horn_of_africa_region": 7,
+   "horn_of_africa_region": 11,
+   "south_china_sea_region": 2,
+   "east_indian_ocean_region": 1,
+   "arabian_sea_region": 2,
+   "west_india_region": 1,
    "east_china_sea_region": 1,
    "malaya_region": 1,
    "indo_china_region": 1,
    "south_africa_region": 1,
-   "south_china_sea_region": 1,
-   "arabian_sea_region": 1,
-   "balkan_region": 1,
-   "anatolia_region": 1
+   "anatolia_region": 1,
+   "balkan_region": 1
   },
   "sweight": {
-   "africa_superregion": 7,
+   "africa_superregion": 11,
+   "indian_pacific_sea_superregion": 2,
+   "east_african_sea_superregion": 2,
+   "india_superregion": 1,
    "north_pacific_sea_superregion": 1,
    "east_indies_superregion": 2,
    "southern_africa_superregion": 1,
-   "indian_pacific_sea_superregion": 1,
-   "east_african_sea_superregion": 1,
-   "near_east_superregion": 1,
-   "eastern_europe_superregion": 1
+   "eastern_europe_superregion": 1,
+   "near_east_superregion": 1
   },
   "series": [
    "ajuuran_asian_trade_slot",
@@ -5196,37 +6861,54 @@
    "ajuuran_internal_slot",
    "ajuuran_offense_slot",
    "ajuuran_own_trade_slot",
+   "gen_horn_of_africa_diplomatic_slot",
+   "gen_horn_of_africa_economic_slot",
+   "gen_horn_of_africa_military_slot",
    "gen_horn_of_africa_religious_slot"
   ]
  },
  "ETH": {
   "name": "Ethiopia",
-  "missions": 29,
+  "missions": 43,
   "regions": [
    "arabia_region",
+   "arabian_sea_region",
+   "east_indian_ocean_region",
    "egypt_region",
    "horn_of_africa_region",
    "mashriq_region",
-   "mediterrenean_region"
+   "mediterrenean_region",
+   "south_china_sea_region",
+   "west_india_region"
   ],
   "supers": [
    "africa_superregion",
+   "east_african_sea_superregion",
+   "india_superregion",
+   "indian_pacific_sea_superregion",
    "near_east_superregion",
    "south_european_sea_superregion"
   ],
-  "n_series": 6,
+  "n_series": 9,
   "dlc": [
    "Origins"
   ],
   "rweight": {
-   "horn_of_africa_region": 11,
+   "horn_of_africa_region": 15,
+   "south_china_sea_region": 1,
+   "east_indian_ocean_region": 1,
+   "arabian_sea_region": 1,
+   "west_india_region": 1,
    "mediterrenean_region": 1,
    "egypt_region": 3,
    "mashriq_region": 1,
    "arabia_region": 2
   },
   "sweight": {
-   "africa_superregion": 11,
+   "africa_superregion": 15,
+   "indian_pacific_sea_superregion": 1,
+   "east_african_sea_superregion": 1,
+   "india_superregion": 1,
    "south_european_sea_superregion": 1,
    "near_east_superregion": 6
   },
@@ -5236,13 +6918,18 @@
    "ethiopia_religion_slot",
    "ethiopia_slot_aksumite_empire",
    "ethiopia_trade_slot",
+   "gen_horn_of_africa_diplomatic_slot",
+   "gen_horn_of_africa_economic_slot",
+   "gen_horn_of_africa_military_slot",
    "gen_horn_of_africa_religious_slot"
   ]
  },
  "BAH": {
   "name": "Bahmanis",
-  "missions": 9,
+  "missions": 22,
   "regions": [
+   "arabia_region",
+   "arabian_sea_region",
    "coromandel_region",
    "deccan_region",
    "hindusthan_region",
@@ -5252,29 +6939,34 @@
    "west_india_region"
   ],
   "supers": [
+   "east_african_sea_superregion",
    "india_superregion",
    "near_east_superregion",
    "persia_superregion"
   ],
-  "n_series": 5,
+  "n_series": 6,
   "dlc": [
    "Dharma"
   ],
   "rweight": {
-   "deccan_region": 4,
-   "persia_region": 1,
+   "deccan_region": 9,
+   "mashriq_region": 2,
    "khorasan_region": 1,
-   "mashriq_region": 1,
-   "west_india_region": 2,
-   "coromandel_region": 1,
-   "hindusthan_region": 2
+   "persia_region": 3,
+   "west_india_region": 4,
+   "arabia_region": 1,
+   "coromandel_region": 4,
+   "hindusthan_region": 2,
+   "arabian_sea_region": 1
   },
   "sweight": {
-   "india_superregion": 6,
-   "near_east_superregion": 1,
-   "persia_superregion": 1
+   "india_superregion": 15,
+   "persia_superregion": 3,
+   "near_east_superregion": 3,
+   "east_african_sea_superregion": 1
   },
   "series": [
+   "bah_coromandel_branch",
    "bah_delhi_branch",
    "bah_gharbians",
    "bah_indigenization",
@@ -5284,8 +6976,10 @@
  },
  "DEC": {
   "name": "Deccan",
-  "missions": 9,
+  "missions": 22,
   "regions": [
+   "arabia_region",
+   "arabian_sea_region",
    "coromandel_region",
    "deccan_region",
    "hindusthan_region",
@@ -5295,34 +6989,83 @@
    "west_india_region"
   ],
   "supers": [
+   "east_african_sea_superregion",
    "india_superregion",
    "near_east_superregion",
    "persia_superregion"
   ],
-  "n_series": 5,
+  "n_series": 6,
   "dlc": [
    "Dharma"
   ],
   "rweight": {
-   "deccan_region": 4,
-   "persia_region": 1,
+   "deccan_region": 9,
+   "mashriq_region": 2,
    "khorasan_region": 1,
-   "mashriq_region": 1,
-   "west_india_region": 2,
-   "coromandel_region": 1,
-   "hindusthan_region": 2
+   "persia_region": 3,
+   "west_india_region": 4,
+   "arabia_region": 1,
+   "coromandel_region": 4,
+   "hindusthan_region": 2,
+   "arabian_sea_region": 1
   },
   "sweight": {
-   "india_superregion": 6,
-   "near_east_superregion": 1,
-   "persia_superregion": 1
+   "india_superregion": 15,
+   "persia_superregion": 3,
+   "near_east_superregion": 3,
+   "east_african_sea_superregion": 1
   },
   "series": [
+   "bah_coromandel_branch",
    "bah_delhi_branch",
    "bah_gharbians",
    "bah_indigenization",
    "bah_persian_branch",
    "bah_vijayanagari_branch"
+  ]
+ },
+ "BUL": {
+  "name": "Bulgaria",
+  "missions": 3,
+  "regions": [
+   "balkan_region",
+   "carpathia_region"
+  ],
+  "supers": [
+   "eastern_europe_superregion"
+  ],
+  "n_series": 1,
+  "dlc": [],
+  "rweight": {
+   "balkan_region": 3,
+   "carpathia_region": 1
+  },
+  "sweight": {
+   "eastern_europe_superregion": 3
+  },
+  "series": [
+   "bul_1"
+  ]
+ },
+ "LNA": {
+  "name": "Lan Na",
+  "missions": 4,
+  "regions": [
+   "indo_china_region"
+  ],
+  "supers": [
+   "east_indies_superregion"
+  ],
+  "n_series": 1,
+  "dlc": [],
+  "rweight": {
+   "indo_china_region": 3
+  },
+  "sweight": {
+   "east_indies_superregion": 3
+  },
+  "series": [
+   "lna_1"
   ]
  },
  "ADE": {
@@ -5351,7 +7094,7 @@
  },
  "EGY": {
   "name": "Egypt",
-  "missions": 41,
+  "missions": 42,
   "regions": [
    "anatolia_region",
    "arabia_region",
@@ -5397,11 +7140,11 @@
    "mashriq_region": 5,
    "balkan_region": 2,
    "iberia_region": 1,
-   "italy_region": 1,
-   "central_asia_region": 1,
-   "maghreb_region": 3,
-   "west_india_region": 1,
    "caucasia_region": 1,
+   "italy_region": 1,
+   "maghreb_region": 3,
+   "central_asia_region": 1,
+   "west_india_region": 1,
    "arabian_sea_region": 1
   },
   "sweight": {
@@ -5411,9 +7154,9 @@
    "south_european_sea_superregion": 1,
    "persia_superregion": 5,
    "eastern_europe_superregion": 2,
-   "india_superregion": 1,
-   "europe_superregion": 1,
    "tartary_superregion": 1,
+   "europe_superregion": 1,
+   "india_superregion": 1,
    "east_african_sea_superregion": 1
   },
   "series": [
@@ -5456,11 +7199,13 @@
  },
  "BNG": {
   "name": "Bengal",
-  "missions": 7,
+  "missions": 55,
   "regions": [
    "bengal_region",
    "burma_region",
+   "coromandel_region",
    "deccan_region",
+   "east_indian_ocean_region",
    "hindusthan_region",
    "west_india_region",
    "xinan_region"
@@ -5468,23 +7213,27 @@
   "supers": [
    "china_superregion",
    "east_indies_superregion",
-   "india_superregion"
+   "india_superregion",
+   "indian_pacific_sea_superregion"
   ],
-  "n_series": 6,
+  "n_series": 13,
   "dlc": [
    "Dharma"
   ],
   "rweight": {
-   "deccan_region": 1,
-   "hindusthan_region": 3,
-   "west_india_region": 1,
-   "burma_region": 1,
-   "bengal_region": 1,
+   "hindusthan_region": 14,
+   "bengal_region": 10,
+   "deccan_region": 5,
+   "west_india_region": 6,
+   "coromandel_region": 1,
+   "east_indian_ocean_region": 2,
+   "burma_region": 3,
    "xinan_region": 1
   },
   "sweight": {
-   "india_superregion": 4,
-   "east_indies_superregion": 1,
+   "india_superregion": 25,
+   "indian_pacific_sea_superregion": 2,
+   "east_indies_superregion": 3,
    "china_superregion": 1
   },
   "series": [
@@ -5493,14 +7242,22 @@
    "bng_slot_3",
    "bng_slot_4",
    "bng_slot_5",
+   "gen_hindu",
+   "gen_indian_muslim",
+   "gen_indian_sikh",
+   "gen_north_india_2",
+   "gen_north_india_4",
+   "gen_south_india_2",
+   "gen_south_india_4",
    "gen_south_india_5"
   ]
  },
  "DLH": {
   "name": "Delhi",
-  "missions": 7,
+  "missions": 53,
   "regions": [
    "bengal_region",
+   "coromandel_region",
    "deccan_region",
    "east_indian_ocean_region",
    "hindusthan_region",
@@ -5512,21 +7269,22 @@
    "indian_pacific_sea_superregion",
    "persia_superregion"
   ],
-  "n_series": 5,
+  "n_series": 12,
   "dlc": [
    "Dharma"
   ],
   "rweight": {
-   "deccan_region": 1,
-   "hindusthan_region": 3,
-   "bengal_region": 2,
-   "east_indian_ocean_region": 1,
-   "khorasan_region": 1,
-   "west_india_region": 1
+   "hindusthan_region": 16,
+   "bengal_region": 5,
+   "deccan_region": 7,
+   "west_india_region": 9,
+   "coromandel_region": 2,
+   "east_indian_ocean_region": 2,
+   "khorasan_region": 1
   },
   "sweight": {
-   "india_superregion": 6,
-   "indian_pacific_sea_superregion": 1,
+   "india_superregion": 28,
+   "indian_pacific_sea_superregion": 2,
    "persia_superregion": 1
   },
   "series": [
@@ -5534,37 +7292,60 @@
    "dlh_slot_1",
    "dlh_slot_4",
    "dlh_west_missions",
+   "gen_hindu",
+   "gen_indian_muslim",
+   "gen_indian_sikh",
+   "gen_north_india_2",
+   "gen_north_india_4",
+   "gen_south_india_2",
+   "gen_south_india_4",
    "gen_south_india_5"
   ]
  },
  "MER": {
   "name": "Mewar",
-  "missions": 12,
+  "missions": 54,
   "regions": [
+   "bengal_region",
+   "coromandel_region",
    "deccan_region",
+   "east_indian_ocean_region",
    "hindusthan_region",
    "west_india_region"
   ],
   "supers": [
-   "india_superregion"
+   "india_superregion",
+   "indian_pacific_sea_superregion"
   ],
-  "n_series": 11,
+  "n_series": 19,
   "dlc": [
    "Dharma"
   ],
   "rweight": {
-   "deccan_region": 2,
-   "west_india_region": 5,
-   "hindusthan_region": 3
+   "hindusthan_region": 17,
+   "bengal_region": 3,
+   "deccan_region": 5,
+   "west_india_region": 12,
+   "coromandel_region": 1,
+   "east_indian_ocean_region": 1
   },
   "sweight": {
-   "india_superregion": 9
+   "india_superregion": 28,
+   "indian_pacific_sea_superregion": 1
   },
   "series": [
+   "gen_hindu",
+   "gen_indian_muslim",
+   "gen_indian_sikh",
+   "gen_north_india_2",
+   "gen_north_india_4",
+   "gen_south_india_2",
+   "gen_south_india_4",
    "gen_south_india_5",
    "mer_army_tree",
    "mer_city_of_lakes",
    "mer_delhi",
+   "mer_fortify_rajputana_tree",
    "mer_gondwana",
    "mer_gurjaratra",
    "mer_indus",
@@ -5576,40 +7357,61 @@
  },
  "MLW": {
   "name": "Malwa",
-  "missions": 3,
+  "missions": 50,
   "regions": [
+   "bengal_region",
+   "coromandel_region",
    "deccan_region",
-   "hindusthan_region"
+   "east_indian_ocean_region",
+   "hindusthan_region",
+   "west_india_region"
   ],
   "supers": [
-   "india_superregion"
+   "india_superregion",
+   "indian_pacific_sea_superregion"
   ],
-  "n_series": 3,
+  "n_series": 13,
   "dlc": [
    "Dharma"
   ],
   "rweight": {
-   "deccan_region": 1,
-   "hindusthan_region": 1
+   "hindusthan_region": 12,
+   "bengal_region": 2,
+   "deccan_region": 5,
+   "west_india_region": 10,
+   "coromandel_region": 1,
+   "east_indian_ocean_region": 1
   },
   "sweight": {
-   "india_superregion": 2
+   "india_superregion": 22,
+   "indian_pacific_sea_superregion": 1
   },
   "series": [
+   "gen_hindu",
+   "gen_indian_muslim",
+   "gen_indian_sikh",
+   "gen_north_india_2",
+   "gen_north_india_4",
+   "gen_south_india_2",
+   "gen_south_india_4",
    "gen_south_india_5",
+   "mlw_slot_1",
    "mlw_slot_2",
-   "mlw_slot_4"
+   "mlw_slot_3",
+   "mlw_slot_4",
+   "mlw_slot_5"
   ]
  },
  "MUG": {
   "name": "Mughals",
-  "missions": 54,
+  "missions": 88,
   "regions": [
    "bengal_region",
    "burma_region",
    "central_asia_region",
    "coromandel_region",
    "deccan_region",
+   "east_indian_ocean_region",
    "hindusthan_region",
    "indo_china_region",
    "khorasan_region",
@@ -5623,20 +7425,22 @@
    "china_superregion",
    "east_indies_superregion",
    "india_superregion",
+   "indian_pacific_sea_superregion",
    "persia_superregion",
    "tartary_superregion"
   ],
-  "n_series": 10,
+  "n_series": 17,
   "dlc": [
    "Dharma",
    "Winds of Change"
   ],
   "rweight": {
-   "deccan_region": 7,
-   "hindusthan_region": 8,
-   "west_india_region": 7,
-   "bengal_region": 4,
-   "coromandel_region": 2,
+   "hindusthan_region": 16,
+   "bengal_region": 6,
+   "deccan_region": 10,
+   "west_india_region": 11,
+   "coromandel_region": 3,
+   "east_indian_ocean_region": 1,
    "malaya_region": 4,
    "khorasan_region": 2,
    "persia_region": 1,
@@ -5647,7 +7451,8 @@
    "south_china_region": 1
   },
   "sweight": {
-   "india_superregion": 20,
+   "india_superregion": 32,
+   "indian_pacific_sea_superregion": 1,
    "east_indies_superregion": 7,
    "persia_superregion": 2,
    "tartary_superregion": 1,
@@ -5663,43 +7468,97 @@
    "WoC_mughals_4_coromandel",
    "WoC_mughals_4_locked",
    "WoC_mughals_5",
+   "gen_hindu",
+   "gen_indian_muslim",
+   "gen_indian_sikh",
+   "gen_north_india_2",
+   "gen_north_india_4",
+   "gen_south_india_2",
+   "gen_south_india_4",
    "gen_south_india_5"
   ]
  },
  "ORI": {
   "name": "Orissa",
-  "missions": 7,
+  "missions": 52,
   "regions": [
+   "arabian_sea_region",
    "bengal_region",
+   "burma_region",
    "coromandel_region",
    "deccan_region",
-   "east_indian_ocean_region"
+   "east_indian_ocean_region",
+   "hindusthan_region",
+   "south_china_sea_region",
+   "west_india_region"
   ],
   "supers": [
+   "east_african_sea_superregion",
+   "east_indies_superregion",
    "india_superregion",
    "indian_pacific_sea_superregion"
   ],
-  "n_series": 6,
+  "n_series": 13,
   "dlc": [
    "Dharma"
   ],
   "rweight": {
-   "deccan_region": 1,
-   "coromandel_region": 2,
-   "bengal_region": 2,
-   "east_indian_ocean_region": 1
+   "hindusthan_region": 8,
+   "bengal_region": 7,
+   "deccan_region": 6,
+   "west_india_region": 4,
+   "coromandel_region": 4,
+   "east_indian_ocean_region": 3,
+   "arabian_sea_region": 1,
+   "burma_region": 3,
+   "south_china_sea_region": 1
   },
   "sweight": {
-   "india_superregion": 5,
-   "indian_pacific_sea_superregion": 1
+   "india_superregion": 23,
+   "indian_pacific_sea_superregion": 4,
+   "east_african_sea_superregion": 1,
+   "east_indies_superregion": 3
   },
   "series": [
+   "gen_hindu",
+   "gen_indian_muslim",
+   "gen_indian_sikh",
+   "gen_north_india_2",
+   "gen_north_india_4",
+   "gen_south_india_2",
+   "gen_south_india_4",
    "gen_south_india_5",
    "ori_bengal_missions",
    "ori_garjat_missions",
    "ori_missions_south",
    "ori_missions_west",
    "ori_religious_missions"
+  ]
+ },
+ "MLC": {
+  "name": "Malacca",
+  "missions": 10,
+  "regions": [
+   "indo_china_region",
+   "indonesia_region",
+   "malaya_region"
+  ],
+  "supers": [
+   "east_indies_superregion"
+  ],
+  "n_series": 2,
+  "dlc": [],
+  "rweight": {
+   "malaya_region": 5,
+   "indo_china_region": 1,
+   "indonesia_region": 1
+  },
+  "sweight": {
+   "east_indies_superregion": 7
+  },
+  "series": [
+   "mnd_mlc_1",
+   "mnd_mlc_2"
   ]
  },
  "LAN": {
@@ -5756,6 +7615,31 @@
    "emp_tusc_renaissance_4"
   ]
  },
+ "USA": {
+  "name": "United States",
+  "missions": 4,
+  "regions": [
+   "mississippi_region",
+   "northeast_america_region",
+   "southeast_america_region"
+  ],
+  "supers": [
+   "north_america_superregion"
+  ],
+  "n_series": 1,
+  "dlc": [],
+  "rweight": {
+   "northeast_america_region": 1,
+   "southeast_america_region": 1,
+   "mississippi_region": 1
+  },
+  "sweight": {
+   "north_america_superregion": 3
+  },
+  "series": [
+   "usa_missions_main"
+  ]
+ },
  "JOL": {
   "name": "Jolof",
   "missions": 13,
@@ -5787,8 +7671,9 @@
  },
  "PAL": {
   "name": "The Palatinate",
-  "missions": 3,
+  "missions": 8,
   "regions": [
+   "france_region",
    "north_german_region",
    "south_german_region"
   ],
@@ -5798,11 +7683,12 @@
   "n_series": 2,
   "dlc": [],
   "rweight": {
-   "north_german_region": 1,
-   "south_german_region": 1
+   "south_german_region": 3,
+   "north_german_region": 2,
+   "france_region": 1
   },
   "sweight": {
-   "europe_superregion": 1
+   "europe_superregion": 5
   },
   "series": [
    "palatinate_conquest_group",
@@ -5811,13 +7697,15 @@
  },
  "AFG": {
   "name": "Afghanistan",
-  "missions": 9,
+  "missions": 12,
   "regions": [
    "central_asia_region",
+   "hindusthan_region",
    "khorasan_region",
    "persia_region"
   ],
   "supers": [
+   "india_superregion",
    "persia_superregion",
    "tartary_superregion"
   ],
@@ -5827,11 +7715,13 @@
   ],
   "rweight": {
    "khorasan_region": 4,
+   "hindusthan_region": 2,
    "persia_region": 3,
    "central_asia_region": 2
   },
   "sweight": {
    "persia_superregion": 6,
+   "india_superregion": 2,
    "tartary_superregion": 2
   },
   "series": [
@@ -5842,13 +7732,15 @@
  },
  "KHO": {
   "name": "Khorasan",
-  "missions": 9,
+  "missions": 12,
   "regions": [
    "central_asia_region",
+   "hindusthan_region",
    "khorasan_region",
    "persia_region"
   ],
   "supers": [
+   "india_superregion",
    "persia_superregion",
    "tartary_superregion"
   ],
@@ -5858,11 +7750,13 @@
   ],
   "rweight": {
    "khorasan_region": 4,
+   "hindusthan_region": 2,
    "persia_region": 3,
    "central_asia_region": 2
   },
   "sweight": {
    "persia_superregion": 6,
+   "india_superregion": 2,
    "tartary_superregion": 2
   },
   "series": [
@@ -5873,13 +7767,15 @@
  },
  "QOM": {
   "name": "Ajam",
-  "missions": 9,
+  "missions": 12,
   "regions": [
    "central_asia_region",
+   "hindusthan_region",
    "khorasan_region",
    "persia_region"
   ],
   "supers": [
+   "india_superregion",
    "persia_superregion",
    "tartary_superregion"
   ],
@@ -5889,11 +7785,13 @@
   ],
   "rweight": {
    "khorasan_region": 4,
+   "hindusthan_region": 2,
    "persia_region": 3,
    "central_asia_region": 2
   },
   "sweight": {
    "persia_superregion": 6,
+   "india_superregion": 2,
    "tartary_superregion": 2
   },
   "series": [
@@ -5904,7 +7802,7 @@
  },
  "TIM": {
   "name": "Timurids",
-  "missions": 59,
+  "missions": 62,
   "regions": [
    "anatolia_region",
    "arabian_sea_region",
@@ -5939,14 +7837,14 @@
   ],
   "rweight": {
    "khorasan_region": 11,
+   "hindusthan_region": 6,
    "persia_region": 9,
-   "caucasia_region": 3,
    "mashriq_region": 3,
    "anatolia_region": 3,
+   "caucasia_region": 3,
    "egypt_region": 1,
    "balkan_region": 1,
    "central_asia_region": 7,
-   "hindusthan_region": 4,
    "west_india_region": 3,
    "ural_region": 1,
    "russia_region": 1,
@@ -5957,10 +7855,10 @@
   },
   "sweight": {
    "persia_superregion": 20,
+   "india_superregion": 7,
    "near_east_superregion": 4,
    "eastern_europe_superregion": 2,
    "tartary_superregion": 8,
-   "india_superregion": 5,
    "east_african_sea_superregion": 2,
    "china_superregion": 1
   },
@@ -5999,13 +7897,15 @@
  },
  "TRS": {
   "name": "Transoxiana",
-  "missions": 9,
+  "missions": 12,
   "regions": [
    "central_asia_region",
+   "hindusthan_region",
    "khorasan_region",
    "persia_region"
   ],
   "supers": [
+   "india_superregion",
    "persia_superregion",
    "tartary_superregion"
   ],
@@ -6015,11 +7915,13 @@
   ],
   "rweight": {
    "khorasan_region": 4,
+   "hindusthan_region": 2,
    "persia_region": 3,
    "central_asia_region": 2
   },
   "sweight": {
    "persia_superregion": 6,
+   "india_superregion": 2,
    "tartary_superregion": 2
   },
   "series": [
@@ -6062,13 +7964,13 @@
   ],
   "rweight": {
    "arabia_region": 11,
-   "deccan_region": 2,
-   "bengal_region": 2,
    "west_india_region": 1,
+   "bengal_region": 2,
+   "deccan_region": 2,
    "coromandel_region": 1,
    "malaya_region": 3,
-   "moluccas_region": 1,
    "indonesia_region": 1,
+   "moluccas_region": 1,
    "mashriq_region": 2,
    "egypt_region": 1,
    "south_china_region": 1,
@@ -6178,18 +8080,18 @@
    "Origins"
   ],
   "rweight": {
-   "guinea_region": 8,
-   "sahel_region": 11,
    "niger_region": 10,
+   "sahel_region": 11,
+   "guinea_region": 8,
    "west_african_sea_region": 2,
    "maghreb_region": 1,
    "mediterrenean_region": 1,
+   "central_africa_region": 1,
+   "arabia_region": 1,
    "anatolia_region": 1,
    "east_africa_region": 1,
-   "arabia_region": 1,
-   "egypt_region": 1,
-   "central_africa_region": 1,
-   "kongo_region": 1
+   "kongo_region": 1,
+   "egypt_region": 1
   },
   "sweight": {
    "africa_superregion": 18,
@@ -6233,9 +8135,9 @@
    "Origins"
   ],
   "rweight": {
-   "guinea_region": 12,
-   "sahel_region": 18,
    "niger_region": 16,
+   "sahel_region": 18,
+   "guinea_region": 12,
    "west_african_sea_region": 2,
    "maghreb_region": 4
   },
@@ -6799,7 +8701,7 @@
  },
  "BRE": {
   "name": "Bremen",
-  "missions": 17,
+  "missions": 21,
   "regions": [
    "baltic_region",
    "baltic_sea_region",
@@ -6808,6 +8710,8 @@
    "low_countries_region",
    "north_atlantic_region",
    "north_german_region",
+   "northeast_america_region",
+   "russia_region",
    "scandinavia_region"
   ],
   "supers": [
@@ -6823,18 +8727,20 @@
   "rweight": {
    "north_german_region": 4,
    "scandinavia_region": 4,
-   "british_isles_region": 2,
+   "russia_region": 1,
+   "british_isles_region": 3,
    "baltic_sea_region": 1,
-   "north_atlantic_region": 2,
+   "north_atlantic_region": 3,
    "canada_region": 1,
+   "northeast_america_region": 1,
    "baltic_region": 2,
    "low_countries_region": 1
   },
   "sweight": {
-   "europe_superregion": 8,
-   "north_european_sea_superregion": 3,
-   "north_america_superregion": 1,
-   "eastern_europe_superregion": 2
+   "europe_superregion": 9,
+   "eastern_europe_superregion": 3,
+   "north_european_sea_superregion": 4,
+   "north_america_superregion": 2
   },
   "series": [
    "hanseatic_britain_tree",
@@ -6851,7 +8757,7 @@
  },
  "HAM": {
   "name": "Hamburg",
-  "missions": 17,
+  "missions": 21,
   "regions": [
    "baltic_region",
    "baltic_sea_region",
@@ -6860,6 +8766,8 @@
    "low_countries_region",
    "north_atlantic_region",
    "north_german_region",
+   "northeast_america_region",
+   "russia_region",
    "scandinavia_region"
   ],
   "supers": [
@@ -6875,18 +8783,20 @@
   "rweight": {
    "north_german_region": 4,
    "scandinavia_region": 4,
-   "british_isles_region": 2,
+   "russia_region": 1,
+   "british_isles_region": 3,
    "baltic_sea_region": 1,
-   "north_atlantic_region": 2,
+   "north_atlantic_region": 3,
    "canada_region": 1,
+   "northeast_america_region": 1,
    "baltic_region": 2,
    "low_countries_region": 1
   },
   "sweight": {
-   "europe_superregion": 8,
-   "north_european_sea_superregion": 3,
-   "north_america_superregion": 1,
-   "eastern_europe_superregion": 2
+   "europe_superregion": 9,
+   "eastern_europe_superregion": 3,
+   "north_european_sea_superregion": 4,
+   "north_america_superregion": 2
   },
   "series": [
    "hanseatic_britain_tree",
@@ -6998,52 +8908,61 @@
  },
  "VIJ": {
   "name": "Vijayanagar",
-  "missions": 8,
+  "missions": 25,
   "regions": [
    "arabia_region",
+   "arabian_sea_region",
    "bengal_region",
    "coromandel_region",
    "deccan_region",
    "east_africa_region",
    "east_indian_ocean_region",
    "horn_of_africa_region",
-   "malaya_region"
+   "malaya_region",
+   "south_africa_region",
+   "west_indian_ocean_region"
   ],
   "supers": [
    "africa_superregion",
+   "east_african_sea_superregion",
    "east_indies_superregion",
    "india_superregion",
    "indian_pacific_sea_superregion",
    "near_east_superregion",
    "southern_africa_superregion"
   ],
-  "n_series": 4,
+  "n_series": 5,
   "dlc": [
    "Dharma"
   ],
   "rweight": {
-   "deccan_region": 1,
+   "deccan_region": 6,
+   "east_africa_region": 2,
    "horn_of_africa_region": 1,
-   "east_africa_region": 1,
-   "coromandel_region": 1,
+   "west_indian_ocean_region": 1,
+   "south_africa_region": 1,
+   "coromandel_region": 6,
    "arabia_region": 1,
+   "arabian_sea_region": 2,
    "bengal_region": 1,
    "east_indian_ocean_region": 1,
-   "malaya_region": 1
+   "malaya_region": 2
   },
   "sweight": {
-   "india_superregion": 3,
-   "southern_africa_superregion": 1,
+   "india_superregion": 12,
    "africa_superregion": 1,
+   "southern_africa_superregion": 2,
+   "east_african_sea_superregion": 3,
    "near_east_superregion": 1,
    "indian_pacific_sea_superregion": 1,
-   "east_indies_superregion": 1
+   "east_indies_superregion": 2
   },
   "series": [
    "vij_east_conquest",
    "vij_north_conquest",
    "vij_religious_missions",
-   "vij_south_conquest"
+   "vij_south_conquest",
+   "vij_tamil_conquest"
   ]
  },
  "GLH": {
@@ -7085,8 +9004,8 @@
    "Winds of Change"
   ],
   "rweight": {
-   "russia_region": 10,
    "ruthenia_region": 6,
+   "russia_region": 10,
    "caucasia_region": 3,
    "persia_region": 7,
    "mashriq_region": 3,
@@ -7186,8 +9105,8 @@
    "Winds of Change"
   ],
   "rweight": {
-   "russia_region": 10,
    "ruthenia_region": 6,
+   "russia_region": 10,
    "caucasia_region": 3,
    "persia_region": 7,
    "mashriq_region": 3,
@@ -7288,8 +9207,8 @@
    "Winds of Change"
   ],
   "rweight": {
-   "russia_region": 10,
    "ruthenia_region": 6,
+   "russia_region": 10,
    "caucasia_region": 3,
    "persia_region": 7,
    "mashriq_region": 3,
@@ -7400,8 +9319,8 @@
    "Winds of Change"
   ],
   "rweight": {
-   "russia_region": 10,
    "ruthenia_region": 6,
+   "russia_region": 10,
    "caucasia_region": 3,
    "persia_region": 7,
    "mashriq_region": 3,
@@ -7550,7 +9469,7 @@
  },
  "BAV": {
   "name": "Bavaria",
-  "missions": 11,
+  "missions": 19,
   "regions": [
    "italy_region",
    "low_countries_region",
@@ -7560,18 +9479,18 @@
   "supers": [
    "europe_superregion"
   ],
-  "n_series": 10,
+  "n_series": 11,
   "dlc": [
    "Emperor"
   ],
   "rweight": {
-   "south_german_region": 6,
+   "south_german_region": 10,
    "north_german_region": 3,
    "italy_region": 1,
    "low_countries_region": 1
   },
   "sweight": {
-   "europe_superregion": 9
+   "europe_superregion": 13
   },
   "series": [
    "bavarian_missions_main",
@@ -7583,12 +9502,13 @@
    "emp_bav_missions_illuminati",
    "emp_bav_missions_military",
    "emp_bav_missions_netherlands",
-   "emp_bav_missions_religious"
+   "emp_bav_missions_religious",
+   "emp_bav_prestige_branch"
   ]
  },
  "ING": {
   "name": "Ingolstadt",
-  "missions": 11,
+  "missions": 19,
   "regions": [
    "italy_region",
    "low_countries_region",
@@ -7598,18 +9518,18 @@
   "supers": [
    "europe_superregion"
   ],
-  "n_series": 10,
+  "n_series": 11,
   "dlc": [
    "Emperor"
   ],
   "rweight": {
-   "south_german_region": 6,
+   "south_german_region": 10,
    "north_german_region": 3,
    "italy_region": 1,
    "low_countries_region": 1
   },
   "sweight": {
-   "europe_superregion": 9
+   "europe_superregion": 13
   },
   "series": [
    "bavarian_missions_main",
@@ -7621,12 +9541,13 @@
    "emp_bav_missions_illuminati",
    "emp_bav_missions_military",
    "emp_bav_missions_netherlands",
-   "emp_bav_missions_religious"
+   "emp_bav_missions_religious",
+   "emp_bav_prestige_branch"
   ]
  },
  "LBV": {
   "name": "Landshut",
-  "missions": 11,
+  "missions": 19,
   "regions": [
    "italy_region",
    "low_countries_region",
@@ -7636,18 +9557,18 @@
   "supers": [
    "europe_superregion"
   ],
-  "n_series": 10,
+  "n_series": 11,
   "dlc": [
    "Emperor"
   ],
   "rweight": {
-   "south_german_region": 6,
+   "south_german_region": 10,
    "north_german_region": 3,
    "italy_region": 1,
    "low_countries_region": 1
   },
   "sweight": {
-   "europe_superregion": 9
+   "europe_superregion": 13
   },
   "series": [
    "bavarian_missions_main",
@@ -7659,12 +9580,13 @@
    "emp_bav_missions_illuminati",
    "emp_bav_missions_military",
    "emp_bav_missions_netherlands",
-   "emp_bav_missions_religious"
+   "emp_bav_missions_religious",
+   "emp_bav_prestige_branch"
   ]
  },
  "UBV": {
   "name": "Munich",
-  "missions": 11,
+  "missions": 19,
   "regions": [
    "italy_region",
    "low_countries_region",
@@ -7674,18 +9596,18 @@
   "supers": [
    "europe_superregion"
   ],
-  "n_series": 10,
+  "n_series": 11,
   "dlc": [
    "Emperor"
   ],
   "rweight": {
-   "south_german_region": 6,
+   "south_german_region": 10,
    "north_german_region": 3,
    "italy_region": 1,
    "low_countries_region": 1
   },
   "sweight": {
-   "europe_superregion": 9
+   "europe_superregion": 13
   },
   "series": [
    "bavarian_missions_main",
@@ -7697,7 +9619,8 @@
    "emp_bav_missions_illuminati",
    "emp_bav_missions_military",
    "emp_bav_missions_netherlands",
-   "emp_bav_missions_religious"
+   "emp_bav_missions_religious",
+   "emp_bav_prestige_branch"
   ]
  },
  "ADA": {
@@ -7762,8 +9685,8 @@
    "mashriq_region": 5,
    "anatolia_region": 3,
    "caucasia_region": 6,
-   "egypt_region": 2,
-   "horn_of_africa_region": 1
+   "horn_of_africa_region": 1,
+   "egypt_region": 2
   },
   "sweight": {
    "persia_superregion": 8,
@@ -7803,8 +9726,8 @@
    "mashriq_region": 5,
    "anatolia_region": 3,
    "caucasia_region": 6,
-   "egypt_region": 2,
-   "horn_of_africa_region": 1
+   "horn_of_africa_region": 1,
+   "egypt_region": 2
   },
   "sweight": {
    "persia_superregion": 8,
@@ -7850,13 +9773,13 @@
   ],
   "rweight": {
    "arabia_region": 9,
-   "deccan_region": 2,
-   "bengal_region": 2,
    "west_india_region": 1,
+   "bengal_region": 2,
+   "deccan_region": 2,
    "coromandel_region": 1,
    "malaya_region": 3,
-   "moluccas_region": 1,
    "indonesia_region": 1,
+   "moluccas_region": 1,
    "mashriq_region": 2,
    "egypt_region": 1,
    "south_china_region": 1,
@@ -7933,8 +9856,8 @@
   ],
   "rweight": {
    "northeast_america_region": 3,
-   "canada_region": 1,
    "great_lakes_region": 1,
+   "canada_region": 1,
    "mississippi_region": 1,
    "american_east_coast_region": 1
   },
@@ -7967,8 +9890,8 @@
   "dlc": [],
   "rweight": {
    "northeast_america_region": 3,
-   "canada_region": 1,
    "great_lakes_region": 1,
+   "canada_region": 1,
    "mississippi_region": 1
   },
   "sweight": {
@@ -7979,9 +9902,50 @@
    "southeast"
   ]
  },
+ "BRA": {
+  "name": "Brandenburg",
+  "missions": 24,
+  "regions": [
+   "baltic_region",
+   "low_countries_region",
+   "north_german_region",
+   "poland_region",
+   "south_china_region",
+   "south_german_region"
+  ],
+  "supers": [
+   "china_superregion",
+   "eastern_europe_superregion",
+   "europe_superregion"
+  ],
+  "n_series": 4,
+  "dlc": [
+   "Domination",
+   "Emperor"
+  ],
+  "rweight": {
+   "north_german_region": 12,
+   "baltic_region": 2,
+   "south_german_region": 4,
+   "poland_region": 2,
+   "south_china_region": 2,
+   "low_countries_region": 2
+  },
+  "sweight": {
+   "europe_superregion": 15,
+   "eastern_europe_superregion": 4,
+   "china_superregion": 2
+  },
+  "series": [
+   "emp_bra_pru_1",
+   "emp_bra_pru_2",
+   "emp_bra_pru_3",
+   "emp_bra_pru_4"
+  ]
+ },
  "PRU": {
   "name": "Prussia",
-  "missions": 68,
+  "missions": 88,
   "regions": [
    "baltic_region",
    "baltic_sea_region",
@@ -8000,28 +9964,28 @@
    "europe_superregion",
    "north_european_sea_superregion"
   ],
-  "n_series": 24,
+  "n_series": 25,
   "dlc": [
    "Domination",
    "Emperor",
    "Lions of the North"
   ],
   "rweight": {
-   "south_china_region": 1,
-   "low_countries_region": 5,
-   "north_german_region": 23,
-   "baltic_region": 12,
-   "poland_region": 12,
+   "north_german_region": 34,
+   "baltic_region": 14,
+   "south_german_region": 9,
+   "poland_region": 14,
+   "south_china_region": 2,
+   "low_countries_region": 6,
    "carpathia_region": 6,
-   "south_german_region": 5,
-   "ruthenia_region": 8,
    "crimea_region": 6,
+   "ruthenia_region": 8,
    "baltic_sea_region": 1
   },
   "sweight": {
-   "europe_superregion": 25,
-   "china_superregion": 1,
-   "eastern_europe_superregion": 29,
+   "europe_superregion": 38,
+   "eastern_europe_superregion": 33,
+   "china_superregion": 2,
    "north_european_sea_superregion": 1
   },
   "series": [
@@ -8029,6 +9993,7 @@
    "dnz_development_mission_slot",
    "dnz_hre_mission_slot",
    "dnz_internal_mission_slot",
+   "emp_bra_pru_1",
    "emp_bra_pru_1_b",
    "emp_bra_pru_2",
    "emp_bra_pru_3",
@@ -8049,38 +10014,6 @@
    "teu_pru_prussia_mission_slot",
    "teu_pru_secondary_conquest_hre_mission_slot",
    "teu_pru_secondary_kingdom_of_prussia_mission_slot"
-  ]
- },
- "BRA": {
-  "name": "Brandenburg",
-  "missions": 5,
-  "regions": [
-   "low_countries_region",
-   "north_german_region",
-   "south_china_region"
-  ],
-  "supers": [
-   "china_superregion",
-   "europe_superregion"
-  ],
-  "n_series": 3,
-  "dlc": [
-   "Domination",
-   "Emperor"
-  ],
-  "rweight": {
-   "south_china_region": 1,
-   "low_countries_region": 1,
-   "north_german_region": 1
-  },
-  "sweight": {
-   "europe_superregion": 2,
-   "china_superregion": 1
-  },
-  "series": [
-   "emp_bra_pru_2",
-   "emp_bra_pru_3",
-   "emp_bra_pru_4"
   ]
  },
  "ADU": {
@@ -8122,8 +10055,8 @@
    "italy_region": 2,
    "arabia_region": 1,
    "egypt_region": 2,
-   "persia_region": 2,
    "mashriq_region": 2,
+   "persia_region": 2,
    "caucasia_region": 1
   },
   "sweight": {
@@ -8188,8 +10121,9 @@
  },
  "RJP": {
   "name": "Rajputana",
-  "missions": 11,
+  "missions": 19,
   "regions": [
+   "bengal_region",
    "deccan_region",
    "hindusthan_region",
    "west_india_region"
@@ -8197,22 +10131,24 @@
   "supers": [
    "india_superregion"
   ],
-  "n_series": 10,
+  "n_series": 11,
   "dlc": [
    "Dharma"
   ],
   "rweight": {
-   "west_india_region": 5,
-   "hindusthan_region": 3,
+   "hindusthan_region": 9,
+   "west_india_region": 8,
+   "bengal_region": 1,
    "deccan_region": 1
   },
   "sweight": {
-   "india_superregion": 8
+   "india_superregion": 15
   },
   "series": [
    "mer_army_tree",
    "mer_city_of_lakes",
    "mer_delhi",
+   "mer_fortify_rajputana_tree",
    "mer_gondwana",
    "mer_gurjaratra",
    "mer_indus",
@@ -8224,53 +10160,89 @@
  },
  "AYU": {
   "name": "Ayutthaya",
-  "missions": 2,
+  "missions": 23,
   "regions": [
-   "japan_region"
+   "burma_region",
+   "indo_china_region",
+   "japan_region",
+   "malaya_region",
+   "south_china_sea_region"
   ],
   "supers": [
-   "far_east_superregion"
+   "china_superregion",
+   "east_indies_superregion",
+   "far_east_superregion",
+   "indian_pacific_sea_superregion"
   ],
-  "n_series": 1,
+  "n_series": 5,
   "dlc": [
    "Leviathan"
   ],
   "rweight": {
-   "japan_region": 1
+   "japan_region": 1,
+   "indo_china_region": 5,
+   "burma_region": 3,
+   "malaya_region": 2,
+   "south_china_sea_region": 1
   },
   "sweight": {
-   "far_east_superregion": 1
+   "far_east_superregion": 1,
+   "east_indies_superregion": 11,
+   "china_superregion": 2,
+   "indian_pacific_sea_superregion": 1
   },
   "series": [
-   "mnd_siam_2"
+   "mnd_siam_1",
+   "mnd_siam_2",
+   "mnd_siam_3",
+   "mnd_siam_4",
+   "mnd_siam_5"
   ]
  },
  "SIA": {
   "name": "Siam",
-  "missions": 2,
+  "missions": 23,
   "regions": [
-   "japan_region"
+   "burma_region",
+   "indo_china_region",
+   "japan_region",
+   "malaya_region",
+   "south_china_sea_region"
   ],
   "supers": [
-   "far_east_superregion"
+   "china_superregion",
+   "east_indies_superregion",
+   "far_east_superregion",
+   "indian_pacific_sea_superregion"
   ],
-  "n_series": 1,
+  "n_series": 5,
   "dlc": [
    "Leviathan"
   ],
   "rweight": {
-   "japan_region": 1
+   "japan_region": 1,
+   "indo_china_region": 5,
+   "burma_region": 3,
+   "malaya_region": 2,
+   "south_china_sea_region": 1
   },
   "sweight": {
-   "far_east_superregion": 1
+   "far_east_superregion": 1,
+   "east_indies_superregion": 11,
+   "china_superregion": 2,
+   "indian_pacific_sea_superregion": 1
   },
   "series": [
-   "mnd_siam_2"
+   "mnd_siam_1",
+   "mnd_siam_2",
+   "mnd_siam_3",
+   "mnd_siam_4",
+   "mnd_siam_5"
   ]
  },
  "SWI": {
   "name": "Switzerland",
-  "missions": 9,
+  "missions": 15,
   "regions": [
    "south_german_region"
   ],
@@ -8282,10 +10254,10 @@
    "Emperor"
   ],
   "rweight": {
-   "south_german_region": 5
+   "south_german_region": 6
   },
   "sweight": {
-   "europe_superregion": 5
+   "europe_superregion": 6
   },
   "series": [
    "swiss_missions_1",
@@ -8297,357 +10269,385 @@
  },
  "CNN": {
   "name": "Clanricarde",
-  "missions": 3,
+  "missions": 14,
   "regions": [
    "british_isles_region"
   ],
   "supers": [
    "europe_superregion"
   ],
-  "n_series": 3,
+  "n_series": 5,
   "dlc": [
    "Rule Britannia"
   ],
   "rweight": {
-   "british_isles_region": 1
+   "british_isles_region": 11
   },
   "sweight": {
-   "europe_superregion": 1
+   "europe_superregion": 11
   },
   "series": [
    "ire_colonial_missions",
+   "ire_conquest_1",
    "ire_conquest_2",
-   "ire_conquest_4"
+   "ire_conquest_4",
+   "ire_conquest_main"
   ]
  },
  "DMS": {
   "name": "Desmond",
-  "missions": 3,
+  "missions": 14,
   "regions": [
    "british_isles_region"
   ],
   "supers": [
    "europe_superregion"
   ],
-  "n_series": 3,
+  "n_series": 5,
   "dlc": [
    "Rule Britannia"
   ],
   "rweight": {
-   "british_isles_region": 1
+   "british_isles_region": 11
   },
   "sweight": {
-   "europe_superregion": 1
+   "europe_superregion": 11
   },
   "series": [
    "ire_colonial_missions",
+   "ire_conquest_1",
    "ire_conquest_2",
-   "ire_conquest_4"
+   "ire_conquest_4",
+   "ire_conquest_main"
   ]
  },
  "FLY": {
   "name": "Offaly",
-  "missions": 3,
+  "missions": 14,
   "regions": [
    "british_isles_region"
   ],
   "supers": [
    "europe_superregion"
   ],
-  "n_series": 3,
+  "n_series": 5,
   "dlc": [
    "Rule Britannia"
   ],
   "rweight": {
-   "british_isles_region": 1
+   "british_isles_region": 11
   },
   "sweight": {
-   "europe_superregion": 1
+   "europe_superregion": 11
   },
   "series": [
    "ire_colonial_missions",
+   "ire_conquest_1",
    "ire_conquest_2",
-   "ire_conquest_4"
+   "ire_conquest_4",
+   "ire_conquest_main"
   ]
  },
  "IRE": {
   "name": "Ireland",
-  "missions": 3,
+  "missions": 14,
   "regions": [
    "british_isles_region"
   ],
   "supers": [
    "europe_superregion"
   ],
-  "n_series": 3,
+  "n_series": 5,
   "dlc": [
    "Rule Britannia"
   ],
   "rweight": {
-   "british_isles_region": 1
+   "british_isles_region": 11
   },
   "sweight": {
-   "europe_superregion": 1
+   "europe_superregion": 11
   },
   "series": [
    "ire_colonial_missions",
+   "ire_conquest_1",
    "ire_conquest_2",
-   "ire_conquest_4"
+   "ire_conquest_4",
+   "ire_conquest_main"
   ]
  },
  "KID": {
   "name": "Kildare",
-  "missions": 3,
+  "missions": 14,
   "regions": [
    "british_isles_region"
   ],
   "supers": [
    "europe_superregion"
   ],
-  "n_series": 3,
+  "n_series": 5,
   "dlc": [
    "Rule Britannia"
   ],
   "rweight": {
-   "british_isles_region": 1
+   "british_isles_region": 11
   },
   "sweight": {
-   "europe_superregion": 1
+   "europe_superregion": 11
   },
   "series": [
    "ire_colonial_missions",
+   "ire_conquest_1",
    "ire_conquest_2",
-   "ire_conquest_4"
+   "ire_conquest_4",
+   "ire_conquest_main"
   ]
  },
  "LEI": {
   "name": "Leinster",
-  "missions": 3,
+  "missions": 14,
   "regions": [
    "british_isles_region"
   ],
   "supers": [
    "europe_superregion"
   ],
-  "n_series": 3,
+  "n_series": 5,
   "dlc": [
    "Rule Britannia"
   ],
   "rweight": {
-   "british_isles_region": 1
+   "british_isles_region": 11
   },
   "sweight": {
-   "europe_superregion": 1
+   "europe_superregion": 11
   },
   "series": [
    "ire_colonial_missions",
+   "ire_conquest_1",
    "ire_conquest_2",
-   "ire_conquest_4"
+   "ire_conquest_4",
+   "ire_conquest_main"
   ]
  },
  "MCM": {
   "name": "Munster",
-  "missions": 3,
+  "missions": 14,
   "regions": [
    "british_isles_region"
   ],
   "supers": [
    "europe_superregion"
   ],
-  "n_series": 3,
+  "n_series": 5,
   "dlc": [
    "Rule Britannia"
   ],
   "rweight": {
-   "british_isles_region": 1
+   "british_isles_region": 11
   },
   "sweight": {
-   "europe_superregion": 1
+   "europe_superregion": 11
   },
   "series": [
    "ire_colonial_missions",
+   "ire_conquest_1",
    "ire_conquest_2",
-   "ire_conquest_4"
+   "ire_conquest_4",
+   "ire_conquest_main"
   ]
  },
  "MNS": {
   "name": "Thomond",
-  "missions": 3,
+  "missions": 14,
   "regions": [
    "british_isles_region"
   ],
   "supers": [
    "europe_superregion"
   ],
-  "n_series": 3,
+  "n_series": 5,
   "dlc": [
    "Rule Britannia"
   ],
   "rweight": {
-   "british_isles_region": 1
+   "british_isles_region": 11
   },
   "sweight": {
-   "europe_superregion": 1
+   "europe_superregion": 11
   },
   "series": [
    "ire_colonial_missions",
+   "ire_conquest_1",
    "ire_conquest_2",
-   "ire_conquest_4"
+   "ire_conquest_4",
+   "ire_conquest_main"
   ]
  },
  "MTH": {
   "name": "Meath",
-  "missions": 3,
+  "missions": 14,
   "regions": [
    "british_isles_region"
   ],
   "supers": [
    "europe_superregion"
   ],
-  "n_series": 3,
+  "n_series": 5,
   "dlc": [
    "Rule Britannia"
   ],
   "rweight": {
-   "british_isles_region": 1
+   "british_isles_region": 11
   },
   "sweight": {
-   "europe_superregion": 1
+   "europe_superregion": 11
   },
   "series": [
    "ire_colonial_missions",
+   "ire_conquest_1",
    "ire_conquest_2",
-   "ire_conquest_4"
+   "ire_conquest_4",
+   "ire_conquest_main"
   ]
  },
  "ORD": {
   "name": "Ormond",
-  "missions": 3,
+  "missions": 14,
   "regions": [
    "british_isles_region"
   ],
   "supers": [
    "europe_superregion"
   ],
-  "n_series": 3,
+  "n_series": 5,
   "dlc": [
    "Rule Britannia"
   ],
   "rweight": {
-   "british_isles_region": 1
+   "british_isles_region": 11
   },
   "sweight": {
-   "europe_superregion": 1
+   "europe_superregion": 11
   },
   "series": [
    "ire_colonial_missions",
+   "ire_conquest_1",
    "ire_conquest_2",
-   "ire_conquest_4"
+   "ire_conquest_4",
+   "ire_conquest_main"
   ]
  },
  "SLN": {
   "name": "Sligo",
-  "missions": 3,
+  "missions": 14,
   "regions": [
    "british_isles_region"
   ],
   "supers": [
    "europe_superregion"
   ],
-  "n_series": 3,
+  "n_series": 5,
   "dlc": [
    "Rule Britannia"
   ],
   "rweight": {
-   "british_isles_region": 1
+   "british_isles_region": 11
   },
   "sweight": {
-   "europe_superregion": 1
+   "europe_superregion": 11
   },
   "series": [
    "ire_colonial_missions",
+   "ire_conquest_1",
    "ire_conquest_2",
-   "ire_conquest_4"
+   "ire_conquest_4",
+   "ire_conquest_main"
   ]
  },
  "TRY": {
   "name": "Tyrconnell",
-  "missions": 3,
+  "missions": 14,
   "regions": [
    "british_isles_region"
   ],
   "supers": [
    "europe_superregion"
   ],
-  "n_series": 3,
+  "n_series": 5,
   "dlc": [
    "Rule Britannia"
   ],
   "rweight": {
-   "british_isles_region": 1
+   "british_isles_region": 11
   },
   "sweight": {
-   "europe_superregion": 1
+   "europe_superregion": 11
   },
   "series": [
    "ire_colonial_missions",
+   "ire_conquest_1",
    "ire_conquest_2",
-   "ire_conquest_4"
+   "ire_conquest_4",
+   "ire_conquest_main"
   ]
  },
  "TYR": {
   "name": "Tyrone",
-  "missions": 3,
+  "missions": 14,
   "regions": [
    "british_isles_region"
   ],
   "supers": [
    "europe_superregion"
   ],
-  "n_series": 3,
+  "n_series": 5,
   "dlc": [
    "Rule Britannia"
   ],
   "rweight": {
-   "british_isles_region": 1
+   "british_isles_region": 11
   },
   "sweight": {
-   "europe_superregion": 1
+   "europe_superregion": 11
   },
   "series": [
    "ire_colonial_missions",
+   "ire_conquest_1",
    "ire_conquest_2",
-   "ire_conquest_4"
+   "ire_conquest_4",
+   "ire_conquest_main"
   ]
  },
  "ULS": {
   "name": "Ulster",
-  "missions": 3,
+  "missions": 14,
   "regions": [
    "british_isles_region"
   ],
   "supers": [
    "europe_superregion"
   ],
-  "n_series": 3,
+  "n_series": 5,
   "dlc": [
    "Rule Britannia"
   ],
   "rweight": {
-   "british_isles_region": 1
+   "british_isles_region": 11
   },
   "sweight": {
-   "europe_superregion": 1
+   "europe_superregion": 11
   },
   "series": [
    "ire_colonial_missions",
+   "ire_conquest_1",
    "ire_conquest_2",
-   "ire_conquest_4"
+   "ire_conquest_4",
+   "ire_conquest_main"
   ]
  },
  "KOR": {
   "name": "Korea",
-  "missions": 43,
+  "missions": 44,
   "regions": [
    "east_china_sea_region",
    "japan_region",
@@ -8661,14 +10661,14 @@
    "far_east_superregion",
    "north_pacific_sea_superregion"
   ],
-  "n_series": 20,
+  "n_series": 21,
   "dlc": [
    "Domination",
    "Mandate of Heaven"
   ],
   "rweight": {
    "manchuria_region": 4,
-   "north_china_region": 8,
+   "north_china_region": 9,
    "south_china_region": 4,
    "korea_region": 6,
    "japan_region": 3,
@@ -8676,10 +10676,11 @@
   },
   "sweight": {
    "far_east_superregion": 13,
-   "china_superregion": 10,
+   "china_superregion": 11,
    "north_pacific_sea_superregion": 1
   },
   "series": [
+   "kor_diplo_missions",
    "kor_fortify_missions",
    "kor_harmony_with_japan",
    "kor_japan_tree",
@@ -8702,154 +10703,196 @@
    "korean_missions_eoc_5"
   ]
  },
- "LOT": {
-  "name": "Lotharingia",
-  "missions": 8,
+ "BUR": {
+  "name": "Burgundy",
+  "missions": 23,
   "regions": [
    "france_region",
    "italy_region",
    "low_countries_region",
+   "north_atlantic_region",
    "north_german_region",
    "south_german_region"
   ],
   "supers": [
-   "europe_superregion"
+   "europe_superregion",
+   "north_european_sea_superregion"
   ],
-  "n_series": 6,
+  "n_series": 5,
   "dlc": [
    "Emperor"
   ],
   "rweight": {
-   "italy_region": 1,
-   "low_countries_region": 2,
-   "france_region": 1,
-   "north_german_region": 2,
-   "south_german_region": 3
+   "france_region": 6,
+   "south_german_region": 4,
+   "italy_region": 2,
+   "low_countries_region": 6,
+   "north_atlantic_region": 1,
+   "north_german_region": 4
   },
   "sweight": {
-   "europe_superregion": 7
+   "europe_superregion": 14,
+   "north_european_sea_superregion": 1
   },
   "series": [
+   "emp_burgundy_1",
    "emp_burgundy_2",
    "emp_burgundy_3",
    "emp_burgundy_4",
+   "emp_burgundy_5"
+  ]
+ },
+ "LOT": {
+  "name": "Lotharingia",
+  "missions": 27,
+  "regions": [
+   "france_region",
+   "italy_region",
+   "low_countries_region",
+   "north_atlantic_region",
+   "north_german_region",
+   "south_german_region"
+  ],
+  "supers": [
+   "europe_superregion",
+   "north_european_sea_superregion"
+  ],
+  "n_series": 8,
+  "dlc": [
+   "Emperor"
+  ],
+  "rweight": {
+   "france_region": 6,
+   "south_german_region": 6,
+   "italy_region": 3,
+   "low_countries_region": 6,
+   "north_atlantic_region": 1,
+   "north_german_region": 5
+  },
+  "sweight": {
+   "europe_superregion": 17,
+   "north_european_sea_superregion": 1
+  },
+  "series": [
+   "emp_burgundy_1",
+   "emp_burgundy_2",
+   "emp_burgundy_3",
+   "emp_burgundy_4",
+   "emp_burgundy_5",
    "emp_lotharingia_1",
    "emp_lotharingia_4",
    "emp_lotharingia_5"
   ]
  },
- "BUR": {
-  "name": "Burgundy",
-  "missions": 5,
-  "regions": [
-   "france_region",
-   "low_countries_region",
-   "north_german_region",
-   "south_german_region"
-  ],
-  "supers": [
-   "europe_superregion"
-  ],
-  "n_series": 3,
-  "dlc": [
-   "Emperor"
-  ],
-  "rweight": {
-   "low_countries_region": 2,
-   "france_region": 1,
-   "north_german_region": 1,
-   "south_german_region": 1
-  },
-  "sweight": {
-   "europe_superregion": 4
-  },
-  "series": [
-   "emp_burgundy_2",
-   "emp_burgundy_3",
-   "emp_burgundy_4"
-  ]
- },
  "MKL": {
   "name": "Mecklenburg",
-  "missions": 1,
+  "missions": 8,
   "regions": [
-   "north_german_region"
+   "baltic_region",
+   "north_german_region",
+   "poland_region"
   ],
   "supers": [
+   "eastern_europe_superregion",
    "europe_superregion"
   ],
-  "n_series": 1,
+  "n_series": 2,
   "dlc": [],
   "rweight": {
-   "north_german_region": 1
+   "north_german_region": 5,
+   "poland_region": 1,
+   "baltic_region": 1
   },
   "sweight": {
-   "europe_superregion": 1
+   "europe_superregion": 5,
+   "eastern_europe_superregion": 2
   },
   "series": [
+   "pom_1",
    "pom_2"
   ]
  },
  "POM": {
   "name": "Pomerania",
-  "missions": 1,
+  "missions": 8,
   "regions": [
-   "north_german_region"
+   "baltic_region",
+   "north_german_region",
+   "poland_region"
   ],
   "supers": [
+   "eastern_europe_superregion",
    "europe_superregion"
   ],
-  "n_series": 1,
+  "n_series": 2,
   "dlc": [],
   "rweight": {
-   "north_german_region": 1
+   "north_german_region": 5,
+   "poland_region": 1,
+   "baltic_region": 1
   },
   "sweight": {
-   "europe_superregion": 1
+   "europe_superregion": 5,
+   "eastern_europe_superregion": 2
   },
   "series": [
+   "pom_1",
    "pom_2"
   ]
  },
  "STE": {
   "name": "Stettin",
-  "missions": 1,
+  "missions": 8,
   "regions": [
-   "north_german_region"
+   "baltic_region",
+   "north_german_region",
+   "poland_region"
   ],
   "supers": [
+   "eastern_europe_superregion",
    "europe_superregion"
   ],
-  "n_series": 1,
+  "n_series": 2,
   "dlc": [],
   "rweight": {
-   "north_german_region": 1
+   "north_german_region": 5,
+   "poland_region": 1,
+   "baltic_region": 1
   },
   "sweight": {
-   "europe_superregion": 1
+   "europe_superregion": 5,
+   "eastern_europe_superregion": 2
   },
   "series": [
+   "pom_1",
    "pom_2"
   ]
  },
  "WOL": {
   "name": "Wolgast",
-  "missions": 1,
+  "missions": 8,
   "regions": [
-   "north_german_region"
+   "baltic_region",
+   "north_german_region",
+   "poland_region"
   ],
   "supers": [
+   "eastern_europe_superregion",
    "europe_superregion"
   ],
-  "n_series": 1,
+  "n_series": 2,
   "dlc": [],
   "rweight": {
-   "north_german_region": 1
+   "north_german_region": 5,
+   "poland_region": 1,
+   "baltic_region": 1
   },
   "sweight": {
-   "europe_superregion": 1
+   "europe_superregion": 5,
+   "eastern_europe_superregion": 2
   },
   "series": [
+   "pom_1",
    "pom_2"
   ]
  },
@@ -8881,8 +10924,8 @@
    "north_german_region": 5,
    "baltic_region": 5,
    "russia_region": 5,
-   "baltic_sea_region": 1,
    "north_atlantic_region": 1,
+   "baltic_sea_region": 1,
    "guinea_region": 1,
    "poland_region": 2
   },
@@ -8943,8 +10986,8 @@
    "north_german_region": 22,
    "carpathia_region": 6,
    "south_german_region": 5,
-   "ruthenia_region": 10,
    "crimea_region": 8,
+   "ruthenia_region": 10,
    "low_countries_region": 4,
    "baltic_sea_region": 1,
    "russia_region": 5,
@@ -9016,15 +11059,15 @@
    "north_german_region": 17,
    "carpathia_region": 6,
    "south_german_region": 4,
+   "crimea_region": 6,
    "baltic_region": 10,
    "ruthenia_region": 8,
-   "crimea_region": 6,
    "low_countries_region": 4,
    "baltic_sea_region": 1
   },
   "sweight": {
-   "europe_superregion": 18,
    "eastern_europe_superregion": 26,
+   "europe_superregion": 18,
    "north_european_sea_superregion": 1
   },
   "series": [
@@ -9045,37 +11088,65 @@
  },
  "TUN": {
   "name": "Tunis",
-  "missions": 3,
+  "missions": 21,
   "regions": [
+   "anatolia_region",
+   "balkan_region",
+   "caribbean_sea_region",
+   "egypt_region",
+   "iberia_region",
    "italy_region",
-   "maghreb_region"
+   "maghreb_region",
+   "mediterrenean_region",
+   "niger_region",
+   "sahel_region"
   ],
   "supers": [
    "africa_superregion",
-   "europe_superregion"
+   "east_american_sea_superregion",
+   "eastern_europe_superregion",
+   "europe_superregion",
+   "near_east_superregion",
+   "south_european_sea_superregion"
   ],
-  "n_series": 3,
+  "n_series": 6,
   "dlc": [
    "Golden Century"
   ],
   "rweight": {
-   "italy_region": 1,
-   "maghreb_region": 1
+   "maghreb_region": 6,
+   "sahel_region": 2,
+   "niger_region": 1,
+   "italy_region": 3,
+   "iberia_region": 3,
+   "anatolia_region": 1,
+   "balkan_region": 1,
+   "mediterrenean_region": 2,
+   "egypt_region": 1,
+   "caribbean_sea_region": 1
   },
   "sweight": {
-   "europe_superregion": 1,
-   "africa_superregion": 1
+   "africa_superregion": 8,
+   "europe_superregion": 5,
+   "eastern_europe_superregion": 1,
+   "near_east_superregion": 2,
+   "south_european_sea_superregion": 2,
+   "east_american_sea_superregion": 1
   },
   "series": [
+   "berber_3",
+   "gc_tunis_1",
    "gc_tunis_2",
+   "gc_tunis_3",
    "gc_tunis_4",
    "gc_tunis_5"
   ]
  },
  "BEI": {
   "name": "Brunei",
-  "missions": 3,
+  "missions": 9,
   "regions": [
+   "indonesia_region",
    "moluccas_region"
   ],
   "supers": [
@@ -9084,14 +11155,36 @@
   "n_series": 2,
   "dlc": [],
   "rweight": {
-   "moluccas_region": 3
+   "indonesia_region": 3,
+   "moluccas_region": 5
   },
   "sweight": {
-   "east_indies_superregion": 3
+   "east_indies_superregion": 8
   },
   "series": [
    "mnd_bei_1",
    "mnd_bei_2"
+  ]
+ },
+ "ALB": {
+  "name": "Albania",
+  "missions": 5,
+  "regions": [
+   "balkan_region"
+  ],
+  "supers": [
+   "eastern_europe_superregion"
+  ],
+  "n_series": 1,
+  "dlc": [],
+  "rweight": {
+   "balkan_region": 5
+  },
+  "sweight": {
+   "eastern_europe_superregion": 5
+  },
+  "series": [
+   "alb_1"
   ]
  },
  "NOR": {
@@ -9139,36 +11232,36 @@
   "rweight": {
    "scandinavia_region": 7,
    "north_atlantic_region": 1,
-   "baltic_sea_region": 1,
    "north_german_region": 1,
+   "baltic_sea_region": 1,
    "canada_region": 2,
    "british_isles_region": 2,
-   "south_west_pacific_region": 1,
-   "random_new_world_region": 1,
-   "south_east_pacific_region": 1,
-   "north_east_pacific_region": 1,
    "north_west_pacific_region": 1,
-   "pacific_south_america_region": 1,
-   "east_indian_ocean_region": 1,
    "south_indian_ocean_region": 1,
-   "west_african_sea_region": 1,
+   "east_china_sea_region": 1,
    "south_china_sea_region": 1,
+   "west_african_sea_region": 1,
+   "south_east_pacific_region": 1,
    "south_atlantic_region": 1,
+   "east_indian_ocean_region": 1,
+   "random_new_world_region": 1,
+   "pacific_south_america_region": 1,
+   "north_east_pacific_region": 1,
+   "south_west_pacific_region": 1,
    "atlantic_south_america_region": 1,
    "west_indian_ocean_region": 1,
-   "east_china_sea_region": 1,
    "guinea_region": 1
   },
   "sweight": {
    "europe_superregion": 10,
    "north_european_sea_superregion": 1,
    "north_america_superregion": 2,
-   "east_african_sea_superregion": 1,
-   "west_african_sea_superregion": 1,
    "indian_pacific_sea_superregion": 1,
-   "north_pacific_sea_superregion": 1,
-   "east_american_sea_superregion": 1,
    "west_american_sea_superregion": 1,
+   "east_african_sea_superregion": 1,
+   "north_pacific_sea_superregion": 1,
+   "west_african_sea_superregion": 1,
+   "east_american_sea_superregion": 1,
    "africa_superregion": 1
   },
   "series": [
@@ -9215,8 +11308,8 @@
   "rweight": {
    "anatolia_region": 6,
    "egypt_region": 6,
-   "arabia_region": 6,
    "mashriq_region": 10,
+   "arabia_region": 6,
    "caucasia_region": 1,
    "persia_region": 6,
    "arabian_sea_region": 2
@@ -9244,9 +11337,12 @@
  },
  "GUG": {
   "name": "Guge",
-  "missions": 6,
+  "missions": 12,
   "regions": [
+   "bengal_region",
+   "central_asia_region",
    "hindusthan_region",
+   "mongolia_region",
    "north_china_region",
    "tibet_region",
    "xinan_region"
@@ -9259,15 +11355,18 @@
   "n_series": 3,
   "dlc": [],
   "rweight": {
+   "tibet_region": 4,
    "hindusthan_region": 2,
-   "tibet_region": 2,
+   "mongolia_region": 1,
+   "central_asia_region": 1,
+   "xinan_region": 2,
    "north_china_region": 1,
-   "xinan_region": 1
+   "bengal_region": 1
   },
   "sweight": {
-   "india_superregion": 2,
-   "tartary_superregion": 2,
-   "china_superregion": 1
+   "tartary_superregion": 5,
+   "india_superregion": 3,
+   "china_superregion": 2
   },
   "series": [
    "tib_slot_2",
@@ -9277,9 +11376,12 @@
  },
  "KAM": {
   "name": "Kham",
-  "missions": 6,
+  "missions": 12,
   "regions": [
+   "bengal_region",
+   "central_asia_region",
    "hindusthan_region",
+   "mongolia_region",
    "north_china_region",
    "tibet_region",
    "xinan_region"
@@ -9292,15 +11394,18 @@
   "n_series": 3,
   "dlc": [],
   "rweight": {
+   "tibet_region": 4,
    "hindusthan_region": 2,
-   "tibet_region": 2,
+   "mongolia_region": 1,
+   "central_asia_region": 1,
+   "xinan_region": 2,
    "north_china_region": 1,
-   "xinan_region": 1
+   "bengal_region": 1
   },
   "sweight": {
-   "india_superregion": 2,
-   "tartary_superregion": 2,
-   "china_superregion": 1
+   "tartary_superregion": 5,
+   "india_superregion": 3,
+   "china_superregion": 2
   },
   "series": [
    "tib_slot_2",
@@ -9310,9 +11415,12 @@
  },
  "PHA": {
   "name": "U",
-  "missions": 6,
+  "missions": 12,
   "regions": [
+   "bengal_region",
+   "central_asia_region",
    "hindusthan_region",
+   "mongolia_region",
    "north_china_region",
    "tibet_region",
    "xinan_region"
@@ -9325,15 +11433,18 @@
   "n_series": 3,
   "dlc": [],
   "rweight": {
+   "tibet_region": 4,
    "hindusthan_region": 2,
-   "tibet_region": 2,
+   "mongolia_region": 1,
+   "central_asia_region": 1,
+   "xinan_region": 2,
    "north_china_region": 1,
-   "xinan_region": 1
+   "bengal_region": 1
   },
   "sweight": {
-   "india_superregion": 2,
-   "tartary_superregion": 2,
-   "china_superregion": 1
+   "tartary_superregion": 5,
+   "india_superregion": 3,
+   "china_superregion": 2
   },
   "series": [
    "tib_slot_2",
@@ -9343,9 +11454,12 @@
  },
  "TIB": {
   "name": "Tibet",
-  "missions": 6,
+  "missions": 12,
   "regions": [
+   "bengal_region",
+   "central_asia_region",
    "hindusthan_region",
+   "mongolia_region",
    "north_china_region",
    "tibet_region",
    "xinan_region"
@@ -9358,15 +11472,18 @@
   "n_series": 3,
   "dlc": [],
   "rweight": {
+   "tibet_region": 4,
    "hindusthan_region": 2,
-   "tibet_region": 2,
+   "mongolia_region": 1,
+   "central_asia_region": 1,
+   "xinan_region": 2,
    "north_china_region": 1,
-   "xinan_region": 1
+   "bengal_region": 1
   },
   "sweight": {
-   "india_superregion": 2,
-   "tartary_superregion": 2,
-   "china_superregion": 1
+   "tartary_superregion": 5,
+   "india_superregion": 3,
+   "china_superregion": 2
   },
   "series": [
    "tib_slot_2",
@@ -9376,9 +11493,12 @@
  },
  "UTS": {
   "name": "Tsang",
-  "missions": 6,
+  "missions": 12,
   "regions": [
+   "bengal_region",
+   "central_asia_region",
    "hindusthan_region",
+   "mongolia_region",
    "north_china_region",
    "tibet_region",
    "xinan_region"
@@ -9391,15 +11511,18 @@
   "n_series": 3,
   "dlc": [],
   "rweight": {
+   "tibet_region": 4,
    "hindusthan_region": 2,
-   "tibet_region": 2,
+   "mongolia_region": 1,
+   "central_asia_region": 1,
+   "xinan_region": 2,
    "north_china_region": 1,
-   "xinan_region": 1
+   "bengal_region": 1
   },
   "sweight": {
-   "india_superregion": 2,
-   "tartary_superregion": 2,
-   "china_superregion": 1
+   "tartary_superregion": 5,
+   "india_superregion": 3,
+   "china_superregion": 2
   },
   "series": [
    "tib_slot_2",
@@ -9407,11 +11530,37 @@
    "tib_slot_4"
   ]
  },
- "FKN": {
-  "name": "Franconia",
-  "missions": 2,
+ "ANS": {
+  "name": "Ansbach",
+  "missions": 9,
   "regions": [
-   "france_region"
+   "north_german_region",
+   "south_german_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 3,
+  "dlc": [],
+  "rweight": {
+   "south_german_region": 4,
+   "north_german_region": 2
+  },
+  "sweight": {
+   "europe_superregion": 5
+  },
+  "series": [
+   "franconia_conquest_group_1",
+   "franconia_splendour_group",
+   "franconia_splendour_group_2"
+  ]
+ },
+ "BAM": {
+  "name": "Bamberg",
+  "missions": 7,
+  "regions": [
+   "north_german_region",
+   "south_german_region"
   ],
   "supers": [
    "europe_superregion"
@@ -9419,40 +11568,164 @@
   "n_series": 2,
   "dlc": [],
   "rweight": {
-   "france_region": 1
+   "south_german_region": 4,
+   "north_german_region": 1
   },
   "sweight": {
-   "europe_superregion": 1
+   "europe_superregion": 4
   },
   "series": [
-   "franconia_conquest_group_2",
-   "franconia_splendour_group_2"
-  ]
- },
- "ANS": {
-  "name": "Ansbach",
-  "missions": 1,
-  "regions": [],
-  "supers": [],
-  "n_series": 1,
-  "dlc": [],
-  "rweight": {},
-  "sweight": {},
-  "series": [
-   "franconia_splendour_group_2"
+   "franconia_conquest_group_1",
+   "franconia_splendour_group"
   ]
  },
  "BYT": {
   "name": "Bayreuth",
-  "missions": 1,
-  "regions": [],
-  "supers": [],
-  "n_series": 1,
+  "missions": 9,
+  "regions": [
+   "north_german_region",
+   "south_german_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 3,
   "dlc": [],
-  "rweight": {},
-  "sweight": {},
+  "rweight": {
+   "south_german_region": 4,
+   "north_german_region": 2
+  },
+  "sweight": {
+   "europe_superregion": 5
+  },
   "series": [
+   "franconia_conquest_group_1",
+   "franconia_splendour_group",
    "franconia_splendour_group_2"
+  ]
+ },
+ "COB": {
+  "name": "Coburg",
+  "missions": 7,
+  "regions": [
+   "north_german_region",
+   "south_german_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 2,
+  "dlc": [],
+  "rweight": {
+   "south_german_region": 4,
+   "north_german_region": 1
+  },
+  "sweight": {
+   "europe_superregion": 4
+  },
+  "series": [
+   "franconia_conquest_group_1",
+   "franconia_splendour_group"
+  ]
+ },
+ "FKN": {
+  "name": "Franconia",
+  "missions": 10,
+  "regions": [
+   "france_region",
+   "north_german_region",
+   "south_german_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 4,
+  "dlc": [],
+  "rweight": {
+   "south_german_region": 4,
+   "north_german_region": 2,
+   "france_region": 1
+  },
+  "sweight": {
+   "europe_superregion": 6
+  },
+  "series": [
+   "franconia_conquest_group_1",
+   "franconia_conquest_group_2",
+   "franconia_splendour_group",
+   "franconia_splendour_group_2"
+  ]
+ },
+ "NUM": {
+  "name": "Nuremberg",
+  "missions": 7,
+  "regions": [
+   "north_german_region",
+   "south_german_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 2,
+  "dlc": [],
+  "rweight": {
+   "south_german_region": 4,
+   "north_german_region": 1
+  },
+  "sweight": {
+   "europe_superregion": 4
+  },
+  "series": [
+   "franconia_conquest_group_1",
+   "franconia_splendour_group"
+  ]
+ },
+ "ROT": {
+  "name": "Rothenburg",
+  "missions": 7,
+  "regions": [
+   "north_german_region",
+   "south_german_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 2,
+  "dlc": [],
+  "rweight": {
+   "south_german_region": 4,
+   "north_german_region": 1
+  },
+  "sweight": {
+   "europe_superregion": 4
+  },
+  "series": [
+   "franconia_conquest_group_1",
+   "franconia_splendour_group"
+  ]
+ },
+ "WBG": {
+  "name": "Wurzburg",
+  "missions": 7,
+  "regions": [
+   "north_german_region",
+   "south_german_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 2,
+  "dlc": [],
+  "rweight": {
+   "south_german_region": 4,
+   "north_german_region": 1
+  },
+  "sweight": {
+   "europe_superregion": 4
+  },
+  "series": [
+   "franconia_conquest_group_1",
+   "franconia_splendour_group"
   ]
  },
  "GZI": {
@@ -9535,7 +11808,7 @@
  },
  "ZIM": {
   "name": "Mutapa",
-  "missions": 23,
+  "missions": 36,
   "regions": [
    "arabian_sea_region",
    "east_africa_region",
@@ -9548,23 +11821,25 @@
    "east_african_sea_superregion",
    "southern_africa_superregion"
   ],
-  "n_series": 7,
+  "n_series": 9,
   "dlc": [
    "Origins"
   ],
   "rweight": {
-   "south_africa_region": 8,
-   "east_africa_region": 2,
+   "south_africa_region": 11,
+   "east_africa_region": 5,
    "west_indian_ocean_region": 1,
-   "arabian_sea_region": 1,
+   "arabian_sea_region": 2,
    "horn_of_africa_region": 1
   },
   "sweight": {
-   "southern_africa_superregion": 9,
-   "east_african_sea_superregion": 2,
+   "southern_africa_superregion": 12,
+   "east_african_sea_superregion": 3,
    "africa_superregion": 1
   },
   "series": [
+   "east_african_diplomatic_slot",
+   "east_african_militar_slot",
    "east_african_trade_slot1",
    "east_african_trade_slot2",
    "mutapa_conquer_africa_missions_slot",
@@ -9632,7 +11907,7 @@
  },
  "SAX": {
   "name": "Saxony",
-  "missions": 11,
+  "missions": 16,
   "regions": [
    "north_german_region",
    "poland_region",
@@ -9642,18 +11917,18 @@
    "eastern_europe_superregion",
    "europe_superregion"
   ],
-  "n_series": 6,
+  "n_series": 7,
   "dlc": [
    "Emperor"
   ],
   "rweight": {
-   "poland_region": 1,
-   "north_german_region": 5,
+   "north_german_region": 9,
+   "poland_region": 2,
    "south_german_region": 1
   },
   "sweight": {
-   "eastern_europe_superregion": 1,
-   "europe_superregion": 6
+   "europe_superregion": 10,
+   "eastern_europe_superregion": 2
   },
   "series": [
    "emp_sax_missions_conquer_franconia",
@@ -9661,12 +11936,13 @@
    "emp_sax_missions_culture_1",
    "emp_sax_missions_culture_2",
    "emp_sax_missions_defragment_and_go_east",
+   "emp_sax_missions_economic",
    "emp_sax_missions_religion"
   ]
  },
  "THU": {
   "name": "Thuringia",
-  "missions": 11,
+  "missions": 16,
   "regions": [
    "north_german_region",
    "poland_region",
@@ -9676,18 +11952,18 @@
    "eastern_europe_superregion",
    "europe_superregion"
   ],
-  "n_series": 6,
+  "n_series": 7,
   "dlc": [
    "Emperor"
   ],
   "rweight": {
-   "poland_region": 1,
-   "north_german_region": 5,
+   "north_german_region": 9,
+   "poland_region": 2,
    "south_german_region": 1
   },
   "sweight": {
-   "eastern_europe_superregion": 1,
-   "europe_superregion": 6
+   "europe_superregion": 10,
+   "eastern_europe_superregion": 2
   },
   "series": [
    "emp_sax_missions_conquer_franconia",
@@ -9695,12 +11971,13 @@
    "emp_sax_missions_culture_1",
    "emp_sax_missions_culture_2",
    "emp_sax_missions_defragment_and_go_east",
+   "emp_sax_missions_economic",
    "emp_sax_missions_religion"
   ]
  },
  "MAM": {
   "name": "Mamluks",
-  "missions": 38,
+  "missions": 39,
   "regions": [
    "anatolia_region",
    "arabia_region",
@@ -9746,11 +12023,11 @@
    "mashriq_region": 5,
    "balkan_region": 2,
    "iberia_region": 1,
-   "italy_region": 1,
-   "central_asia_region": 1,
-   "maghreb_region": 3,
-   "west_india_region": 1,
    "caucasia_region": 1,
+   "italy_region": 1,
+   "maghreb_region": 3,
+   "central_asia_region": 1,
+   "west_india_region": 1,
    "arabian_sea_region": 1
   },
   "sweight": {
@@ -9760,9 +12037,9 @@
    "south_european_sea_superregion": 1,
    "persia_superregion": 5,
    "eastern_europe_superregion": 2,
-   "india_superregion": 1,
-   "europe_superregion": 1,
    "tartary_superregion": 1,
+   "europe_superregion": 1,
+   "india_superregion": 1,
    "east_african_sea_superregion": 1
   },
   "series": [
@@ -9885,7 +12162,7 @@
  },
  "CRO": {
   "name": "Croatia",
-  "missions": 4,
+  "missions": 10,
   "regions": [
    "balkan_region",
    "south_german_region"
@@ -9897,11 +12174,11 @@
   "n_series": 3,
   "dlc": [],
   "rweight": {
-   "balkan_region": 3,
+   "balkan_region": 6,
    "south_german_region": 1
   },
   "sweight": {
-   "eastern_europe_superregion": 3,
+   "eastern_europe_superregion": 6,
    "europe_superregion": 1
   },
   "series": [
@@ -9912,7 +12189,7 @@
  },
  "DAL": {
   "name": "Dalmatia",
-  "missions": 4,
+  "missions": 10,
   "regions": [
    "balkan_region",
    "south_german_region"
@@ -9924,11 +12201,11 @@
   "n_series": 3,
   "dlc": [],
   "rweight": {
-   "balkan_region": 3,
+   "balkan_region": 6,
    "south_german_region": 1
   },
   "sweight": {
-   "eastern_europe_superregion": 3,
+   "eastern_europe_superregion": 6,
    "europe_superregion": 1
   },
   "series": [
@@ -9939,7 +12216,7 @@
  },
  "RAG": {
   "name": "Ragusa",
-  "missions": 4,
+  "missions": 10,
   "regions": [
    "balkan_region",
    "south_german_region"
@@ -9951,11 +12228,11 @@
   "n_series": 3,
   "dlc": [],
   "rweight": {
-   "balkan_region": 3,
+   "balkan_region": 6,
    "south_german_region": 1
   },
   "sweight": {
-   "eastern_europe_superregion": 3,
+   "eastern_europe_superregion": 6,
    "europe_superregion": 1
   },
   "series": [
@@ -10061,352 +12338,639 @@
  },
  "AAC": {
   "name": "Aachen",
-  "missions": 2,
-  "regions": [],
-  "supers": [],
-  "n_series": 2,
+  "missions": 8,
+  "regions": [
+   "north_german_region",
+   "south_german_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 3,
   "dlc": [],
-  "rweight": {},
-  "sweight": {},
+  "rweight": {
+   "north_german_region": 3,
+   "south_german_region": 2
+  },
+  "sweight": {
+   "europe_superregion": 3
+  },
   "series": [
+   "westfalian_group_1",
    "westfalian_group_2",
    "westfalian_group_3"
   ]
  },
  "BRG": {
   "name": "Berg",
-  "missions": 2,
-  "regions": [],
-  "supers": [],
-  "n_series": 2,
+  "missions": 8,
+  "regions": [
+   "north_german_region",
+   "south_german_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 3,
   "dlc": [],
-  "rweight": {},
-  "sweight": {},
+  "rweight": {
+   "north_german_region": 3,
+   "south_german_region": 2
+  },
+  "sweight": {
+   "europe_superregion": 3
+  },
   "series": [
+   "westfalian_group_1",
    "westfalian_group_2",
    "westfalian_group_3"
   ]
  },
  "FRN": {
   "name": "Frankfurt",
-  "missions": 2,
-  "regions": [],
-  "supers": [],
-  "n_series": 2,
+  "missions": 8,
+  "regions": [
+   "north_german_region",
+   "south_german_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 3,
   "dlc": [],
-  "rweight": {},
-  "sweight": {},
+  "rweight": {
+   "north_german_region": 3,
+   "south_german_region": 2
+  },
+  "sweight": {
+   "europe_superregion": 3
+  },
   "series": [
+   "westfalian_group_1",
    "westfalian_group_2",
    "westfalian_group_3"
   ]
  },
  "HES": {
   "name": "Hesse",
-  "missions": 2,
-  "regions": [],
-  "supers": [],
-  "n_series": 2,
+  "missions": 8,
+  "regions": [
+   "north_german_region",
+   "south_german_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 3,
   "dlc": [],
-  "rweight": {},
-  "sweight": {},
+  "rweight": {
+   "north_german_region": 3,
+   "south_german_region": 2
+  },
+  "sweight": {
+   "europe_superregion": 3
+  },
   "series": [
+   "westfalian_group_1",
    "westfalian_group_2",
    "westfalian_group_3"
   ]
  },
  "KLE": {
   "name": "Cleves",
-  "missions": 2,
-  "regions": [],
-  "supers": [],
-  "n_series": 2,
+  "missions": 8,
+  "regions": [
+   "north_german_region",
+   "south_german_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 3,
   "dlc": [],
-  "rweight": {},
-  "sweight": {},
+  "rweight": {
+   "north_german_region": 3,
+   "south_german_region": 2
+  },
+  "sweight": {
+   "europe_superregion": 3
+  },
   "series": [
+   "westfalian_group_1",
    "westfalian_group_2",
    "westfalian_group_3"
   ]
  },
  "LPP": {
   "name": "Lippe",
-  "missions": 2,
-  "regions": [],
-  "supers": [],
-  "n_series": 2,
+  "missions": 8,
+  "regions": [
+   "north_german_region",
+   "south_german_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 3,
   "dlc": [],
-  "rweight": {},
-  "sweight": {},
+  "rweight": {
+   "north_german_region": 3,
+   "south_german_region": 2
+  },
+  "sweight": {
+   "europe_superregion": 3
+  },
   "series": [
+   "westfalian_group_1",
    "westfalian_group_2",
    "westfalian_group_3"
   ]
  },
  "MUN": {
   "name": "M\u00fcnster",
-  "missions": 2,
-  "regions": [],
-  "supers": [],
-  "n_series": 2,
+  "missions": 8,
+  "regions": [
+   "north_german_region",
+   "south_german_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 3,
   "dlc": [],
-  "rweight": {},
-  "sweight": {},
+  "rweight": {
+   "north_german_region": 3,
+   "south_german_region": 2
+  },
+  "sweight": {
+   "europe_superregion": 3
+  },
   "series": [
+   "westfalian_group_1",
    "westfalian_group_2",
    "westfalian_group_3"
   ]
  },
  "NSA": {
   "name": "Nassau",
-  "missions": 2,
-  "regions": [],
-  "supers": [],
-  "n_series": 2,
+  "missions": 8,
+  "regions": [
+   "north_german_region",
+   "south_german_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 3,
   "dlc": [],
-  "rweight": {},
-  "sweight": {},
+  "rweight": {
+   "north_german_region": 3,
+   "south_german_region": 2
+  },
+  "sweight": {
+   "europe_superregion": 3
+  },
   "series": [
+   "westfalian_group_1",
    "westfalian_group_2",
    "westfalian_group_3"
   ]
  },
  "OLD": {
   "name": "Oldenburg",
-  "missions": 2,
-  "regions": [],
-  "supers": [],
-  "n_series": 2,
+  "missions": 8,
+  "regions": [
+   "north_german_region",
+   "south_german_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 3,
   "dlc": [],
-  "rweight": {},
-  "sweight": {},
+  "rweight": {
+   "north_german_region": 3,
+   "south_german_region": 2
+  },
+  "sweight": {
+   "europe_superregion": 3
+  },
   "series": [
+   "westfalian_group_1",
    "westfalian_group_2",
    "westfalian_group_3"
   ]
  },
  "OSN": {
   "name": "Osnabr\u00fcck",
-  "missions": 2,
-  "regions": [],
-  "supers": [],
-  "n_series": 2,
+  "missions": 8,
+  "regions": [
+   "north_german_region",
+   "south_german_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 3,
   "dlc": [],
-  "rweight": {},
-  "sweight": {},
+  "rweight": {
+   "north_german_region": 3,
+   "south_german_region": 2
+  },
+  "sweight": {
+   "europe_superregion": 3
+  },
   "series": [
+   "westfalian_group_1",
    "westfalian_group_2",
    "westfalian_group_3"
   ]
  },
  "RVA": {
   "name": "Dortmund",
-  "missions": 2,
-  "regions": [],
-  "supers": [],
-  "n_series": 2,
+  "missions": 8,
+  "regions": [
+   "north_german_region",
+   "south_german_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 3,
   "dlc": [],
-  "rweight": {},
-  "sweight": {},
+  "rweight": {
+   "north_german_region": 3,
+   "south_german_region": 2
+  },
+  "sweight": {
+   "europe_superregion": 3
+  },
   "series": [
+   "westfalian_group_1",
    "westfalian_group_2",
    "westfalian_group_3"
   ]
  },
  "WES": {
   "name": "Westphalia",
-  "missions": 2,
-  "regions": [],
-  "supers": [],
-  "n_series": 2,
+  "missions": 8,
+  "regions": [
+   "north_german_region",
+   "south_german_region"
+  ],
+  "supers": [
+   "europe_superregion"
+  ],
+  "n_series": 3,
   "dlc": [],
-  "rweight": {},
-  "sweight": {},
+  "rweight": {
+   "north_german_region": 3,
+   "south_german_region": 2
+  },
+  "sweight": {
+   "europe_superregion": 3
+  },
   "series": [
+   "westfalian_group_1",
    "westfalian_group_2",
    "westfalian_group_3"
   ]
  },
  "ATH": {
   "name": "Athens",
-  "missions": 4,
+  "missions": 17,
   "regions": [
+   "anatolia_region",
+   "balkan_region",
+   "brazil_region",
+   "egypt_region",
+   "horn_of_africa_region",
+   "italy_region",
+   "maghreb_region",
    "mashriq_region"
   ],
   "supers": [
-   "near_east_superregion"
+   "africa_superregion",
+   "eastern_europe_superregion",
+   "europe_superregion",
+   "near_east_superregion",
+   "south_america_superregion"
   ],
-  "n_series": 3,
+  "n_series": 5,
   "dlc": [
    "Emperor"
   ],
   "rweight": {
-   "mashriq_region": 3
+   "mashriq_region": 4,
+   "egypt_region": 1,
+   "horn_of_africa_region": 1,
+   "anatolia_region": 2,
+   "balkan_region": 2,
+   "italy_region": 2,
+   "maghreb_region": 2,
+   "brazil_region": 1
   },
   "sweight": {
-   "near_east_superregion": 3
+   "near_east_superregion": 7,
+   "africa_superregion": 3,
+   "eastern_europe_superregion": 2,
+   "europe_superregion": 2,
+   "south_america_superregion": 1
   },
   "series": [
    "EMP_crusader_1",
    "EMP_crusader_2",
+   "EMP_crusader_3",
+   "EMP_crusader_4",
    "EMP_crusader_5"
   ]
  },
  "CYP": {
   "name": "Cyprus",
-  "missions": 4,
+  "missions": 17,
   "regions": [
+   "anatolia_region",
+   "balkan_region",
+   "brazil_region",
+   "egypt_region",
+   "horn_of_africa_region",
+   "italy_region",
+   "maghreb_region",
    "mashriq_region"
   ],
   "supers": [
-   "near_east_superregion"
+   "africa_superregion",
+   "eastern_europe_superregion",
+   "europe_superregion",
+   "near_east_superregion",
+   "south_america_superregion"
   ],
-  "n_series": 3,
+  "n_series": 5,
   "dlc": [
    "Emperor"
   ],
   "rweight": {
-   "mashriq_region": 3
+   "mashriq_region": 4,
+   "egypt_region": 1,
+   "horn_of_africa_region": 1,
+   "anatolia_region": 2,
+   "balkan_region": 2,
+   "italy_region": 2,
+   "maghreb_region": 2,
+   "brazil_region": 1
   },
   "sweight": {
-   "near_east_superregion": 3
+   "near_east_superregion": 7,
+   "africa_superregion": 3,
+   "eastern_europe_superregion": 2,
+   "europe_superregion": 2,
+   "south_america_superregion": 1
   },
   "series": [
    "EMP_crusader_1",
    "EMP_crusader_2",
+   "EMP_crusader_3",
+   "EMP_crusader_4",
    "EMP_crusader_5"
   ]
  },
  "EPI": {
   "name": "Epirus",
-  "missions": 4,
+  "missions": 17,
   "regions": [
+   "anatolia_region",
+   "balkan_region",
+   "brazil_region",
+   "egypt_region",
+   "horn_of_africa_region",
+   "italy_region",
+   "maghreb_region",
    "mashriq_region"
   ],
   "supers": [
-   "near_east_superregion"
+   "africa_superregion",
+   "eastern_europe_superregion",
+   "europe_superregion",
+   "near_east_superregion",
+   "south_america_superregion"
   ],
-  "n_series": 3,
+  "n_series": 5,
   "dlc": [
    "Emperor"
   ],
   "rweight": {
-   "mashriq_region": 3
+   "mashriq_region": 4,
+   "egypt_region": 1,
+   "horn_of_africa_region": 1,
+   "anatolia_region": 2,
+   "balkan_region": 2,
+   "italy_region": 2,
+   "maghreb_region": 2,
+   "brazil_region": 1
   },
   "sweight": {
-   "near_east_superregion": 3
+   "near_east_superregion": 7,
+   "africa_superregion": 3,
+   "eastern_europe_superregion": 2,
+   "europe_superregion": 2,
+   "south_america_superregion": 1
   },
   "series": [
    "EMP_crusader_1",
    "EMP_crusader_2",
+   "EMP_crusader_3",
+   "EMP_crusader_4",
    "EMP_crusader_5"
   ]
  },
  "KNI": {
   "name": "The Knights",
-  "missions": 4,
+  "missions": 17,
   "regions": [
+   "anatolia_region",
+   "balkan_region",
+   "brazil_region",
+   "egypt_region",
+   "horn_of_africa_region",
+   "italy_region",
+   "maghreb_region",
    "mashriq_region"
   ],
   "supers": [
-   "near_east_superregion"
+   "africa_superregion",
+   "eastern_europe_superregion",
+   "europe_superregion",
+   "near_east_superregion",
+   "south_america_superregion"
   ],
-  "n_series": 3,
+  "n_series": 5,
   "dlc": [
    "Emperor"
   ],
   "rweight": {
-   "mashriq_region": 3
+   "mashriq_region": 4,
+   "egypt_region": 1,
+   "horn_of_africa_region": 1,
+   "anatolia_region": 2,
+   "balkan_region": 2,
+   "italy_region": 2,
+   "maghreb_region": 2,
+   "brazil_region": 1
   },
   "sweight": {
-   "near_east_superregion": 3
+   "near_east_superregion": 7,
+   "africa_superregion": 3,
+   "eastern_europe_superregion": 2,
+   "europe_superregion": 2,
+   "south_america_superregion": 1
   },
   "series": [
    "EMP_crusader_1",
    "EMP_crusader_2",
+   "EMP_crusader_3",
+   "EMP_crusader_4",
    "EMP_crusader_5"
   ]
  },
  "KOJ": {
   "name": "Jerusalem",
-  "missions": 4,
+  "missions": 17,
   "regions": [
+   "anatolia_region",
+   "balkan_region",
+   "brazil_region",
+   "egypt_region",
+   "horn_of_africa_region",
+   "italy_region",
+   "maghreb_region",
    "mashriq_region"
   ],
   "supers": [
-   "near_east_superregion"
+   "africa_superregion",
+   "eastern_europe_superregion",
+   "europe_superregion",
+   "near_east_superregion",
+   "south_america_superregion"
   ],
-  "n_series": 3,
+  "n_series": 5,
   "dlc": [
    "Emperor"
   ],
   "rweight": {
-   "mashriq_region": 3
+   "mashriq_region": 4,
+   "egypt_region": 1,
+   "horn_of_africa_region": 1,
+   "anatolia_region": 2,
+   "balkan_region": 2,
+   "italy_region": 2,
+   "maghreb_region": 2,
+   "brazil_region": 1
   },
   "sweight": {
-   "near_east_superregion": 3
+   "near_east_superregion": 7,
+   "africa_superregion": 3,
+   "eastern_europe_superregion": 2,
+   "europe_superregion": 2,
+   "south_america_superregion": 1
   },
   "series": [
    "EMP_crusader_1",
    "EMP_crusader_2",
+   "EMP_crusader_3",
+   "EMP_crusader_4",
    "EMP_crusader_5"
   ]
  },
  "NAX": {
   "name": "Naxos",
-  "missions": 4,
+  "missions": 17,
   "regions": [
+   "anatolia_region",
+   "balkan_region",
+   "brazil_region",
+   "egypt_region",
+   "horn_of_africa_region",
+   "italy_region",
+   "maghreb_region",
    "mashriq_region"
   ],
   "supers": [
-   "near_east_superregion"
+   "africa_superregion",
+   "eastern_europe_superregion",
+   "europe_superregion",
+   "near_east_superregion",
+   "south_america_superregion"
   ],
-  "n_series": 3,
+  "n_series": 5,
   "dlc": [
    "Emperor"
   ],
   "rweight": {
-   "mashriq_region": 3
+   "mashriq_region": 4,
+   "egypt_region": 1,
+   "horn_of_africa_region": 1,
+   "anatolia_region": 2,
+   "balkan_region": 2,
+   "italy_region": 2,
+   "maghreb_region": 2,
+   "brazil_region": 1
   },
   "sweight": {
-   "near_east_superregion": 3
+   "near_east_superregion": 7,
+   "africa_superregion": 3,
+   "eastern_europe_superregion": 2,
+   "europe_superregion": 2,
+   "south_america_superregion": 1
   },
   "series": [
    "EMP_crusader_1",
    "EMP_crusader_2",
+   "EMP_crusader_3",
+   "EMP_crusader_4",
    "EMP_crusader_5"
   ]
  },
  "NAV": {
   "name": "Navarra",
-  "missions": 3,
+  "missions": 10,
   "regions": [
+   "american_east_coast_region",
    "canada_region",
-   "iberia_region"
+   "france_region",
+   "iberia_region",
+   "north_atlantic_region"
   ],
   "supers": [
+   "east_american_sea_superregion",
    "europe_superregion",
-   "north_america_superregion"
+   "north_america_superregion",
+   "north_european_sea_superregion"
   ],
-  "n_series": 3,
+  "n_series": 4,
   "dlc": [],
   "rweight": {
-   "iberia_region": 2,
-   "canada_region": 1
+   "iberia_region": 4,
+   "north_atlantic_region": 1,
+   "canada_region": 2,
+   "american_east_coast_region": 1,
+   "france_region": 4
   },
   "sweight": {
-   "europe_superregion": 2,
-   "north_america_superregion": 1
+   "europe_superregion": 7,
+   "north_european_sea_superregion": 1,
+   "north_america_superregion": 2,
+   "east_american_sea_superregion": 1
   },
   "series": [
    "nav_missions_1",
    "nav_missions_1_b",
+   "nav_missions_2",
    "nav_missions_5"
   ]
  },
  "MLO": {
   "name": "Milan",
-  "missions": 8,
+  "missions": 22,
   "regions": [
    "balkan_region",
    "france_region",
@@ -10418,19 +12982,19 @@
    "eastern_europe_superregion",
    "europe_superregion"
   ],
-  "n_series": 7,
+  "n_series": 8,
   "dlc": [
    "Emperor"
   ],
   "rweight": {
-   "italy_region": 7,
-   "south_german_region": 4,
+   "italy_region": 17,
+   "south_german_region": 5,
    "iberia_region": 1,
    "france_region": 1,
    "balkan_region": 1
   },
   "sweight": {
-   "europe_superregion": 7,
+   "europe_superregion": 17,
    "eastern_europe_superregion": 1
   },
   "series": [
@@ -10439,75 +13003,14 @@
    "emp_mlo_papal_branch",
    "emp_mlo_security_branch",
    "emp_mlo_security_branch_2",
+   "emp_mlo_swiss_mercs_branch",
    "emp_mlo_venice_branch",
    "emp_mlo_victorious_branch"
   ]
  },
  "GER": {
   "name": "Germany",
-  "missions": 29,
-  "regions": [
-   "baltic_region",
-   "baltic_sea_region",
-   "british_isles_region",
-   "carpathia_region",
-   "france_region",
-   "italy_region",
-   "low_countries_region",
-   "north_german_region",
-   "poland_region",
-   "scandinavia_region",
-   "south_german_region"
-  ],
-  "supers": [
-   "china_superregion",
-   "east_indies_superregion",
-   "eastern_europe_superregion",
-   "europe_superregion",
-   "india_superregion",
-   "north_european_sea_superregion",
-   "southern_africa_superregion"
-  ],
-  "n_series": 8,
-  "dlc": [
-   "Winds of Change"
-  ],
-  "rweight": {
-   "north_german_region": 7,
-   "low_countries_region": 1,
-   "france_region": 1,
-   "british_isles_region": 1,
-   "south_german_region": 4,
-   "italy_region": 1,
-   "baltic_region": 2,
-   "poland_region": 2,
-   "carpathia_region": 1,
-   "scandinavia_region": 2,
-   "baltic_sea_region": 1
-  },
-  "sweight": {
-   "europe_superregion": 12,
-   "southern_africa_superregion": 1,
-   "east_indies_superregion": 1,
-   "india_superregion": 1,
-   "china_superregion": 1,
-   "eastern_europe_superregion": 4,
-   "north_european_sea_superregion": 1
-  },
-  "series": [
-   "JHC_GER_1",
-   "JHC_GER_2",
-   "JHC_GER_3",
-   "JHC_GER_3_ger",
-   "JHC_GER_4",
-   "JHC_GER_4_ger",
-   "JHC_GER_5",
-   "JHC_GER_5_ger"
-  ]
- },
- "HLR": {
-  "name": "Holy Roman Empire",
-  "missions": 26,
+  "missions": 30,
   "regions": [
    "baltic_region",
    "baltic_sea_region",
@@ -10540,19 +13043,81 @@
    "france_region": 1,
    "british_isles_region": 1,
    "south_german_region": 5,
-   "italy_region": 2,
-   "baltic_region": 2,
+   "italy_region": 1,
    "poland_region": 2,
+   "baltic_region": 2,
    "carpathia_region": 1,
    "scandinavia_region": 2,
    "baltic_sea_region": 1
   },
   "sweight": {
-   "europe_superregion": 14,
+   "europe_superregion": 13,
    "southern_africa_superregion": 1,
+   "china_superregion": 1,
    "east_indies_superregion": 1,
    "india_superregion": 1,
+   "eastern_europe_superregion": 4,
+   "north_european_sea_superregion": 1
+  },
+  "series": [
+   "JHC_GER_1",
+   "JHC_GER_2",
+   "JHC_GER_3",
+   "JHC_GER_3_ger",
+   "JHC_GER_4",
+   "JHC_GER_4_ger",
+   "JHC_GER_5",
+   "JHC_GER_5_ger"
+  ]
+ },
+ "HLR": {
+  "name": "Holy Roman Empire",
+  "missions": 27,
+  "regions": [
+   "baltic_region",
+   "baltic_sea_region",
+   "british_isles_region",
+   "carpathia_region",
+   "france_region",
+   "italy_region",
+   "low_countries_region",
+   "north_german_region",
+   "poland_region",
+   "scandinavia_region",
+   "south_german_region"
+  ],
+  "supers": [
+   "china_superregion",
+   "east_indies_superregion",
+   "eastern_europe_superregion",
+   "europe_superregion",
+   "india_superregion",
+   "north_european_sea_superregion",
+   "southern_africa_superregion"
+  ],
+  "n_series": 8,
+  "dlc": [
+   "Winds of Change"
+  ],
+  "rweight": {
+   "north_german_region": 9,
+   "low_countries_region": 1,
+   "france_region": 1,
+   "british_isles_region": 1,
+   "south_german_region": 6,
+   "italy_region": 2,
+   "poland_region": 2,
+   "baltic_region": 2,
+   "carpathia_region": 1,
+   "scandinavia_region": 2,
+   "baltic_sea_region": 1
+  },
+  "sweight": {
+   "europe_superregion": 15,
+   "southern_africa_superregion": 1,
    "china_superregion": 1,
+   "east_indies_superregion": 1,
+   "india_superregion": 1,
    "eastern_europe_superregion": 4,
    "north_european_sea_superregion": 1
   },
@@ -10590,70 +13155,78 @@
  },
  "SAV": {
   "name": "Savoy",
-  "missions": 7,
+  "missions": 23,
   "regions": [
    "anatolia_region",
    "france_region",
-   "italy_region"
+   "italy_region",
+   "south_german_region"
   ],
   "supers": [
    "europe_superregion",
    "near_east_superregion"
   ],
-  "n_series": 6,
+  "n_series": 8,
   "dlc": [
    "Emperor"
   ],
   "rweight": {
-   "italy_region": 3,
-   "france_region": 1,
+   "italy_region": 10,
+   "south_german_region": 3,
+   "france_region": 5,
    "anatolia_region": 1
   },
   "sweight": {
-   "europe_superregion": 4,
+   "europe_superregion": 16,
    "near_east_superregion": 1
   },
   "series": [
    "emp_sav_missions_conquest",
    "emp_sav_missions_conquest_italia",
    "emp_sav_missions_conquest_italia_2",
+   "emp_sav_missions_conquest_north",
    "emp_sav_missions_conquest_west",
    "emp_sav_missions_economy",
-   "emp_sav_missions_papacy"
+   "emp_sav_missions_papacy",
+   "emp_sav_missions_security"
   ]
  },
  "SPI": {
   "name": "Sardinia-Piedmont",
-  "missions": 7,
+  "missions": 23,
   "regions": [
    "anatolia_region",
    "france_region",
-   "italy_region"
+   "italy_region",
+   "south_german_region"
   ],
   "supers": [
    "europe_superregion",
    "near_east_superregion"
   ],
-  "n_series": 6,
+  "n_series": 8,
   "dlc": [
    "Emperor"
   ],
   "rweight": {
-   "italy_region": 3,
-   "france_region": 1,
+   "italy_region": 10,
+   "south_german_region": 3,
+   "france_region": 5,
    "anatolia_region": 1
   },
   "sweight": {
-   "europe_superregion": 4,
+   "europe_superregion": 16,
    "near_east_superregion": 1
   },
   "series": [
    "emp_sav_missions_conquest",
    "emp_sav_missions_conquest_italia",
    "emp_sav_missions_conquest_italia_2",
+   "emp_sav_missions_conquest_north",
    "emp_sav_missions_conquest_west",
    "emp_sav_missions_economy",
-   "emp_sav_missions_papacy"
+   "emp_sav_missions_papacy",
+   "emp_sav_missions_security"
   ]
  },
  "AUH": {
@@ -10698,8 +13271,8 @@
    "south_german_region": 8,
    "italy_region": 6,
    "balkan_region": 4,
-   "caucasia_region": 1,
    "anatolia_region": 1,
+   "caucasia_region": 1,
    "baltic_region": 1,
    "north_german_region": 3,
    "carpathia_region": 1,
@@ -10707,9 +13280,9 @@
    "british_isles_region": 1,
    "iberia_region": 3,
    "poland_region": 4,
-   "deccan_region": 1,
-   "bengal_region": 1,
    "west_india_region": 1,
+   "bengal_region": 1,
+   "deccan_region": 1,
    "coromandel_region": 1,
    "australia_region": 1,
    "low_countries_region": 1,
@@ -10719,8 +13292,8 @@
   "sweight": {
    "europe_superregion": 23,
    "eastern_europe_superregion": 10,
-   "near_east_superregion": 1,
    "persia_superregion": 1,
+   "near_east_superregion": 1,
    "india_superregion": 1,
    "oceania_superregion": 1,
    "china_superregion": 1
@@ -10785,8 +13358,8 @@
    "south_german_region": 8,
    "italy_region": 6,
    "balkan_region": 4,
-   "caucasia_region": 1,
    "anatolia_region": 1,
+   "caucasia_region": 1,
    "baltic_region": 1,
    "north_german_region": 3,
    "carpathia_region": 1,
@@ -10794,9 +13367,9 @@
    "british_isles_region": 1,
    "iberia_region": 3,
    "poland_region": 4,
-   "deccan_region": 1,
-   "bengal_region": 1,
    "west_india_region": 1,
+   "bengal_region": 1,
+   "deccan_region": 1,
    "coromandel_region": 1,
    "australia_region": 1,
    "low_countries_region": 1,
@@ -10806,8 +13379,8 @@
   "sweight": {
    "europe_superregion": 23,
    "eastern_europe_superregion": 10,
-   "near_east_superregion": 1,
    "persia_superregion": 1,
+   "near_east_superregion": 1,
    "india_superregion": 1,
    "oceania_superregion": 1,
    "china_superregion": 1
@@ -10992,33 +13565,33 @@
    "carpathia_region": 1,
    "balkan_region": 3,
    "north_german_region": 1,
-   "hindusthan_region": 3,
    "north_china_region": 3,
+   "hindusthan_region": 3,
+   "east_china_sea_region": 1,
    "east_indian_ocean_region": 1,
    "manchuria_region": 2,
-   "east_china_sea_region": 1,
    "tibet_region": 1,
    "ural_region": 3,
+   "west_siberia_region": 3,
    "persia_region": 2,
    "central_asia_region": 3,
-   "west_siberia_region": 3,
    "crimea_region": 2,
    "caucasia_region": 2,
    "khorasan_region": 2,
    "mongolia_region": 1,
    "east_siberia_region": 1,
    "cascadia_region": 1,
-   "baltic_sea_region": 1,
-   "north_atlantic_region": 1
+   "north_atlantic_region": 1,
+   "baltic_sea_region": 1
   },
   "sweight": {
    "eastern_europe_superregion": 22,
    "europe_superregion": 7,
-   "india_superregion": 3,
    "china_superregion": 3,
+   "india_superregion": 3,
    "indian_pacific_sea_superregion": 1,
-   "north_pacific_sea_superregion": 1,
    "tartary_superregion": 7,
+   "north_pacific_sea_superregion": 1,
    "far_east_superregion": 2,
    "persia_superregion": 4,
    "north_america_superregion": 1,
@@ -11055,7 +13628,7 @@
  },
  "BRI": {
   "name": "Brittany",
-  "missions": 2,
+  "missions": 8,
   "regions": [
    "american_east_coast_region",
    "caribbean_sea_region",
@@ -11068,12 +13641,12 @@
   "n_series": 2,
   "dlc": [],
   "rweight": {
-   "france_region": 1,
+   "france_region": 4,
    "caribbean_sea_region": 1,
    "american_east_coast_region": 1
   },
   "sweight": {
-   "europe_superregion": 1,
+   "europe_superregion": 4,
    "east_american_sea_superregion": 1
   },
   "series": [
@@ -11112,8 +13685,8 @@
   "rweight": {
    "baltic_region": 11,
    "colombia_region": 1,
-   "guinea_region": 1,
    "niger_region": 1,
+   "guinea_region": 1,
    "south_africa_region": 1,
    "deccan_region": 1,
    "coromandel_region": 1,
@@ -11178,8 +13751,8 @@
   "rweight": {
    "baltic_region": 14,
    "colombia_region": 2,
-   "guinea_region": 2,
    "niger_region": 2,
+   "guinea_region": 2,
    "south_africa_region": 2,
    "deccan_region": 2,
    "coromandel_region": 2,
@@ -11253,8 +13826,8 @@
   "rweight": {
    "baltic_region": 11,
    "colombia_region": 1,
-   "guinea_region": 1,
    "niger_region": 1,
+   "guinea_region": 1,
    "south_africa_region": 1,
    "deccan_region": 1,
    "coromandel_region": 1,
@@ -11289,46 +13862,62 @@
  },
  "PRO": {
   "name": "Provence",
-  "missions": 5,
+  "missions": 16,
   "regions": [
    "carpathia_region",
    "france_region",
-   "iberia_region"
+   "iberia_region",
+   "italy_region",
+   "mashriq_region"
   ],
   "supers": [
    "eastern_europe_superregion",
-   "europe_superregion"
+   "europe_superregion",
+   "near_east_superregion"
   ],
-  "n_series": 4,
+  "n_series": 5,
   "dlc": [
    "Emperor"
   ],
   "rweight": {
    "iberia_region": 1,
    "carpathia_region": 1,
-   "france_region": 2
+   "italy_region": 3,
+   "mashriq_region": 1,
+   "france_region": 6
   },
   "sweight": {
-   "europe_superregion": 3,
-   "eastern_europe_superregion": 1
+   "europe_superregion": 10,
+   "eastern_europe_superregion": 1,
+   "near_east_superregion": 1
   },
   "series": [
    "provence_missions_1",
    "provence_missions_2",
    "provence_missions_3",
-   "provence_missions_4"
+   "provence_missions_4",
+   "provence_missions_5"
   ]
  },
  "BLI": {
   "name": "Bali",
-  "missions": 1,
-  "regions": [],
-  "supers": [],
-  "n_series": 1,
+  "missions": 4,
+  "regions": [
+   "indonesia_region"
+  ],
+  "supers": [
+   "east_indies_superregion"
+  ],
+  "n_series": 2,
   "dlc": [],
-  "rweight": {},
-  "sweight": {},
+  "rweight": {
+   "indonesia_region": 2
+  },
+  "sweight": {
+   "east_indies_superregion": 2
+  },
   "series": [
+   "bli_1",
    "bli_2"
   ]
  }
