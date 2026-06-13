@@ -361,9 +361,17 @@ def eval_expr(e, assign):
         return any(eval_expr(s, assign) for s in e[1])
     return True
 
+def _branch_family(flag):
+    # cf:<stem>_<category>_branch_flag -> "<stem>". Such flags are alternatives
+    # ("pick one branch", e.g. hordes confucian/devout/tolerance) so at most one
+    # can be set in a single playthrough.
+    m = re.match(r'cf:(.+?)_[a-z0-9]+_branch_flag$', flag)
+    return m.group(1) if m else None
+
 def _flag_total(items, base):
     """Max missions over free country-flag (cf:) assignments, with `base` fixing
-    tag/origin atoms. Series sharing a cf: flag form one exclusion group."""
+    tag/origin atoms. Series sharing a cf: flag -- or the same *_branch_flag family --
+    form one exclusion group; within a family at most one flag may be set."""
     n = len(items)
     free = [sorted(a for a in flags_in(e) if a.startswith('cf:')) for (_, e) in items]
     parent = list(range(n))
@@ -371,11 +379,14 @@ def _flag_total(items, base):
         while parent[x] != x:
             parent[x] = parent[parent[x]]; x = parent[x]
         return x
-    f2i = {}
+    f2i, fam2i = {}, {}
     for i, fs in enumerate(free):
         for f in fs:
             f2i.setdefault(f, []).append(i)
-    for f, idxs in f2i.items():
+            fam = _branch_family(f)
+            if fam:
+                fam2i.setdefault(fam, []).append(i)
+    for idxs in list(f2i.values()) + list(fam2i.values()):  # union by shared flag AND by family
         for j in idxs[1:]:
             parent[find(j)] = find(idxs[0])
     groups = defaultdict(list)
@@ -388,11 +399,19 @@ def _flag_total(items, base):
             a = dict(base)
             total += sum(items[i][0] for i in idxs if eval_expr(items[i][1], a))
             continue
+        excl = defaultdict(list)            # branch-flag families present in this group
+        for f in gf:
+            fam = _branch_family(f)
+            if fam:
+                excl[fam].append(f)
+        excl = [fs for fs in excl.values() if len(fs) > 1]
         best = 0
         for mask in range(1 << len(gf)):
             a = dict(base)
             for b in range(len(gf)):
                 a[gf[b]] = bool((mask >> b) & 1)
+            if any(sum(a[f] for f in fam) > 1 for fam in excl):
+                continue                    # can't pick two branches of one family
             best = max(best, sum(items[i][0] for i in idxs if eval_expr(items[i][1], a)))
         total += best
     return total
