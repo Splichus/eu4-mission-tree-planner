@@ -105,7 +105,7 @@
           <input type="range" id="fDelta" min="0" max="40" value="40"></div>
         <div class="ctl"><label>Search nation</label><input type="text" id="fSearch" placeholder="e.g. Japan"></div>
         <div class="ctl"><label class="toggle"><input type="checkbox" id="fZero"> Zero overlap only</label>
-          <label class="toggle"><input type="checkbox" id="fWell" checked> Well-characterised only</label>
+          <label class="toggle"><input type="checkbox" id="fWell"> Well-characterised only</label>
           <label class="toggle"><input type="checkbox" id="fNoF"> Hide formables</label></div>
       </div>
       <div class="count" id="pairCount"></div>
@@ -137,7 +137,7 @@
        in your EU4 install, with all DLC enabled. Legacy pre-DLC mission trees (hidden because you own the newer DLC) are excluded.</p>
     <ul>
       <li><b>Missions</b> = total missions across every active, tag-locked mission series that nation's tag can see.</li>
-      <li><b>Core regions</b> = regions targeted by enough missions to be a real objective (weight ≥ max(3, 12% of the nation's missions)). Used for conflict detection.</li>
+      <li><b>Core regions</b> = regions targeted by ≥ 4 of the nation's missions (a real objective; drops regions a tree only brushes incidentally). Used for conflict detection.</li>
       <li><b>A "clean" matchup</b> = (1) zero shared <i>core</i> regions, (2) no shared mission series (not the same lineage/formable chain — so you'll never see e.g. Castile vs Spain), and (3) similar size (smaller/larger ≥ 0.72, or within 12 missions).</li>
       <li><b>Overlap</b> = number of regions both footprints touch <i>at all</i> (incl. peripheral/sea zones). 0 = fully disjoint.</li>
       <li><b><span class="tag F">F</span> = formable</b>: you must form the nation in-game before its tree unlocks — a time cost, not a 1444 start.</li>

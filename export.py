@@ -8,8 +8,10 @@ FORMABLE = {"SCA","MGE","YUA","GLH","ILK","RUM","AUH","QNG","PLC","SPA","MUG","G
 MIN_MISSIONS = 30
 
 def core_set(d):
-    rw = d["rweight"]; thr = max(3, 0.12 * d["missions"])
-    return {r for r, w in rw.items() if w >= thr}
+    # region targeted by >= 4 missions = a real objective (flat threshold;
+    # >=4 drops marginal/incidental regions a nation only brushes a few times)
+    rw = d["rweight"]
+    return {r for r, w in rw.items() if w >= 4}
 def top_super(d):
     sw = d.get("sweight", {})
     return (max(sw, key=sw.get) if sw else "?").replace("_superregion", "")
@@ -63,12 +65,12 @@ pairs.sort(key=lambda p: (p["ov"], p["delta"]))
 
 # curated editor picks (verified clean), tiered by race length
 picks = [
-    {"a":"SPA","b":"RUS","tier":"XL — long campaign","note":"Iberia+colonies vs Eastern Europe+Siberia. Δ1 mission. Only edge-overlap is the Balkans; neither's core. Both start as the great power — fairest titan race."},
-    {"a":"JAP","b":"TUR","tier":"L — medium","note":"Japan (unify the daimyo) vs Ottomans (Balkans/Anatolia/Levant). Zero land overlap. Ottomans expand easier; Japan has the unification minigame — roughly even effort."},
-    {"a":"JAP","b":"SON","tier":"L — medium","note":"Japan vs Songhai (West African Sahel). Literally zero shared regions. Two self-contained theaters."},
+    {"a":"SPA","b":"RUS","tier":"XL — long campaign","note":"Iberia+colonies vs Eastern Europe+Siberia. Δ1 mission, no core conflict. Both start as the great power — the fairest titan race."},
+    {"a":"ENG","b":"TUR","tier":"XL — long campaign","note":"England (British Isles + Atlantic/colonial empire) vs Ottomans (Balkans/Anatolia/Levant). Δ10, no core conflict. Two huge reworked trees pointing in opposite directions."},
+    {"a":"MUG","b":"VEN","tier":"L — medium","note":"Mughals (India) vs Venice (Mediterranean/Italian trade empire). Δ0 missions, zero overlap — India vs the Med. Mughals is a formable; Venice plays tall and naval."},
+    {"a":"JAP","b":"SON","tier":"L — medium","note":"Japan (unify the daimyo) vs Songhai (West African Sahel). Literally zero shared regions — two self-contained worlds."},
     {"a":"POL","b":"MAL","tier":"M — moderate","note":"Poland (Central-Eastern Europe) vs Mali (West Africa). Δ0 missions, zero overlap. Clean and balanced."},
-    {"a":"KOR","b":"HUN","tier":"S — shorter","note":"Korea (vs Ming/Manchu/Japan) vs Hungary (Carpathia/Balkans). Δ1 mission, zero overlap. Quick-ish race."},
-    {"a":"SPA","b":"JAP","tier":"Cross-world wildcard","note":"Opposite ends of the map, zero shared regions. Δ17 but within the size band — Spain a touch longer."},
+    {"a":"KOR","b":"HUN","tier":"S — shorter","note":"Korea (vs Ming/Manchu/Japan) vs Hungary (Carpathia/Balkans). Δ1 mission, zero overlap. The quickest of the recommended races."},
 ]
 pick_out = []
 for p in picks:

@@ -10,14 +10,37 @@ MAP = os.path.join(EU4, "map")
 
 # ---------- tokenizer / parser for Paradox script ----------
 def tokenize(s):
-    lines = []
-    for line in s.split('\n'):
-        h = line.find('#')
-        if h != -1:
-            line = line[:h]
-        lines.append(line)
-    s = '\n'.join(lines)
-    return re.findall(r'"[^"]*"|[{}=]|[^\s{}=]+', s)
+    # Character-level scanner. Correctly handles: multi-line quoted strings
+    # (newer DLC scripted-effect blocks like first_effect = "...{...}..."),
+    # backslash-escaped quotes (\") inside them, and '#' comments. Braces and '#'
+    # INSIDE a string are literal, so structural brace matching stays correct.
+    toks = []
+    i, n = 0, len(s)
+    while i < n:
+        ch = s[i]
+        if ch == '"':
+            j = i + 1
+            while j < n:
+                if s[j] == '\\' and j + 1 < n:
+                    j += 2; continue
+                if s[j] == '"':
+                    break
+                j += 1
+            toks.append(s[i:j + 1])  # whole string as one token
+            i = j + 1
+        elif ch == '#':
+            while i < n and s[i] != '\n':
+                i += 1
+        elif ch in '{}=':
+            toks.append(ch); i += 1
+        elif ch.isspace():
+            i += 1
+        else:
+            j = i
+            while j < n and (not s[j].isspace()) and s[j] not in '{}="#':
+                j += 1
+            toks.append(s[i:j]); i = j
+    return toks
 
 def parse_block(tokens, i):
     items = []

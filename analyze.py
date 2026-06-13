@@ -12,12 +12,12 @@ FORMABLE = {
 }
 MIN_MISSIONS = 30
 
-def core_regions(d, min_w=3, frac=0.12):
+def core_regions(d, min_w=4):
+    # A region is a real objective if >= min_w of the nation's missions target it.
+    # Flat threshold (not a % of tree size) so broad empires aren't under-characterised;
+    # >=4 (not 3) drops marginal/incidental regions a nation only brushes a few times.
     rw = d["rweight"]
-    if not rw:
-        return set()
-    thr = max(min_w, frac * d["missions"])
-    return {r for r, w in rw.items() if w >= thr}
+    return {r for r, w in rw.items() if w >= min_w}
 
 def top_super(d):
     sw = d.get("sweight", {})
@@ -100,7 +100,7 @@ L.append("**Definitions**")
 L.append("- **Missions** = total missions across every *active, tag-locked* mission series that tag can see. Legacy pre-DLC trees (hidden because you own the newer DLC) are excluded.")
 L.append("- **F** = formable nation (you must form it in-game before its mission tree unlocks — a time/difficulty cost, not a 1444 start).")
 L.append("- **Theater** = dominant superregion by mission focus.")
-L.append("- **Core regions** = regions targeted by enough missions to be a real objective (weight ≥ max(3, 12% of the nation's missions)).")
+L.append("- **Core regions** = regions targeted by ≥ 4 of the nation's missions (a real objective; drops regions a tree only brushes incidentally).")
 L.append("- A **clean matchup** requires: (1) zero shared *core* regions, (2) no shared mission series (not the same lineage/formable chain), (3) similar size (smaller/larger ≥ 0.72 **or** within 12 missions).")
 L.append("- **Size is objective (mission count). Difficulty is NOT encoded in the files** — treat the count as the race-length proxy and judge difficulty separately.\n")
 L.append("> Parser caveats: a few nations whose trees use unusual `potential` patterns (e.g. Mughals, Ming) are under-counted here; numbers reflect tag-locked series only, not generic/shared trees a nation can also pursue.\n")

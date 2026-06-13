@@ -42,7 +42,7 @@ python3 export.py     # -> docs/data.js (powers the page)
 
 ## Method (short)
 - **Missions** = total across all active, tag-locked series a tag can see (legacy pre-DLC trees excluded).
-- **Core regions** = regions targeted by ≥ max(3, 12% of missions) — the nation's real objectives.
+- **Core regions** = regions targeted by ≥ 4 of the nation's missions — the nation's real objectives.
 - **Clean matchup** = zero shared *core* regions **and** no shared mission series (not the same
   lineage/formable chain) **and** similar size (ratio ≥ 0.72 or within 12 missions).
 - **Size ≠ difficulty.** The files encode mission *count*, not how hard a tree is — judge that yourselves.
