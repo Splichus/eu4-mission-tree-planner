@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EU4 Mission-Tree Race Planner</title>
+<style>
+  :root{
+    --bg:#0f1216; --panel:#171c23; --panel2:#1d242d; --line:#2a323d;
+    --ink:#e7ecf2; --dim:#9aa7b5; --gold:#d8b25e; --good:#5fbf8f; --warn:#e0a64b; --accent:#6ea8fe;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  a{color:var(--accent)}
+  header{padding:28px 22px 18px;border-bottom:1px solid var(--line);
+    background:linear-gradient(180deg,#13181f,#0f1216)}
+  h1{margin:0 0 4px;font-size:25px;letter-spacing:.2px}
+  h1 .g{color:var(--gold)}
+  .sub{color:var(--dim);max-width:900px}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+  .stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+  .chip{background:var(--panel);border:1px solid var(--line);border-radius:999px;
+    padding:4px 12px;font-size:13px;color:var(--dim)}
+  .chip b{color:var(--ink)}
+  section{margin:26px 0}
+  h2{font-size:18px;margin:0 0 12px;display:flex;align-items:center;gap:10px}
+  h2 .bar{width:4px;height:18px;background:var(--gold);border-radius:2px}
+  .picks{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:12px}
+  .pick{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 15px;
+    border-left:4px solid var(--gold)}
+  .pick .t{font-size:12px;text-transform:uppercase;letter-spacing:.6px;color:var(--gold);margin-bottom:6px}
+  .pick .vs{font-size:17px;font-weight:600;margin-bottom:2px}
+  .pick .meta{color:var(--dim);font-size:13px;margin-bottom:8px}
+  .pick .note{font-size:13.5px;color:#cdd6e0}
+  .tag{display:inline-block;font-size:11px;padding:1px 6px;border-radius:5px;background:var(--panel2);
+    border:1px solid var(--line);color:var(--dim);vertical-align:middle}
+  .F{color:var(--warn);border-color:#4a3a1e;background:#241c10}
+  .controls{display:flex;gap:14px;flex-wrap:wrap;align-items:flex-end;
+    background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:14px}
+  .ctl label{display:block;font-size:12px;color:var(--dim);margin-bottom:4px}
+  select,input[type=text]{background:var(--panel2);color:var(--ink);border:1px solid var(--line);
+    border-radius:8px;padding:7px 9px;font-size:14px;min-width:120px}
+  input[type=range]{vertical-align:middle}
+  .toggle{display:flex;align-items:center;gap:7px;font-size:13px;color:var(--dim);cursor:pointer;user-select:none}
+  table{width:100%;border-collapse:collapse;background:var(--panel);border:1px solid var(--line);
+    border-radius:12px;overflow:hidden;font-size:14px}
+  th,td{padding:9px 11px;text-align:left;border-bottom:1px solid var(--line)}
+  th{background:var(--panel2);color:var(--dim);font-weight:600;font-size:12.5px;cursor:pointer;
+    position:sticky;top:0;white-space:nowrap}
+  th:hover{color:var(--ink)}
+  tbody tr:hover{background:#1b222b}
+  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+  .ov0{color:var(--good);font-weight:600}
+  .ovx{color:var(--warn)}
+  .theater{color:var(--dim);font-size:13px}
+  .count{color:var(--dim);font-size:13px;margin:8px 2px}
+  .pill{font-size:11px;padding:1px 7px;border-radius:999px;border:1px solid var(--line)}
+  .pXXL{color:#ff9d8a;border-color:#5a2e26}.pXL{color:#ffc27a;border-color:#5a4326}
+  .pL{color:#e8d98a;border-color:#534d22}.pM{color:#a7e08a;border-color:#33521f}
+  .pS{color:#8ad6e0;border-color:#1f4a52}.pXS{color:#9aa7b5}
+  details{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:6px 14px;margin-top:16px}
+  summary{cursor:pointer;color:var(--dim);font-size:14px;padding:6px 0}
+  details p,details li{color:#c4cdd7;font-size:13.5px}
+  code{background:var(--panel2);padding:1px 6px;border-radius:5px;border:1px solid var(--line);font-size:12.5px}
+  footer{color:var(--dim);font-size:12.5px;text-align:center;padding:30px 0}
+  .tabs{display:flex;gap:6px;margin-bottom:12px}
+  .tabs button{background:var(--panel);border:1px solid var(--line);color:var(--dim);
+    padding:7px 14px;border-radius:9px;cursor:pointer;font-size:14px}
+  .tabs button.on{background:var(--gold);color:#1a140a;border-color:var(--gold);font-weight:600}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <h1>⚔️ EU4 <span class="g">Mission-Tree Race</span> Planner</h1>
+  <div class="sub">Pick two nations whose mission trees <b>don't fight over the same land</b> and are
+  <b>similar in size</b>, then race to finish them. Built by parsing your installed game files with
+  all DLC enabled — only <b>active, tag-locked</b> mission trees are counted.</div>
+  <div class="stats" id="stats"></div>
+</div></header>
+
+<div class="wrap">
+
+  <section>
+    <h2><span class="bar"></span>Recommended matchups</h2>
+    <div class="picks" id="picks"></div>
+  </section>
+
+  <section>
+    <h2><span class="bar"></span>Explore all clean matchups</h2>
+    <div class="tabs">
+      <button class="on" data-view="pairs">Matchups</button>
+      <button data-view="nations">Nations</button>
+    </div>
+
+    <div id="pairsView">
+      <div class="controls">
+        <div class="ctl"><label>Tier (race length)</label>
+          <select id="fTier"><option value="">Any</option>
+            <option>XXL</option><option>XL</option><option>L</option><option>M</option><option>S</option><option>XS</option>
+          </select></div>
+        <div class="ctl"><label>Theater of A</label><select id="fThA"><option value="">Any</option></select></div>
+        <div class="ctl"><label>Theater of B</label><select id="fThB"><option value="">Any</option></select></div>
+        <div class="ctl"><label>Max size gap (Δ): <b id="dVal">99</b></label>
+          <input type="range" id="fDelta" min="0" max="40" value="40"></div>
+        <div class="ctl"><label>Search nation</label><input type="text" id="fSearch" placeholder="e.g. Japan"></div>
+        <div class="ctl"><label class="toggle"><input type="checkbox" id="fZero"> Zero overlap only</label>
+          <label class="toggle"><input type="checkbox" id="fWell" checked> Well-characterised only</label>
+          <label class="toggle"><input type="checkbox" id="fNoF"> Hide formables</label></div>
+      </div>
+      <div class="count" id="pairCount"></div>
+      <table id="pairsTable"><thead><tr>
+        <th data-k="an">Nation A</th><th class="num" data-k="am">Miss</th>
+        <th data-k="bn">Nation B</th><th class="num" data-k="bm">Miss</th>
+        <th class="num" data-k="delta">Δ</th><th class="num" data-k="ov">Overlap</th>
+        <th data-k="ta">Theaters</th>
+      </tr></thead><tbody></tbody></table>
+    </div>
+
+    <div id="nationsView" style="display:none">
+      <div class="controls">
+        <div class="ctl"><label>Search</label><input type="text" id="nSearch" placeholder="name or tag"></div>
+        <div class="ctl"><label class="toggle"><input type="checkbox" id="nNoF"> Hide formables</label></div>
+      </div>
+      <div class="count" id="natCount"></div>
+      <table id="natTable"><thead><tr>
+        <th data-k="name">Nation</th><th data-k="tag">Tag</th><th class="num" data-k="missions">Missions</th>
+        <th data-k="tier">Tier</th><th data-k="theater">Theater</th>
+        <th class="num" data-k="ncore">Core regions</th><th data-k="core">Focus</th>
+      </tr></thead><tbody></tbody></table>
+    </div>
+  </section>
+
+  <details>
+    <summary>How this was computed &amp; caveats (read me)</summary>
+    <p><b>Source.</b> Parsed directly from <code>missions/*.txt</code> and <code>map/{area,region,superregion}.txt</code>
+       in your EU4 install, with all DLC enabled. Legacy pre-DLC mission trees (hidden because you own the newer DLC) are excluded.</p>
+    <ul>
+      <li><b>Missions</b> = total missions across every active, tag-locked mission series that nation's tag can see.</li>
+      <li><b>Core regions</b> = regions targeted by enough missions to be a real objective (weight ≥ max(3, 12% of the nation's missions)). Used for conflict detection.</li>
+      <li><b>A "clean" matchup</b> = (1) zero shared <i>core</i> regions, (2) no shared mission series (not the same lineage/formable chain — so you'll never see e.g. Castile vs Spain), and (3) similar size (smaller/larger ≥ 0.72, or within 12 missions).</li>
+      <li><b>Overlap</b> = number of regions both footprints touch <i>at all</i> (incl. peripheral/sea zones). 0 = fully disjoint.</li>
+      <li><b><span class="tag F">F</span> = formable</b>: you must form the nation in-game before its tree unlocks — a time cost, not a 1444 start.</li>
+      <li><b>Well-characterised</b> = both sides have ≥2 detected core regions (a confidence filter; nomadic/colonial trees like the Hordes or Portugal spread too thin to pin down and may give looser "non-conflicting" claims).</li>
+    </ul>
+    <p><b>Size ≠ difficulty.</b> The files encode mission <i>count</i> (a good race-length proxy) but not how <i>hard</i> a tree is. Judge difficulty yourselves. A few nations (e.g. Mughals, Ming) use unusual <code>potential</code> patterns and are under-counted here.</p>
+  </details>
+
+  <footer>Generated from your local EU4 files · <span id="genstats"></span></footer>
+</div>
+
+<script src="data.js"></script>
+<script>
+const D = window.EU4_DATA;
+const $ = s => document.querySelector(s);
+const pillCls = t => "pill p"+t;
+const tagF = f => f ? '<span class="tag F" title="Formable — must be formed in-game first">F</span>' : '';
+const cap = s => s.replace(/_/g,' ').replace(/\b\w/g,c=>c.toUpperCase());
+
+// stats
+$('#stats').innerHTML = [
+  `<span class="chip"><b>${D.stats.nCandidates}</b> nations (≥30 missions)</span>`,
+  `<span class="chip"><b>${D.stats.nPairs}</b> clean matchups</span>`,
+  `<span class="chip"><b>${D.stats.nMissionFiles}</b> mission files parsed</span>`,
+  `<span class="chip">all DLC enabled</span>`
+].join('');
+$('#genstats').textContent = `${D.stats.nCandidates} nations · ${D.stats.nPairs} matchups`;
+
+// picks
+$('#picks').innerHTML = D.picks.map(p=>`
+  <div class="pick">
+    <div class="t">${p.tier}</div>
+    <div class="vs">${p.an} ${tagF(p.fa)} <span style="color:var(--dim)">vs</span> ${p.bn} ${tagF(p.fb)}</div>
+    <div class="meta">${p.am} vs ${p.bm} missions · ${cap(p.ta)} / ${cap(p.tb)}</div>
+    <div class="note">${p.note}</div>
+  </div>`).join('');
+
+// theater options
+const theaters = [...new Set(D.candidates.map(c=>c.theater))].sort();
+for(const t of theaters){
+  $('#fThA').insertAdjacentHTML('beforeend',`<option value="${t}">${cap(t)}</option>`);
+  $('#fThB').insertAdjacentHTML('beforeend',`<option value="${t}">${cap(t)}</option>`);
+}
+
+// ---- pairs table ----
+let pSort = {k:'ov', dir:1};
+function renderPairs(){
+  const tier=$('#fTier').value, thA=$('#fThA').value, thB=$('#fThB').value,
+        dmax=+$('#fDelta').value, q=$('#fSearch').value.trim().toLowerCase(),
+        zero=$('#fZero').checked, well=$('#fWell').checked, noF=$('#fNoF').checked;
+  $('#dVal').textContent = dmax;
+  let rows = D.pairs.filter(p=>{
+    if(tier && p.tierA!==tier && p.tierB!==tier) return false;
+    if(thA && p.ta!==thA && p.tb!==thA) return false;
+    if(thB && p.ta!==thB && p.tb!==thB) return false;
+    if(p.delta>dmax) return false;
+    if(zero && p.ov!==0) return false;
+    if(well && !p.well) return false;
+    if(noF && (p.fa||p.fb)) return false;
+    if(q && !(p.an.toLowerCase().includes(q)||p.bn.toLowerCase().includes(q)
+            ||p.a.toLowerCase()===q||p.b.toLowerCase()===q)) return false;
+    return true;
+  });
+  rows.sort((x,y)=>{
+    let v = (x[pSort.k]>y[pSort.k]?1:x[pSort.k]<y[pSort.k]?-1:0)*pSort.dir;
+    if(v===0) v = x.ov-y.ov || x.delta-y.delta;
+    return v;
+  });
+  $('#pairCount').textContent = `${rows.length} matchups`;
+  $('#pairsTable tbody').innerHTML = rows.map(p=>`
+    <tr>
+      <td>${p.an} ${tagF(p.fa)} <span class="${pillCls(p.tierA)}">${p.tierA}</span></td>
+      <td class="num">${p.am}</td>
+      <td>${p.bn} ${tagF(p.fb)} <span class="${pillCls(p.tierB)}">${p.tierB}</span></td>
+      <td class="num">${p.bm}</td>
+      <td class="num">${p.delta}</td>
+      <td class="num ${p.ov===0?'ov0':'ovx'}" title="${p.overlap.map(cap).join(', ')||'no shared regions'}">${p.ov}</td>
+      <td class="theater">${cap(p.ta)} / ${cap(p.tb)}</td>
+    </tr>`).join('') || `<tr><td colspan="7" style="color:var(--dim)">No matchups match these filters.</td></tr>`;
+}
+// ---- nations table ----
+let nSort={k:'missions',dir:-1};
+function renderNations(){
+  const q=$('#nSearch').value.trim().toLowerCase(), noF=$('#nNoF').checked;
+  let rows=D.candidates.filter(c=>{
+    if(noF && c.formable) return false;
+    if(q && !(c.name.toLowerCase().includes(q)||c.tag.toLowerCase()===q)) return false;
+    return true;
+  });
+  rows.sort((x,y)=>(x[nSort.k]>y[nSort.k]?1:x[nSort.k]<y[nSort.k]?-1:0)*nSort.dir);
+  $('#natCount').textContent=`${rows.length} nations`;
+  $('#natTable tbody').innerHTML=rows.map(c=>`
+    <tr>
+      <td>${c.name} ${tagF(c.formable)}${c.aliases.length?` <span class="tag" title="Identical tree">+${c.aliases.length}</span>`:''}</td>
+      <td><span class="tag">${c.tag}</span></td>
+      <td class="num">${c.missions}</td>
+      <td><span class="${pillCls(c.tier)}">${c.tier}</span></td>
+      <td class="theater">${cap(c.theater)}</td>
+      <td class="num">${c.ncore}</td>
+      <td class="theater">${c.core.map(cap).join(', ')||'—'}</td>
+    </tr>`).join('');
+}
+// events
+['#fTier','#fThA','#fThB','#fDelta','#fSearch','#fZero','#fWell','#fNoF']
+  .forEach(s=>$(s).addEventListener('input',renderPairs));
+['#nSearch','#nNoF'].forEach(s=>$(s).addEventListener('input',renderNations));
+document.querySelectorAll('#pairsTable th').forEach(th=>th.addEventListener('click',()=>{
+  const k=th.dataset.k; pSort.dir = (pSort.k===k? -pSort.dir : 1); pSort.k=k; renderPairs();}));
+document.querySelectorAll('#natTable th').forEach(th=>th.addEventListener('click',()=>{
+  const k=th.dataset.k; nSort.dir = (nSort.k===k? -nSort.dir : 1); nSort.k=k; renderNations();}));
+document.querySelectorAll('.tabs button').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('.tabs button').forEach(x=>x.classList.remove('on'));
+  b.classList.add('on');
+  const v=b.dataset.view;
+  $('#pairsView').style.display = v==='pairs'?'':'none';
+  $('#nationsView').style.display = v==='nations'?'':'none';
+}));
+renderPairs(); renderNations();
+</script>
+</body>
+</html>

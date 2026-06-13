@@ -1,0 +1,10 @@
+# dev-only scratch helpers (not part of the published pipeline)
+check.py
+curate.py
+verify.py
+
+# OS / tooling cruft
+.DS_Store
+__pycache__/
+*.pyc
+.playwright-mcp/
