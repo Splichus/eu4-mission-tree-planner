@@ -382,11 +382,11 @@ def _flag_total(items, base, fam_map):
     tag/origin atoms. Series sharing a cf: flag -- or a flag in the same choice family --
     form one exclusion group; within a family at most one flag may be set."""
     n = len(items)
-    # free atoms: country flags, was_tag origins, and any tag: NOT pinned in base
-    # (pinned = self -> true, predecessors -> false). Unpinned tags are forward/achievable.
-    free = [sorted(a for a in flags_in(e)
-                   if a.startswith('cf:') or a.startswith('wastag:')
-                   or (a.startswith('tag:') and a not in base)) for (_, e) in items]
+    # free atoms = country flags + was_tag origins. tag: atoms are NOT free: only the
+    # analysed nation's own tag is true (set in base); every other tag (predecessor OR
+    # sibling like Latin Empire/Morea for Rome) is false -- you are exactly your own tag.
+    free = [sorted(a for a in flags_in(e) if a.startswith('cf:') or a.startswith('wastag:'))
+            for (_, e) in items]
     parent = list(range(n))
     def find(x):
         while parent[x] != x:
@@ -440,7 +440,6 @@ def completable_missions(items, tag):
     for a in atoms:                       # all was_tag predecessors = one mutually-exclusive origin
         if a.startswith('wastag:'):
             fam_map[a] = 'WASTAG_ORIGIN'
-    preds = {a.split(':', 1)[1] for a in atoms if a.startswith('wastag:')}  # tags T formed FROM
     use_origin = any(a in ORIGIN_ATOMS for a in atoms)
     if not use_origin:
         origins = [{}]
@@ -458,9 +457,7 @@ def completable_missions(items, tag):
         base = dict(consts)
         for w in WAS_ATOMS:
             base[w] = orig.get(w, False)
-        base['tag:' + tag] = True          # self = you
-        for x in preds:                    # predecessors: you WERE them, won't revert
-            base['tag:' + x] = False
+        base['tag:' + tag] = True          # only your own tag is true; all others false
         best = max(best, _flag_total(items, base, fam_map))
     return best
 

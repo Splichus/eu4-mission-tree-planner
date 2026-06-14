@@ -67,7 +67,7 @@ pairs.sort(key=lambda p: (p["ov"], p["delta"]))
 # curated editor picks (verified clean), tiered by race length
 picks = [
     {"a":"SPA","b":"RUS","tier":"XL — long campaign","note":"Iberia+colonies vs Eastern Europe+Siberia. Δ1 mission, no core conflict. Both start as the great power — the fairest titan race."},
-    {"a":"ENG","b":"TUR","tier":"XL — long campaign","note":"England (British Isles + Atlantic/colonial empire) vs Ottomans (Balkans/Anatolia/Levant). Δ10, no core conflict. Two huge reworked trees pointing in opposite directions."},
+    {"a":"TUR","b":"FRA","tier":"XL — long campaign","note":"Ottomans (Balkans/Anatolia/Levant) vs France (Western Europe + Italy). Δ13, no core conflict. The two largest non-formable trees, at opposite ends of the Mediterranean."},
     {"a":"MUG","b":"PRU","tier":"XL — long campaign","note":"Mughals (India) vs Prussia (Baltic & Germany militarist). Δ0 missions (88 each), zero overlap — the subcontinent vs Central Europe. Both are formables with two of the game's biggest trees."},
     {"a":"JAP","b":"NED","tier":"L — medium","note":"Japan (unify the daimyo) vs the Netherlands (Atlantic trade & colonial empire). Δ7, no core overlap — Far East vs the Low Countries. Netherlands is a formable."},
     {"a":"POL","b":"POR","tier":"M — moderate","note":"Poland (Central-Eastern Europe) vs Portugal (Iberia + Atlantic/colonial empire). Δ0 missions (41 each), zero overlap — distinct theaters."},
