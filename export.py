@@ -29,6 +29,8 @@ groups, order = {}, []
 for t, d in sorted(nat.items(), key=lambda kv: -kv[1]["missions"]):
     if d["missions"] < MIN_MISSIONS:
         continue
+    if d.get("inherits"):        # "recolour" tags with no tree of their own (Roman Empire,
+        continue                 # Austria-Hungary) -- drop entirely; the real predecessors show instead
     fp = (d["missions"], tuple(sorted(d["regions"])), tuple(sorted(d["series"])))
     if fp in groups:
         groups[fp].append(t)
