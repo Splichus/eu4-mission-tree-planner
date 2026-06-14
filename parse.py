@@ -264,11 +264,14 @@ def build_item(k, v):
     if kl == 'has_country_flag' and isinstance(v, str):
         return ['flag', 'cf:' + v.strip('"')]
     if kl == 'tag' and isinstance(v, str):
-        x = v.strip('"')
-        # Only the 4 steppe formables need `tag` as a hard exclusive atom (their origin
-        # else-defaults: GLH->Tatar, YUA->Mongol). Every other tag is freely satisfiable
-        # (you can FORM tags) so flavor pairs like tag=POL/NOT tag=PLC aren't broken.
-        return ['flag', 'tag:' + x] if x in STEPPE_FORMABLES else None
+        # `tag = X` is true only for the exact nation being analysed (pinned in base);
+        # any other tag is false (you are one nation). This correctly gates origin
+        # idioms like OR(tag=DAN, AND(was_tag=DAN, tag=SCA)) -> was_tag=DAN for SCA.
+        return ['flag', 'tag:' + v.strip('"')]
+    if kl == 'was_tag' and isinstance(v, str):
+        # formation origin: "formed from <tag>" -- a nation formed from ONE predecessor,
+        # so was_tag values are mutually exclusive (handled as one choice family).
+        return ['flag', 'wastag:' + v.strip('"')]
     if kl in ORIGIN_ATOMS:
         atom = ['flag', kl]
         return ['not', atom] if (isinstance(v, str) and v.strip('"').lower() == 'no') else atom
@@ -345,14 +348,7 @@ def eval_expr(e, assign):
         return True
     t = e[0]
     if t == 'flag':
-        name = e[1]
-        if name in assign:
-            return assign[name]
-        # tag:<X> not pinned -> treat as achievable (you can FORM other tags). Only the
-        # steppe formables are pinned in `base` (mutually-exclusive origin defaults).
-        if name.startswith('tag:'):
-            return True
-        return False
+        return assign.get(e[1], False)   # unpinned atoms (incl. other tags) are false
     if t == 'not':
         return not eval_expr(e[1], assign)
     if t == 'and':
@@ -386,7 +382,11 @@ def _flag_total(items, base, fam_map):
     tag/origin atoms. Series sharing a cf: flag -- or a flag in the same choice family --
     form one exclusion group; within a family at most one flag may be set."""
     n = len(items)
-    free = [sorted(a for a in flags_in(e) if a.startswith('cf:')) for (_, e) in items]
+    # free atoms: country flags, was_tag origins, and any tag: NOT pinned in base
+    # (pinned = self -> true, predecessors -> false). Unpinned tags are forward/achievable.
+    free = [sorted(a for a in flags_in(e)
+                   if a.startswith('cf:') or a.startswith('wastag:')
+                   or (a.startswith('tag:') and a not in base)) for (_, e) in items]
     parent = list(range(n))
     def find(x):
         while parent[x] != x:
@@ -437,6 +437,10 @@ def completable_missions(items, tag):
     for _, e in items:
         atoms |= flags_in(e)
     fam_map = detect_flag_families({a for a in atoms if a.startswith('cf:')})
+    for a in atoms:                       # all was_tag predecessors = one mutually-exclusive origin
+        if a.startswith('wastag:'):
+            fam_map[a] = 'WASTAG_ORIGIN'
+    preds = {a.split(':', 1)[1] for a in atoms if a.startswith('wastag:')}  # tags T formed FROM
     use_origin = any(a in ORIGIN_ATOMS for a in atoms)
     if not use_origin:
         origins = [{}]
@@ -454,9 +458,9 @@ def completable_missions(items, tag):
         base = dict(consts)
         for w in WAS_ATOMS:
             base[w] = orig.get(w, False)
-        base['tag:' + tag] = True
-        for f in STEPPE_FORMABLES:        # pin the 4 steppe formables (exclusive origin defaults)
-            base['tag:' + f] = (f == tag)
+        base['tag:' + tag] = True          # self = you
+        for x in preds:                    # predecessors: you WERE them, won't revert
+            base['tag:' + x] = False
         best = max(best, _flag_total(items, base, fam_map))
     return best
 

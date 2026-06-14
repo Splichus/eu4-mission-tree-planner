@@ -70,7 +70,7 @@ picks = [
     {"a":"ENG","b":"TUR","tier":"XL — long campaign","note":"England (British Isles + Atlantic/colonial empire) vs Ottomans (Balkans/Anatolia/Levant). Δ10, no core conflict. Two huge reworked trees pointing in opposite directions."},
     {"a":"MUG","b":"PRU","tier":"XL — long campaign","note":"Mughals (India) vs Prussia (Baltic & Germany militarist). Δ0 missions (88 each), zero overlap — the subcontinent vs Central Europe. Both are formables with two of the game's biggest trees."},
     {"a":"JAP","b":"NED","tier":"L — medium","note":"Japan (unify the daimyo) vs the Netherlands (Atlantic trade & colonial empire). Δ7, no core overlap — Far East vs the Low Countries. Netherlands is a formable."},
-    {"a":"POL","b":"MAL","tier":"M — moderate","note":"Poland (Central-Eastern Europe) vs Mali (West Africa). Δ0 missions, zero overlap. Clean and balanced."},
+    {"a":"POL","b":"POR","tier":"M — moderate","note":"Poland (Central-Eastern Europe) vs Portugal (Iberia + Atlantic/colonial empire). Δ0 missions (41 each), zero overlap — distinct theaters."},
     {"a":"KOR","b":"HUN","tier":"S — shorter","note":"Korea (vs Ming/Manchu/Japan) vs Hungary (Carpathia/Balkans). Δ1 mission, zero overlap. The quickest of the recommended races."},
 ]
 pick_out = []

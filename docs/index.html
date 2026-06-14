@@ -109,6 +109,7 @@
           <label class="toggle"><input type="checkbox" id="fNoF"> Hide formables</label></div>
       </div>
       <div class="count" id="pairCount"></div>
+      <div class="count" id="pairNote" style="color:var(--warn)"></div>
       <table id="pairsTable"><thead><tr>
         <th data-k="an">Nation A</th><th class="num" data-k="am">Miss</th>
         <th data-k="bn">Nation B</th><th class="num" data-k="bm">Miss</th>
@@ -207,6 +208,19 @@ function renderPairs(){
     return v;
   });
   $('#pairCount').textContent = `${rows.length} matchups`;
+  // helpful empty-state: if you searched a nation with no matchup, say WHY + nearest by size
+  let empty = `<tr><td colspan="7" style="color:var(--dim)">No matchups match these filters.</td></tr>`;
+  if(q){
+    const c = D.candidates.find(c=>c.name.toLowerCase().includes(q)||c.tag.toLowerCase()===q);
+    if(c){
+      const near = D.candidates.filter(o=>o.tag!==c.tag)
+        .sort((a,b)=>Math.abs(a.missions-c.missions)-Math.abs(b.missions-c.missions))[0];
+      empty = `<tr><td colspan="7" style="color:var(--dim);padding:14px;line-height:1.6">
+        <b style="color:var(--ink)">${c.name}</b> (${c.missions} missions) has no clean similar-size matchup —
+        nearest in size is <b style="color:var(--ink)">${near.name}</b> (${near.missions}, a ${Math.abs(c.missions-near.missions)}-mission gap, too far for a fair race).
+        It's still listed in the <b>Nations</b> tab.</td></tr>`;
+    }
+  }
   $('#pairsTable tbody').innerHTML = rows.map(p=>`
     <tr>
       <td>${p.an} ${tagF(p.fa)} <span class="${pillCls(p.tierA)}">${p.tierA}</span></td>
@@ -216,7 +230,7 @@ function renderPairs(){
       <td class="num">${p.delta}</td>
       <td class="num ${p.ov===0?'ov0':'ovx'}" title="${p.overlap.map(cap).join(', ')||'no shared regions'}">${p.ov}</td>
       <td class="theater">${cap(p.ta)} / ${cap(p.tb)}</td>
-    </tr>`).join('') || `<tr><td colspan="7" style="color:var(--dim)">No matchups match these filters.</td></tr>`;
+    </tr>`).join('') || empty;
 }
 // ---- nations table ----
 let nSort={k:'missions',dir:-1};
