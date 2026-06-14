@@ -461,6 +461,21 @@ def completable_missions(items, tag):
         best = max(best, _flag_total(items, base, fam_map))
     return best
 
+def own_missions(items, tag):
+    """Missions completable with NO formation origin (tag=self true, all was_tag false).
+    0 => the nation has no tree of its own; it only continues a predecessor's."""
+    base = {a: False for a in ORIGIN_ATOMS}
+    base['tag:' + tag] = True
+    tot = 0
+    for m, e in items:
+        a = dict(base)
+        for f in flags_in(e):
+            if f.startswith('cf:'):
+                a[f] = True   # give it any country flags it might need
+        if eval_expr(e, a):
+            tot += m
+    return tot
+
 SERIES_KEYWORDS = {'slot','generic','ai','potential','has_country_shield','has_country_flag','potential_on_load'}
 
 # ---------- main parse ----------
@@ -525,9 +540,13 @@ for s in series_list:
 
 out = {}
 for tag, d in nation.items():
+    own = own_missions(d['items'], tag)
+    inherits = sorted({a.split(':', 1)[1] for (_, e) in d['items']
+                       for a in flags_in(e) if a.startswith('wastag:')}) if own == 0 else []
     out[tag] = {
         'name': cname(tag), 'missions': completable_missions(d['items'], tag),
-        'blueprint': d['missions'],
+        'blueprint': d['missions'], 'own': own,
+        'inherits': [cname(x) for x in inherits],   # set only when own==0 (no tree of its own)
         'regions': sorted(d['regions']), 'supers': sorted(d['supers']),
         'n_series': len(d['series']), 'dlc': sorted(d['dlc']),
         'rweight': dict(d['rweight']), 'sweight': dict(d['sweight']),

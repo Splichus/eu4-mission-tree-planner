@@ -42,6 +42,7 @@ for fp, t, d in order:
                "m": d["missions"], "name": d["name"], "sup": top_super(d), "f": t in FORMABLE}
     cands.append({"tag": t, "name": d["name"], "missions": d["missions"], "tier": tier(d["missions"]),
                   "blueprint": d.get("blueprint", d["missions"]),
+                  "inherits": d.get("inherits", []),   # non-empty => no own tree (continuation of these)
                   "theater": top_super(d), "core": cs, "ncore": len(cs),
                   "formable": t in FORMABLE, "aliases": [x for x in groups[fp] if x != t],
                   "nseries": len(d["series"])})

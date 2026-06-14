@@ -245,7 +245,7 @@ function renderNations(){
   $('#natCount').textContent=`${rows.length} nations`;
   $('#natTable tbody').innerHTML=rows.map(c=>`
     <tr>
-      <td>${c.name} ${tagF(c.formable)}${c.aliases.length?` <span class="tag" title="Identical tree">+${c.aliases.length}</span>`:''}</td>
+      <td>${c.name} ${tagF(c.formable)}${c.aliases.length?` <span class="tag" title="Identical tree">+${c.aliases.length}</span>`:''}${c.inherits&&c.inherits.length?` <span class="tag F" title="No mission tree of its own — continues ${c.inherits.join(' / ')}">↳ ${c.inherits.join('/')}</span>`:''}</td>
       <td><span class="tag">${c.tag}</span></td>
       <td class="num">${c.missions}${c.blueprint>c.missions?` <span class="tag" title="${c.blueprint} defined incl. mutually-exclusive branches you can't all complete in one game">of ${c.blueprint}</span>`:''}</td>
       <td><span class="${pillCls(c.tier)}">${c.tier}</span></td>
