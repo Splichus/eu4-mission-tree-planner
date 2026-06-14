@@ -361,16 +361,29 @@ def eval_expr(e, assign):
         return any(eval_expr(s, assign) for s in e[1])
     return True
 
-def _branch_family(flag):
-    # cf:<stem>_<category>_branch_flag -> "<stem>". Such flags are alternatives
-    # ("pick one branch", e.g. hordes confucian/devout/tolerance) so at most one
-    # can be set in a single playthrough.
-    m = re.match(r'cf:(.+?)_[a-z0-9]+_branch_flag$', flag)
-    return m.group(1) if m else None
+def detect_flag_families(flags):
+    """Group country-flags that look like alternatives of one choice: identical
+    except a single WORD token (e.g. sca_unlock_{catholic,humanist,norse,protestant}_missions,
+    hordes_{confucian,devout,tolerance}_branch_flag, pol_{chose,denied}_pu_flag).
+    Numeric-only differences (step_1/step_2) are NOT grouped (those are sequential).
+    Returns {flag: family_id} for flags that belong to a family of >=2."""
+    keymap = defaultdict(set)
+    for f in flags:
+        toks = f[3:].split('_')  # strip 'cf:'
+        for i, t in enumerate(toks):
+            if t.isalpha():      # only a word token may be the varying choice
+                key = (tuple(toks[:i]), '*', tuple(toks[i+1:]))
+                keymap[key].add(f)
+    fam = {}
+    for members in sorted((v for v in keymap.values() if len(v) >= 2), key=lambda s: -len(s)):
+        fid = min(members)
+        for f in members:
+            fam.setdefault(f, fid)  # largest family a flag matches wins
+    return fam
 
-def _flag_total(items, base):
+def _flag_total(items, base, fam_map):
     """Max missions over free country-flag (cf:) assignments, with `base` fixing
-    tag/origin atoms. Series sharing a cf: flag -- or the same *_branch_flag family --
+    tag/origin atoms. Series sharing a cf: flag -- or a flag in the same choice family --
     form one exclusion group; within a family at most one flag may be set."""
     n = len(items)
     free = [sorted(a for a in flags_in(e) if a.startswith('cf:')) for (_, e) in items]
@@ -383,9 +396,8 @@ def _flag_total(items, base):
     for i, fs in enumerate(free):
         for f in fs:
             f2i.setdefault(f, []).append(i)
-            fam = _branch_family(f)
-            if fam:
-                fam2i.setdefault(fam, []).append(i)
+            if f in fam_map:
+                fam2i.setdefault(fam_map[f], []).append(i)
     for idxs in list(f2i.values()) + list(fam2i.values()):  # union by shared flag AND by family
         for j in idxs[1:]:
             parent[find(j)] = find(idxs[0])
@@ -395,15 +407,14 @@ def _flag_total(items, base):
     total = 0
     for idxs in groups.values():
         gf = sorted(set().union(*[set(free[i]) for i in idxs])) if idxs else []
-        if not gf or len(gf) > 16:
+        if not gf or len(gf) > 18:
             a = dict(base)
             total += sum(items[i][0] for i in idxs if eval_expr(items[i][1], a))
             continue
-        excl = defaultdict(list)            # branch-flag families present in this group
+        excl = defaultdict(list)            # choice families present in this group
         for f in gf:
-            fam = _branch_family(f)
-            if fam:
-                excl[fam].append(f)
+            if f in fam_map:
+                excl[fam_map[f]].append(f)
         excl = [fs for fs in excl.values() if len(fs) > 1]
         best = 0
         for mask in range(1 << len(gf)):
@@ -411,7 +422,7 @@ def _flag_total(items, base):
             for b in range(len(gf)):
                 a[gf[b]] = bool((mask >> b) & 1)
             if any(sum(a[f] for f in fam) > 1 for fam in excl):
-                continue                    # can't pick two branches of one family
+                continue                    # can't pick two options of one choice family
             best = max(best, sum(items[i][0] for i in idxs if eval_expr(items[i][1], a)))
         total += best
     return total
@@ -425,6 +436,7 @@ def completable_missions(items, tag):
     atoms = set()
     for _, e in items:
         atoms |= flags_in(e)
+    fam_map = detect_flag_families({a for a in atoms if a.startswith('cf:')})
     use_origin = any(a in ORIGIN_ATOMS for a in atoms)
     if not use_origin:
         origins = [{}]
@@ -445,7 +457,7 @@ def completable_missions(items, tag):
         base['tag:' + tag] = True
         for f in STEPPE_FORMABLES:        # pin the 4 steppe formables (exclusive origin defaults)
             base['tag:' + f] = (f == tag)
-        best = max(best, _flag_total(items, base))
+        best = max(best, _flag_total(items, base, fam_map))
     return best
 
 SERIES_KEYWORDS = {'slot','generic','ai','potential','has_country_shield','has_country_flag','potential_on_load'}
