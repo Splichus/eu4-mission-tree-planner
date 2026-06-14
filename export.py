@@ -37,14 +37,32 @@ for t, d in sorted(nat.items(), key=lambda kv: -kv[1]["missions"]):
     else:
         groups[fp] = [t]; order.append((fp, t, d))
 
-# Drop formable "recolours" whose entire mission set is a subset of a real (non-formable)
-# nation -- they add nothing (e.g. Great Britain subset of England, Angevin subset of England).
-# Spain/Commonwealth/Scandinavia survive: they are SUPERSETS of their start nation, not subsets.
-_nonform_series = [set(d["series"]) for fp, t, d in order if t not in FORMABLE]
+# Handle formable recolours (a formable whose whole mission set is a subset of a real
+# nation -- it adds nothing). Two cases:
+#  - SPLIT parent: a real nation with >=2 distinct formable outcomes (England -> Great
+#    Britain / Angevin, mutually-exclusive branches). Drop the parent, KEEP the outcomes
+#    (they're genuinely different races).
+#  - otherwise: drop the formable subset, keep the real nation.
+# Spain/Commonwealth/Scandinavia survive either way -- they are SUPERSETS of their start
+# nation, not subsets.
+sermap = {t: set(d["series"]) for fp, t, d in order}
+nonform = [t for fp, t, d in order if t not in FORMABLE]
+split_parents = set()
+for u in nonform:
+    subs = [t for fp, t, d in order if t in FORMABLE and sermap[t] and sermap[t] <= sermap[u]]
+    distinct = [t for t in subs if not any(s != t and sermap[t] < sermap[s] for s in subs)]
+    if len(distinct) >= 2:
+        split_parents.add(u)
+def _is_recolour(t, st):
+    if t in split_parents:                       # parent replaced by its outcomes
+        return True
+    if t in FORMABLE and any(st <= sermap[u] for u in nonform if u not in split_parents):
+        return True                              # subset of a single-outcome real nation
+    return False
 _before = len(order)
-order = [(fp, t, d) for fp, t, d in order
-         if not (t in FORMABLE and any(set(d["series"]) <= ns for ns in _nonform_series))]
-print(f"dropped {_before - len(order)} formable recolours (subset of a real nation)")
+order = [(fp, t, d) for fp, t, d in order if not _is_recolour(t, set(d["series"]))]
+print(f"dropped {_before - len(order)} recolours; split-parents replaced by outcomes: "
+      f"{sorted(nat[t]['name'] for t in split_parents)}")
 
 info, cands = {}, []
 for fp, t, d in order:
