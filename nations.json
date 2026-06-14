@@ -152,8 +152,8 @@
    "north_china_region": 7,
    "manchuria_region": 1,
    "tibet_region": 1,
-   "east_indian_ocean_region": 1,
    "south_china_sea_region": 1,
+   "east_indian_ocean_region": 1,
    "south_china_region": 3,
    "korea_region": 1,
    "indo_china_region": 1,
@@ -565,9 +565,9 @@
    "Mandate of Heaven"
   ],
   "rweight": {
-   "xinan_region": 3,
+   "south_china_region": 6,
    "north_china_region": 9,
-   "south_china_region": 6
+   "xinan_region": 3
   },
   "sweight": {
    "china_superregion": 15
@@ -606,9 +606,9 @@
    "Mandate of Heaven"
   ],
   "rweight": {
-   "xinan_region": 3,
+   "south_china_region": 6,
    "north_china_region": 9,
-   "south_china_region": 6
+   "xinan_region": 3
   },
   "sweight": {
    "china_superregion": 15
@@ -647,9 +647,9 @@
    "Mandate of Heaven"
   ],
   "rweight": {
-   "xinan_region": 3,
+   "south_china_region": 6,
    "north_china_region": 9,
-   "south_china_region": 6
+   "xinan_region": 3
   },
   "sweight": {
    "china_superregion": 15
@@ -688,9 +688,9 @@
    "Mandate of Heaven"
   ],
   "rweight": {
-   "xinan_region": 3,
+   "south_china_region": 6,
    "north_china_region": 9,
-   "south_china_region": 6
+   "xinan_region": 3
   },
   "sweight": {
    "china_superregion": 15
@@ -729,9 +729,9 @@
    "Mandate of Heaven"
   ],
   "rweight": {
-   "xinan_region": 3,
+   "south_china_region": 6,
    "north_china_region": 9,
-   "south_china_region": 6
+   "xinan_region": 3
   },
   "sweight": {
    "china_superregion": 15
@@ -770,9 +770,9 @@
    "Mandate of Heaven"
   ],
   "rweight": {
-   "xinan_region": 3,
+   "south_china_region": 6,
    "north_china_region": 9,
-   "south_china_region": 6
+   "xinan_region": 3
   },
   "sweight": {
    "china_superregion": 15
@@ -811,9 +811,9 @@
    "Mandate of Heaven"
   ],
   "rweight": {
-   "xinan_region": 3,
+   "south_china_region": 6,
    "north_china_region": 9,
-   "south_china_region": 6
+   "xinan_region": 3
   },
   "sweight": {
    "china_superregion": 15
@@ -852,9 +852,9 @@
    "Mandate of Heaven"
   ],
   "rweight": {
-   "xinan_region": 3,
+   "south_china_region": 6,
    "north_china_region": 9,
-   "south_china_region": 6
+   "xinan_region": 3
   },
   "sweight": {
    "china_superregion": 15
@@ -893,9 +893,9 @@
    "Mandate of Heaven"
   ],
   "rweight": {
-   "xinan_region": 3,
+   "south_china_region": 6,
    "north_china_region": 9,
-   "south_china_region": 6
+   "xinan_region": 3
   },
   "sweight": {
    "china_superregion": 15
@@ -934,9 +934,9 @@
    "Mandate of Heaven"
   ],
   "rweight": {
-   "xinan_region": 3,
+   "south_china_region": 6,
    "north_china_region": 9,
-   "south_china_region": 6
+   "xinan_region": 3
   },
   "sweight": {
    "china_superregion": 15
@@ -975,9 +975,9 @@
    "Mandate of Heaven"
   ],
   "rweight": {
-   "xinan_region": 3,
+   "south_china_region": 6,
    "north_china_region": 9,
-   "south_china_region": 6
+   "xinan_region": 3
   },
   "sweight": {
    "china_superregion": 15
@@ -1016,9 +1016,9 @@
    "Mandate of Heaven"
   ],
   "rweight": {
-   "xinan_region": 3,
+   "south_china_region": 6,
    "north_china_region": 9,
-   "south_china_region": 6
+   "xinan_region": 3
   },
   "sweight": {
    "china_superregion": 15
@@ -1057,9 +1057,9 @@
    "Mandate of Heaven"
   ],
   "rweight": {
-   "xinan_region": 3,
+   "south_china_region": 6,
    "north_china_region": 9,
-   "south_china_region": 6
+   "xinan_region": 3
   },
   "sweight": {
    "china_superregion": 15
@@ -1098,9 +1098,9 @@
    "Mandate of Heaven"
   ],
   "rweight": {
-   "xinan_region": 3,
+   "south_china_region": 6,
    "north_china_region": 9,
-   "south_china_region": 6
+   "xinan_region": 3
   },
   "sweight": {
    "china_superregion": 15
@@ -1139,9 +1139,9 @@
    "Mandate of Heaven"
   ],
   "rweight": {
-   "xinan_region": 3,
+   "south_china_region": 6,
    "north_china_region": 9,
-   "south_china_region": 6
+   "xinan_region": 3
   },
   "sweight": {
    "china_superregion": 15
@@ -1180,9 +1180,9 @@
    "Mandate of Heaven"
   ],
   "rweight": {
-   "xinan_region": 3,
+   "south_china_region": 6,
    "north_china_region": 9,
-   "south_china_region": 6
+   "xinan_region": 3
   },
   "sweight": {
    "china_superregion": 15
@@ -1221,9 +1221,9 @@
    "Mandate of Heaven"
   ],
   "rweight": {
-   "xinan_region": 3,
+   "south_china_region": 6,
    "north_china_region": 9,
-   "south_china_region": 6
+   "xinan_region": 3
   },
   "sweight": {
    "china_superregion": 15
@@ -1262,9 +1262,9 @@
    "Mandate of Heaven"
   ],
   "rweight": {
-   "xinan_region": 3,
+   "south_china_region": 6,
    "north_china_region": 9,
-   "south_china_region": 6
+   "xinan_region": 3
   },
   "sweight": {
    "china_superregion": 15
@@ -1303,9 +1303,9 @@
    "Mandate of Heaven"
   ],
   "rweight": {
-   "xinan_region": 3,
+   "south_china_region": 6,
    "north_china_region": 9,
-   "south_china_region": 6
+   "xinan_region": 3
   },
   "sweight": {
    "china_superregion": 15
@@ -1344,9 +1344,9 @@
    "Mandate of Heaven"
   ],
   "rweight": {
-   "xinan_region": 3,
+   "south_china_region": 6,
    "north_china_region": 9,
-   "south_china_region": 6
+   "xinan_region": 3
   },
   "sweight": {
    "china_superregion": 15
@@ -1785,16 +1785,16 @@
    "mediterrenean_region": 1,
    "peru_region": 2,
    "upper_peru_region": 2,
-   "colombia_region": 1,
    "caribbean_sea_region": 1,
+   "colombia_region": 1,
    "italy_region": 3,
    "low_countries_region": 2,
    "central_america_region": 1,
    "south_german_region": 1,
    "carribeans_region": 2,
    "mexico_region": 2,
-   "mississippi_region": 1,
    "southeast_america_region": 1,
+   "mississippi_region": 1,
    "west_african_sea_region": 1,
    "guinea_region": 1,
    "moluccas_region": 2
@@ -1881,21 +1881,21 @@
    "mediterrenean_region": 3,
    "italy_region": 7,
    "france_region": 5,
-   "mashriq_region": 1,
    "egypt_region": 2,
-   "anatolia_region": 2,
    "balkan_region": 3,
+   "mashriq_region": 1,
+   "anatolia_region": 2,
    "peru_region": 2,
    "upper_peru_region": 2,
-   "colombia_region": 1,
    "caribbean_sea_region": 1,
+   "colombia_region": 1,
    "low_countries_region": 2,
    "central_america_region": 1,
    "south_german_region": 1,
    "carribeans_region": 2,
    "mexico_region": 2,
-   "mississippi_region": 1,
    "southeast_america_region": 1,
+   "mississippi_region": 1,
    "west_african_sea_region": 1,
    "guinea_region": 1,
    "moluccas_region": 2
@@ -1904,8 +1904,8 @@
    "europe_superregion": 30,
    "africa_superregion": 5,
    "south_european_sea_superregion": 3,
-   "near_east_superregion": 3,
    "eastern_europe_superregion": 3,
+   "near_east_superregion": 3,
    "andes_superregion": 2,
    "south_america_superregion": 1,
    "east_american_sea_superregion": 1,
@@ -1964,18 +1964,18 @@
    "iberia_region": 10,
    "mediterrenean_region": 2,
    "italy_region": 4,
-   "mashriq_region": 1,
    "france_region": 3,
    "egypt_region": 2,
-   "anatolia_region": 2,
    "balkan_region": 3,
+   "mashriq_region": 1,
+   "anatolia_region": 2,
    "maghreb_region": 2
   },
   "sweight": {
    "europe_superregion": 15,
    "south_european_sea_superregion": 2,
-   "near_east_superregion": 3,
    "eastern_europe_superregion": 3,
+   "near_east_superregion": 3,
    "africa_superregion": 2
   },
   "series": [
@@ -2041,9 +2041,9 @@
    "south_china_region": 1,
    "anatolia_region": 2,
    "mashriq_region": 1,
-   "arabian_sea_region": 2,
+   "west_african_sea_region": 1,
    "caribbean_sea_region": 1,
-   "west_african_sea_region": 1
+   "arabian_sea_region": 2
   },
   "sweight": {
    "europe_superregion": 12,
@@ -2155,8 +2155,8 @@
    "north_atlantic_region": 3,
    "hudson_bay_region": 2,
    "northeast_america_region": 2,
-   "canada_region": 4,
    "southeast_america_region": 2,
+   "canada_region": 4,
    "carribeans_region": 1,
    "east_indian_ocean_region": 2,
    "arabian_sea_region": 1,
@@ -2170,20 +2170,20 @@
    "hindusthan_region": 1,
    "baltic_sea_region": 2,
    "poland_region": 2,
+   "west_indian_ocean_region": 1,
+   "west_african_sea_region": 1,
+   "east_china_sea_region": 1,
+   "pacific_south_america_region": 1,
+   "south_atlantic_region": 1,
+   "north_west_pacific_region": 1,
+   "north_east_pacific_region": 1,
+   "random_new_world_region": 1,
+   "south_indian_ocean_region": 1,
+   "atlantic_south_america_region": 1,
    "south_west_pacific_region": 1,
    "south_east_pacific_region": 1,
-   "south_atlantic_region": 1,
-   "west_indian_ocean_region": 1,
-   "random_new_world_region": 1,
-   "east_china_sea_region": 1,
-   "north_east_pacific_region": 1,
-   "north_west_pacific_region": 1,
-   "south_indian_ocean_region": 1,
-   "pacific_south_america_region": 1,
-   "atlantic_south_america_region": 1,
-   "west_african_sea_region": 1,
-   "rio_grande_region": 1,
    "california_region": 1,
+   "rio_grande_region": 1,
    "colombia_region": 1,
    "niger_region": 2,
    "sahel_region": 1
@@ -2196,13 +2196,13 @@
    "north_european_sea_superregion": 3,
    "north_america_superregion": 4,
    "central_america_superregion": 2,
-   "india_superregion": 7,
    "indian_pacific_sea_superregion": 3,
    "east_african_sea_superregion": 2,
-   "north_pacific_sea_superregion": 1,
+   "india_superregion": 7,
    "east_american_sea_superregion": 1,
    "west_american_sea_superregion": 1,
    "west_african_sea_superregion": 1,
+   "north_pacific_sea_superregion": 1,
    "south_america_superregion": 1
   },
   "series": [
@@ -2337,13 +2337,13 @@
    "Lions of the North"
   ],
   "rweight": {
-   "mediterrenean_region": 4,
    "atlantic_south_america_region": 1,
+   "mediterrenean_region": 4,
    "west_african_sea_region": 1,
    "carribeans_region": 5,
+   "arabian_sea_region": 1,
    "east_indian_ocean_region": 1,
    "west_india_region": 1,
-   "arabian_sea_region": 1,
    "scandinavia_region": 7,
    "baltic_sea_region": 3,
    "north_german_region": 4,
@@ -2354,18 +2354,18 @@
    "low_countries_region": 1,
    "italy_region": 2,
    "baltic_region": 3,
-   "mashriq_region": 1,
    "egypt_region": 1,
-   "balkan_region": 1
+   "balkan_region": 1,
+   "mashriq_region": 1
   },
   "sweight": {
-   "east_american_sea_superregion": 1,
    "west_african_sea_superregion": 1,
    "south_european_sea_superregion": 4,
+   "east_american_sea_superregion": 1,
    "central_america_superregion": 5,
-   "india_superregion": 1,
    "indian_pacific_sea_superregion": 1,
    "east_african_sea_superregion": 1,
+   "india_superregion": 1,
    "europe_superregion": 13,
    "north_european_sea_superregion": 5,
    "eastern_europe_superregion": 6,
@@ -2465,8 +2465,8 @@
    "Emperor"
   ],
   "rweight": {
-   "italy_region": 8,
    "mediterrenean_region": 4,
+   "italy_region": 8,
    "maghreb_region": 4,
    "iberia_region": 2,
    "egypt_region": 2,
@@ -2475,8 +2475,8 @@
    "mashriq_region": 1
   },
   "sweight": {
-   "south_european_sea_superregion": 4,
    "europe_superregion": 9,
+   "south_european_sea_superregion": 4,
    "africa_superregion": 4,
    "near_east_superregion": 3,
    "eastern_europe_superregion": 3
@@ -2601,8 +2601,8 @@
    "north_atlantic_region": 1,
    "hudson_bay_region": 2,
    "northeast_america_region": 2,
-   "canada_region": 2,
    "southeast_america_region": 2,
+   "canada_region": 2,
    "baltic_region": 2,
    "russia_region": 1,
    "guinea_region": 1,
@@ -2627,9 +2627,9 @@
    "africa_superregion": 1,
    "southern_africa_superregion": 1,
    "central_america_superregion": 1,
-   "india_superregion": 4,
    "indian_pacific_sea_superregion": 2,
-   "east_african_sea_superregion": 1
+   "east_african_sea_superregion": 1,
+   "india_superregion": 4
   },
   "series": [
    "dan_caribbeans_mission_slot",
@@ -3068,8 +3068,8 @@
   ],
   "rweight": {
    "crimea_region": 3,
-   "anatolia_region": 10,
    "mediterrenean_region": 2,
+   "anatolia_region": 10,
    "balkan_region": 1,
    "caucasia_region": 2,
    "mashriq_region": 2
@@ -3355,8 +3355,8 @@
    "egypt_region": 3,
    "mashriq_region": 2,
    "horn_of_africa_region": 1,
-   "west_india_region": 1,
    "arabian_sea_region": 1,
+   "west_india_region": 1,
    "mediterrenean_region": 2
   },
   "sweight": {
@@ -3364,8 +3364,8 @@
    "eastern_europe_superregion": 3,
    "near_east_superregion": 6,
    "africa_superregion": 4,
-   "india_superregion": 1,
    "east_african_sea_superregion": 1,
+   "india_superregion": 1,
    "south_european_sea_superregion": 2
   },
   "series": [
@@ -3447,8 +3447,8 @@
    "egypt_region": 7,
    "mashriq_region": 6,
    "horn_of_africa_region": 1,
-   "west_india_region": 1,
    "arabian_sea_region": 1,
+   "west_india_region": 1,
    "mediterrenean_region": 3,
    "crimea_region": 1,
    "caucasia_region": 1,
@@ -3459,8 +3459,8 @@
    "eastern_europe_superregion": 24,
    "near_east_superregion": 20,
    "africa_superregion": 5,
-   "india_superregion": 1,
    "east_african_sea_superregion": 1,
+   "india_superregion": 1,
    "south_european_sea_superregion": 3,
    "persia_superregion": 1
   },
@@ -3652,8 +3652,8 @@
    "Origins"
   ],
   "rweight": {
-   "niger_region": 4,
    "sahel_region": 3,
+   "niger_region": 4,
    "guinea_region": 1
   },
   "sweight": {
@@ -3815,15 +3815,15 @@
    "italy_region": 1,
    "iberia_region": 1,
    "arabian_sea_region": 1,
-   "north_china_region": 1,
-   "south_china_region": 1
+   "south_china_region": 1,
+   "north_china_region": 1
   },
   "sweight": {
    "persia_superregion": 18,
    "near_east_superregion": 12,
    "eastern_europe_superregion": 4,
-   "india_superregion": 9,
    "europe_superregion": 3,
+   "india_superregion": 9,
    "tartary_superregion": 4,
    "africa_superregion": 2,
    "east_african_sea_superregion": 1,
@@ -3920,15 +3920,15 @@
    "italy_region": 1,
    "iberia_region": 1,
    "arabian_sea_region": 1,
-   "north_china_region": 1,
-   "south_china_region": 1
+   "south_china_region": 1,
+   "north_china_region": 1
   },
   "sweight": {
    "persia_superregion": 18,
    "near_east_superregion": 12,
    "eastern_europe_superregion": 4,
-   "india_superregion": 9,
    "europe_superregion": 3,
+   "india_superregion": 9,
    "tartary_superregion": 4,
    "africa_superregion": 2,
    "east_african_sea_superregion": 1,
@@ -4091,8 +4091,8 @@
    "arabia_region": 3,
    "hindusthan_region": 9,
    "south_africa_region": 3,
-   "east_africa_region": 2,
    "horn_of_africa_region": 2,
+   "east_africa_region": 2,
    "deccan_region": 5,
    "malaya_region": 1,
    "bengal_region": 2,
@@ -4153,8 +4153,8 @@
    "south_china_sea_region": 3,
    "malaya_region": 7,
    "indonesia_region": 9,
-   "indo_china_region": 2,
    "burma_region": 1,
+   "indo_china_region": 2,
    "moluccas_region": 3
   },
   "sweight": {
@@ -4308,23 +4308,23 @@
    "persia_region": 1,
    "horn_of_africa_region": 1,
    "arabian_sea_region": 3,
-   "south_atlantic_region": 1,
    "west_indian_ocean_region": 1,
-   "west_india_region": 1,
-   "south_china_sea_region": 4,
    "west_african_sea_region": 1,
+   "south_atlantic_region": 1,
+   "south_china_sea_region": 4,
+   "west_india_region": 1,
    "south_china_region": 1,
-   "indonesia_region": 1,
-   "malaya_region": 1
+   "malaya_region": 1,
+   "indonesia_region": 1
   },
   "sweight": {
    "southern_africa_superregion": 13,
    "persia_superregion": 1,
    "africa_superregion": 1,
    "east_african_sea_superregion": 3,
-   "india_superregion": 1,
-   "west_african_sea_superregion": 1,
    "indian_pacific_sea_superregion": 4,
+   "west_african_sea_superregion": 1,
+   "india_superregion": 1,
    "china_superregion": 1,
    "east_indies_superregion": 1
   },
@@ -5085,9 +5085,9 @@
    "Domination"
   ],
   "rweight": {
-   "balkan_region": 18,
    "mashriq_region": 8,
    "egypt_region": 6,
+   "balkan_region": 18,
    "anatolia_region": 7,
    "carpathia_region": 6,
    "south_german_region": 1,
@@ -5099,22 +5099,22 @@
    "west_india_region": 2,
    "arabia_region": 7,
    "horn_of_africa_region": 1,
-   "east_indian_ocean_region": 1,
-   "south_china_sea_region": 1,
    "east_china_sea_region": 1,
+   "south_china_sea_region": 1,
+   "east_indian_ocean_region": 1,
    "crimea_region": 3,
    "caucasia_region": 3,
    "persia_region": 3,
    "central_asia_region": 1
   },
   "sweight": {
-   "near_east_superregion": 23,
    "eastern_europe_superregion": 25,
+   "near_east_superregion": 23,
    "europe_superregion": 5,
    "south_european_sea_superregion": 1,
    "africa_superregion": 8,
-   "india_superregion": 2,
    "east_african_sea_superregion": 1,
+   "india_superregion": 2,
    "north_pacific_sea_superregion": 1,
    "indian_pacific_sea_superregion": 1,
    "persia_superregion": 6,
@@ -5249,8 +5249,8 @@
    "north_german_region": 4,
    "baltic_sea_region": 1,
    "baltic_region": 9,
-   "poland_region": 1,
-   "south_german_region": 1
+   "south_german_region": 1,
+   "poland_region": 1
   },
   "sweight": {
    "europe_superregion": 4,
@@ -6579,8 +6579,8 @@
    "maghreb_region": 2,
    "guinea_region": 2,
    "kongo_region": 1,
-   "mediterrenean_region": 2,
    "atlantic_south_america_region": 1,
+   "mediterrenean_region": 2,
    "west_african_sea_region": 1,
    "deccan_region": 2,
    "west_india_region": 1,
@@ -6601,9 +6601,9 @@
    "east_indies_superregion": 3,
    "africa_superregion": 5,
    "southern_africa_superregion": 5,
-   "east_american_sea_superregion": 1,
    "west_african_sea_superregion": 1,
    "south_european_sea_superregion": 2,
+   "east_american_sea_superregion": 1,
    "europe_superregion": 4,
    "indian_pacific_sea_superregion": 2,
    "north_pacific_sea_superregion": 1,
@@ -6747,12 +6747,12 @@
   ],
   "rweight": {
    "italy_region": 7,
-   "balkan_region": 2,
    "russia_region": 1,
+   "balkan_region": 2,
    "south_german_region": 2,
    "mashriq_region": 1,
-   "north_china_region": 1,
    "south_china_region": 1,
+   "north_china_region": 1,
    "caucasia_region": 1,
    "anatolia_region": 1,
    "horn_of_africa_region": 1,
@@ -6986,13 +6986,13 @@
    "south_german_region": 1,
    "north_german_region": 1,
    "low_countries_region": 1,
-   "american_east_coast_region": 1,
-   "north_atlantic_region": 2
+   "north_atlantic_region": 2,
+   "american_east_coast_region": 1
   },
   "sweight": {
    "europe_superregion": 19,
-   "east_american_sea_superregion": 1,
-   "north_european_sea_superregion": 2
+   "north_european_sea_superregion": 2,
+   "east_american_sea_superregion": 1
   },
   "series": [
    "ave_row_3",
@@ -7057,11 +7057,11 @@
    "france_region": 9,
    "iberia_region": 3,
    "coromandel_region": 2,
-   "west_india_region": 2,
    "deccan_region": 2,
+   "west_india_region": 2,
    "italy_region": 3,
-   "balkan_region": 1,
    "anatolia_region": 1,
+   "balkan_region": 1,
    "bengal_region": 2,
    "south_german_region": 1,
    "north_german_region": 1,
@@ -7069,18 +7069,18 @@
    "south_africa_region": 2,
    "east_africa_region": 1,
    "australia_region": 1,
-   "american_east_coast_region": 1,
-   "north_atlantic_region": 2
+   "north_atlantic_region": 2,
+   "american_east_coast_region": 1
   },
   "sweight": {
    "europe_superregion": 22,
    "india_superregion": 7,
-   "near_east_superregion": 1,
    "eastern_europe_superregion": 1,
+   "near_east_superregion": 1,
    "southern_africa_superregion": 2,
    "oceania_superregion": 1,
-   "east_american_sea_superregion": 1,
-   "north_european_sea_superregion": 2
+   "north_european_sea_superregion": 2,
+   "east_american_sea_superregion": 1
   },
   "series": [
    "ave_row_3",
@@ -7147,29 +7147,29 @@
    "british_isles_region": 5,
    "coromandel_region": 2,
    "france_region": 2,
-   "west_india_region": 2,
    "deccan_region": 2,
-   "balkan_region": 1,
+   "west_india_region": 2,
    "iberia_region": 1,
-   "italy_region": 1,
    "anatolia_region": 1,
+   "italy_region": 1,
+   "balkan_region": 1,
    "bengal_region": 2,
    "low_countries_region": 1,
    "south_africa_region": 2,
    "east_africa_region": 1,
    "australia_region": 1,
-   "american_east_coast_region": 1,
-   "north_atlantic_region": 2
+   "north_atlantic_region": 2,
+   "american_east_coast_region": 1
   },
   "sweight": {
    "europe_superregion": 9,
    "india_superregion": 7,
-   "near_east_superregion": 1,
    "eastern_europe_superregion": 1,
+   "near_east_superregion": 1,
    "southern_africa_superregion": 2,
    "oceania_superregion": 1,
-   "east_american_sea_superregion": 1,
-   "north_european_sea_superregion": 2
+   "north_european_sea_superregion": 2,
+   "east_american_sea_superregion": 1
   },
   "series": [
    "eng_row_slot_1",
@@ -7217,8 +7217,8 @@
    "russia_region": 2,
    "scandinavia_region": 5,
    "north_german_region": 12,
-   "baltic_sea_region": 1,
    "north_atlantic_region": 2,
+   "baltic_sea_region": 1,
    "canada_region": 1
   },
   "sweight": {
@@ -7362,26 +7362,26 @@
   "rweight": {
    "horn_of_africa_region": 11,
    "east_indian_ocean_region": 1,
+   "south_china_sea_region": 2,
    "arabian_sea_region": 2,
    "west_india_region": 1,
-   "south_china_sea_region": 2,
    "east_china_sea_region": 1,
    "malaya_region": 1,
    "indo_china_region": 1,
    "south_africa_region": 1,
-   "balkan_region": 1,
-   "anatolia_region": 1
+   "anatolia_region": 1,
+   "balkan_region": 1
   },
   "sweight": {
    "africa_superregion": 11,
-   "india_superregion": 1,
-   "east_african_sea_superregion": 2,
    "indian_pacific_sea_superregion": 2,
+   "east_african_sea_superregion": 2,
+   "india_superregion": 1,
    "north_pacific_sea_superregion": 1,
    "east_indies_superregion": 2,
    "southern_africa_superregion": 1,
-   "near_east_superregion": 1,
-   "eastern_europe_superregion": 1
+   "eastern_europe_superregion": 1,
+   "near_east_superregion": 1
   },
   "series": [
    "ajuuran_asian_trade_slot",
@@ -7427,9 +7427,9 @@
   "rweight": {
    "horn_of_africa_region": 15,
    "east_indian_ocean_region": 1,
+   "south_china_sea_region": 1,
    "arabian_sea_region": 1,
    "west_india_region": 1,
-   "south_china_sea_region": 1,
    "mediterrenean_region": 1,
    "egypt_region": 3,
    "mashriq_region": 1,
@@ -7437,9 +7437,9 @@
   },
   "sweight": {
    "africa_superregion": 15,
-   "india_superregion": 1,
-   "east_african_sea_superregion": 1,
    "indian_pacific_sea_superregion": 1,
+   "east_african_sea_superregion": 1,
+   "india_superregion": 1,
    "south_european_sea_superregion": 1,
    "near_east_superregion": 6
   },
@@ -7683,16 +7683,16 @@
    "horn_of_africa_region": 1,
    "moluccas_region": 1,
    "anatolia_region": 4,
-   "egypt_region": 9,
    "mediterrenean_region": 1,
+   "egypt_region": 9,
    "persia_region": 4,
    "mashriq_region": 5,
    "balkan_region": 2,
-   "central_asia_region": 1,
    "italy_region": 1,
+   "central_asia_region": 1,
+   "maghreb_region": 3,
    "iberia_region": 1,
    "caucasia_region": 1,
-   "maghreb_region": 3,
    "west_india_region": 1,
    "arabian_sea_region": 1
   },
@@ -7703,9 +7703,9 @@
    "south_european_sea_superregion": 1,
    "persia_superregion": 5,
    "eastern_europe_superregion": 2,
-   "india_superregion": 1,
-   "europe_superregion": 1,
    "tartary_superregion": 1,
+   "europe_superregion": 1,
+   "india_superregion": 1,
    "east_african_sea_superregion": 1
   },
   "series": [
@@ -7779,8 +7779,8 @@
    "hindusthan_region": 14,
    "bengal_region": 10,
    "deccan_region": 5,
-   "west_india_region": 6,
    "coromandel_region": 1,
+   "west_india_region": 6,
    "east_indian_ocean_region": 2,
    "burma_region": 3,
    "xinan_region": 1
@@ -7835,8 +7835,8 @@
    "hindusthan_region": 16,
    "bengal_region": 5,
    "deccan_region": 7,
-   "west_india_region": 9,
    "coromandel_region": 2,
+   "west_india_region": 9,
    "east_indian_ocean_region": 2,
    "khorasan_region": 1
   },
@@ -7886,8 +7886,8 @@
    "hindusthan_region": 17,
    "bengal_region": 3,
    "deccan_region": 5,
-   "west_india_region": 12,
    "coromandel_region": 1,
+   "west_india_region": 12,
    "east_indian_ocean_region": 1
   },
   "sweight": {
@@ -7942,8 +7942,8 @@
    "hindusthan_region": 12,
    "bengal_region": 2,
    "deccan_region": 5,
-   "west_india_region": 10,
    "coromandel_region": 1,
+   "west_india_region": 10,
    "east_indian_ocean_region": 1
   },
   "sweight": {
@@ -8005,17 +8005,17 @@
    "hindusthan_region": 16,
    "bengal_region": 6,
    "deccan_region": 10,
-   "west_india_region": 11,
    "coromandel_region": 3,
+   "west_india_region": 11,
    "east_indian_ocean_region": 1,
    "malaya_region": 4,
    "khorasan_region": 2,
-   "central_asia_region": 1,
    "persia_region": 1,
+   "central_asia_region": 1,
    "burma_region": 2,
    "indo_china_region": 2,
-   "xinan_region": 1,
-   "south_china_region": 1
+   "south_china_region": 1,
+   "xinan_region": 1
   },
   "sweight": {
    "india_superregion": 32,
@@ -8076,8 +8076,8 @@
    "hindusthan_region": 8,
    "bengal_region": 7,
    "deccan_region": 6,
-   "west_india_region": 4,
    "coromandel_region": 4,
+   "west_india_region": 4,
    "east_indian_ocean_region": 3,
    "arabian_sea_region": 1,
    "burma_region": 3,
@@ -8446,9 +8446,9 @@
    "balkan_region": 1,
    "central_asia_region": 7,
    "west_india_region": 3,
+   "crimea_region": 1,
    "ural_region": 1,
    "russia_region": 1,
-   "crimea_region": 1,
    "arabian_sea_region": 2,
    "south_china_region": 1,
    "mongolia_region": 2
@@ -8570,13 +8570,13 @@
   ],
   "rweight": {
    "arabia_region": 11,
-   "bengal_region": 2,
-   "west_india_region": 1,
-   "coromandel_region": 1,
    "deccan_region": 2,
+   "west_india_region": 1,
+   "bengal_region": 2,
+   "coromandel_region": 1,
    "malaya_region": 3,
-   "indonesia_region": 1,
    "moluccas_region": 1,
+   "indonesia_region": 1,
    "mashriq_region": 2,
    "egypt_region": 1,
    "south_china_region": 1,
@@ -8692,18 +8692,18 @@
    "Origins"
   ],
   "rweight": {
-   "niger_region": 10,
    "sahel_region": 11,
+   "niger_region": 10,
    "guinea_region": 8,
    "west_african_sea_region": 2,
    "maghreb_region": 1,
    "mediterrenean_region": 1,
    "egypt_region": 1,
-   "kongo_region": 1,
+   "central_africa_region": 1,
+   "arabia_region": 1,
    "east_africa_region": 1,
    "anatolia_region": 1,
-   "arabia_region": 1,
-   "central_africa_region": 1
+   "kongo_region": 1
   },
   "sweight": {
    "africa_superregion": 18,
@@ -8750,8 +8750,8 @@
    "Origins"
   ],
   "rweight": {
-   "niger_region": 16,
    "sahel_region": 18,
+   "niger_region": 16,
    "guinea_region": 12,
    "west_african_sea_region": 2,
    "maghreb_region": 4
@@ -9688,8 +9688,8 @@
    "Winds of Change"
   ],
   "rweight": {
-   "russia_region": 10,
    "ruthenia_region": 6,
+   "russia_region": 10,
    "caucasia_region": 3,
    "persia_region": 7,
    "mashriq_region": 3,
@@ -9705,8 +9705,8 @@
    "crimea_region": 5,
    "mongolia_region": 9,
    "north_china_region": 10,
-   "xinan_region": 6,
    "south_china_region": 6,
+   "xinan_region": 6,
    "manchuria_region": 3
   },
   "sweight": {
@@ -9792,8 +9792,8 @@
    "Winds of Change"
   ],
   "rweight": {
-   "russia_region": 10,
    "ruthenia_region": 6,
+   "russia_region": 10,
    "caucasia_region": 3,
    "persia_region": 7,
    "mashriq_region": 3,
@@ -9809,8 +9809,8 @@
    "crimea_region": 5,
    "mongolia_region": 9,
    "north_china_region": 10,
-   "xinan_region": 6,
    "south_china_region": 6,
+   "xinan_region": 6,
    "manchuria_region": 3
   },
   "sweight": {
@@ -9897,8 +9897,8 @@
    "Winds of Change"
   ],
   "rweight": {
-   "russia_region": 10,
    "ruthenia_region": 6,
+   "russia_region": 10,
    "caucasia_region": 3,
    "persia_region": 7,
    "mashriq_region": 3,
@@ -9914,8 +9914,8 @@
    "crimea_region": 5,
    "mongolia_region": 9,
    "north_china_region": 19,
-   "xinan_region": 9,
    "south_china_region": 13,
+   "xinan_region": 9,
    "manchuria_region": 3
   },
   "sweight": {
@@ -10012,8 +10012,8 @@
    "Winds of Change"
   ],
   "rweight": {
-   "russia_region": 10,
    "ruthenia_region": 6,
+   "russia_region": 10,
    "caucasia_region": 3,
    "persia_region": 7,
    "mashriq_region": 3,
@@ -10029,8 +10029,8 @@
    "crimea_region": 5,
    "mongolia_region": 9,
    "north_china_region": 19,
-   "xinan_region": 9,
    "south_china_region": 13,
+   "xinan_region": 9,
    "manchuria_region": 3
   },
   "sweight": {
@@ -10496,13 +10496,13 @@
   ],
   "rweight": {
    "arabia_region": 9,
-   "bengal_region": 2,
-   "west_india_region": 1,
-   "coromandel_region": 1,
    "deccan_region": 2,
+   "west_india_region": 1,
+   "bengal_region": 2,
+   "coromandel_region": 1,
    "malaya_region": 3,
-   "indonesia_region": 1,
    "moluccas_region": 1,
+   "indonesia_region": 1,
    "mashriq_region": 2,
    "egypt_region": 1,
    "south_china_region": 1,
@@ -10716,8 +10716,8 @@
    "south_china_region": 2,
    "low_countries_region": 6,
    "carpathia_region": 6,
-   "ruthenia_region": 8,
    "crimea_region": 6,
+   "ruthenia_region": 8,
    "baltic_sea_region": 1
   },
   "sweight": {
@@ -11746,8 +11746,8 @@
    "north_german_region": 5,
    "russia_region": 5,
    "baltic_region": 5,
-   "baltic_sea_region": 1,
    "north_atlantic_region": 1,
+   "baltic_sea_region": 1,
    "guinea_region": 1,
    "poland_region": 2
   },
@@ -11811,9 +11811,9 @@
    "north_german_region": 22,
    "carpathia_region": 6,
    "south_german_region": 5,
-   "ruthenia_region": 10,
-   "crimea_region": 8,
    "low_countries_region": 4,
+   "crimea_region": 8,
+   "ruthenia_region": 10,
    "baltic_sea_region": 1,
    "russia_region": 5,
    "caucasia_region": 2,
@@ -11883,14 +11883,14 @@
    "Lions of the North"
   ],
   "rweight": {
-   "poland_region": 11,
    "north_german_region": 17,
+   "poland_region": 11,
    "carpathia_region": 6,
    "south_german_region": 4,
-   "ruthenia_region": 8,
-   "crimea_region": 6,
    "low_countries_region": 4,
+   "crimea_region": 6,
    "baltic_region": 10,
+   "ruthenia_region": 8,
    "baltic_sea_region": 1
   },
   "sweight": {
@@ -11950,8 +11950,8 @@
    "niger_region": 1,
    "italy_region": 3,
    "iberia_region": 3,
-   "balkan_region": 1,
    "anatolia_region": 1,
+   "balkan_region": 1,
    "mediterrenean_region": 2,
    "egypt_region": 1,
    "caribbean_sea_region": 1
@@ -11959,8 +11959,8 @@
   "sweight": {
    "africa_superregion": 8,
    "europe_superregion": 5,
-   "near_east_superregion": 2,
    "eastern_europe_superregion": 1,
+   "near_east_superregion": 2,
    "south_european_sea_superregion": 2,
    "east_american_sea_superregion": 1
   },
@@ -12071,25 +12071,25 @@
   ],
   "rweight": {
    "scandinavia_region": 7,
-   "baltic_sea_region": 1,
-   "north_german_region": 1,
    "north_atlantic_region": 1,
+   "north_german_region": 1,
+   "baltic_sea_region": 1,
    "canada_region": 2,
    "british_isles_region": 2,
-   "south_west_pacific_region": 1,
-   "east_indian_ocean_region": 1,
-   "south_east_pacific_region": 1,
-   "south_atlantic_region": 1,
    "west_indian_ocean_region": 1,
-   "random_new_world_region": 1,
-   "east_china_sea_region": 1,
-   "north_east_pacific_region": 1,
-   "north_west_pacific_region": 1,
-   "south_indian_ocean_region": 1,
-   "pacific_south_america_region": 1,
-   "atlantic_south_america_region": 1,
-   "south_china_sea_region": 1,
    "west_african_sea_region": 1,
+   "east_china_sea_region": 1,
+   "pacific_south_america_region": 1,
+   "east_indian_ocean_region": 1,
+   "south_atlantic_region": 1,
+   "north_west_pacific_region": 1,
+   "north_east_pacific_region": 1,
+   "random_new_world_region": 1,
+   "south_indian_ocean_region": 1,
+   "atlantic_south_america_region": 1,
+   "south_west_pacific_region": 1,
+   "south_east_pacific_region": 1,
+   "south_china_sea_region": 1,
    "guinea_region": 1
   },
   "sweight": {
@@ -12097,11 +12097,11 @@
    "north_european_sea_superregion": 1,
    "north_america_superregion": 2,
    "east_african_sea_superregion": 1,
-   "north_pacific_sea_superregion": 1,
    "east_american_sea_superregion": 1,
    "west_american_sea_superregion": 1,
-   "west_african_sea_superregion": 1,
    "indian_pacific_sea_superregion": 1,
+   "west_african_sea_superregion": 1,
+   "north_pacific_sea_superregion": 1,
    "africa_superregion": 1
   },
   "series": [
@@ -12920,16 +12920,16 @@
    "horn_of_africa_region": 1,
    "moluccas_region": 1,
    "anatolia_region": 4,
-   "egypt_region": 9,
    "mediterrenean_region": 1,
+   "egypt_region": 9,
    "persia_region": 4,
    "mashriq_region": 5,
    "balkan_region": 2,
-   "central_asia_region": 1,
    "italy_region": 1,
+   "central_asia_region": 1,
+   "maghreb_region": 3,
    "iberia_region": 1,
    "caucasia_region": 1,
-   "maghreb_region": 3,
    "west_india_region": 1,
    "arabian_sea_region": 1
   },
@@ -12940,9 +12940,9 @@
    "south_european_sea_superregion": 1,
    "persia_superregion": 5,
    "eastern_europe_superregion": 2,
-   "india_superregion": 1,
-   "europe_superregion": 1,
    "tartary_superregion": 1,
+   "europe_superregion": 1,
+   "india_superregion": 1,
    "east_african_sea_superregion": 1
   },
   "series": [
@@ -13179,8 +13179,8 @@
   "n_series": 1,
   "dlc": [],
   "rweight": {
-   "north_german_region": 2,
-   "carpathia_region": 1
+   "carpathia_region": 1,
+   "north_german_region": 2
   },
   "sweight": {
    "eastern_europe_superregion": 1,
@@ -13207,8 +13207,8 @@
   "n_series": 1,
   "dlc": [],
   "rweight": {
-   "north_german_region": 2,
-   "carpathia_region": 1
+   "carpathia_region": 1,
+   "north_german_region": 2
   },
   "sweight": {
    "eastern_europe_superregion": 1,
@@ -13248,8 +13248,8 @@
    "carpathia_region": 8,
    "balkan_region": 8,
    "italy_region": 2,
-   "ruthenia_region": 1,
    "crimea_region": 1,
+   "ruthenia_region": 1,
    "baltic_region": 1,
    "north_german_region": 3,
    "south_german_region": 2
@@ -13633,8 +13633,8 @@
    "mashriq_region": 4,
    "egypt_region": 1,
    "horn_of_africa_region": 1,
-   "balkan_region": 2,
    "anatolia_region": 2,
+   "balkan_region": 2,
    "italy_region": 2,
    "maghreb_region": 2,
    "brazil_region": 1
@@ -13685,8 +13685,8 @@
    "mashriq_region": 4,
    "egypt_region": 1,
    "horn_of_africa_region": 1,
-   "balkan_region": 2,
    "anatolia_region": 2,
+   "balkan_region": 2,
    "italy_region": 2,
    "maghreb_region": 2,
    "brazil_region": 1
@@ -13737,8 +13737,8 @@
    "mashriq_region": 4,
    "egypt_region": 1,
    "horn_of_africa_region": 1,
-   "balkan_region": 2,
    "anatolia_region": 2,
+   "balkan_region": 2,
    "italy_region": 2,
    "maghreb_region": 2,
    "brazil_region": 1
@@ -13789,8 +13789,8 @@
    "mashriq_region": 4,
    "egypt_region": 1,
    "horn_of_africa_region": 1,
-   "balkan_region": 2,
    "anatolia_region": 2,
+   "balkan_region": 2,
    "italy_region": 2,
    "maghreb_region": 2,
    "brazil_region": 1
@@ -13841,8 +13841,8 @@
    "mashriq_region": 4,
    "egypt_region": 1,
    "horn_of_africa_region": 1,
-   "balkan_region": 2,
    "anatolia_region": 2,
+   "balkan_region": 2,
    "italy_region": 2,
    "maghreb_region": 2,
    "brazil_region": 1
@@ -13893,8 +13893,8 @@
    "mashriq_region": 4,
    "egypt_region": 1,
    "horn_of_africa_region": 1,
-   "balkan_region": 2,
    "anatolia_region": 2,
+   "balkan_region": 2,
    "italy_region": 2,
    "maghreb_region": 2,
    "brazil_region": 1
@@ -13980,8 +13980,8 @@
    "italy_region": 17,
    "south_german_region": 5,
    "france_region": 1,
-   "iberia_region": 1,
-   "balkan_region": 1
+   "balkan_region": 1,
+   "iberia_region": 1
   },
   "sweight": {
    "europe_superregion": 17,
@@ -14037,8 +14037,8 @@
    "british_isles_region": 1,
    "south_german_region": 5,
    "italy_region": 1,
-   "poland_region": 2,
    "baltic_region": 2,
+   "poland_region": 2,
    "carpathia_region": 1,
    "scandinavia_region": 2,
    "baltic_sea_region": 1
@@ -14046,9 +14046,9 @@
   "sweight": {
    "europe_superregion": 13,
    "southern_africa_superregion": 1,
+   "east_indies_superregion": 1,
    "china_superregion": 1,
    "india_superregion": 1,
-   "east_indies_superregion": 1,
    "eastern_europe_superregion": 4,
    "north_european_sea_superregion": 1
   },
@@ -14102,8 +14102,8 @@
    "british_isles_region": 1,
    "south_german_region": 6,
    "italy_region": 2,
-   "poland_region": 2,
    "baltic_region": 2,
+   "poland_region": 2,
    "carpathia_region": 1,
    "scandinavia_region": 2,
    "baltic_sea_region": 1
@@ -14111,9 +14111,9 @@
   "sweight": {
    "europe_superregion": 15,
    "southern_africa_superregion": 1,
+   "east_indies_superregion": 1,
    "china_superregion": 1,
    "india_superregion": 1,
-   "east_indies_superregion": 1,
    "eastern_europe_superregion": 4,
    "north_european_sea_superregion": 1
   },
@@ -14287,17 +14287,17 @@
    "north_german_region": 3,
    "carpathia_region": 1,
    "france_region": 4,
-   "british_isles_region": 1,
    "iberia_region": 3,
+   "british_isles_region": 1,
    "poland_region": 4,
-   "bengal_region": 1,
-   "west_india_region": 1,
-   "coromandel_region": 1,
    "deccan_region": 1,
+   "west_india_region": 1,
+   "bengal_region": 1,
+   "coromandel_region": 1,
    "australia_region": 1,
    "low_countries_region": 1,
-   "north_china_region": 1,
-   "south_china_region": 1
+   "south_china_region": 1,
+   "north_china_region": 1
   },
   "sweight": {
    "europe_superregion": 23,
@@ -14377,17 +14377,17 @@
    "north_german_region": 3,
    "carpathia_region": 1,
    "france_region": 4,
-   "british_isles_region": 1,
    "iberia_region": 3,
+   "british_isles_region": 1,
    "poland_region": 4,
-   "bengal_region": 1,
-   "west_india_region": 1,
-   "coromandel_region": 1,
    "deccan_region": 1,
+   "west_india_region": 1,
+   "bengal_region": 1,
+   "coromandel_region": 1,
    "australia_region": 1,
    "low_countries_region": 1,
-   "north_china_region": 1,
-   "south_china_region": 1
+   "south_china_region": 1,
+   "north_china_region": 1
   },
   "sweight": {
    "europe_superregion": 23,
@@ -14587,15 +14587,15 @@
    "carpathia_region": 1,
    "balkan_region": 3,
    "north_german_region": 1,
-   "north_china_region": 3,
    "hindusthan_region": 3,
+   "north_china_region": 3,
+   "east_china_sea_region": 1,
    "east_indian_ocean_region": 1,
    "tibet_region": 1,
-   "east_china_sea_region": 1,
    "manchuria_region": 2,
-   "central_asia_region": 3,
    "persia_region": 2,
    "ural_region": 3,
+   "central_asia_region": 3,
    "west_siberia_region": 3,
    "crimea_region": 2,
    "caucasia_region": 2,
@@ -14603,18 +14603,18 @@
    "mongolia_region": 1,
    "east_siberia_region": 1,
    "cascadia_region": 1,
-   "baltic_sea_region": 1,
-   "north_atlantic_region": 1
+   "north_atlantic_region": 1,
+   "baltic_sea_region": 1
   },
   "sweight": {
    "eastern_europe_superregion": 22,
    "europe_superregion": 7,
    "china_superregion": 3,
    "india_superregion": 3,
-   "north_pacific_sea_superregion": 1,
    "tartary_superregion": 7,
-   "far_east_superregion": 2,
    "indian_pacific_sea_superregion": 1,
+   "far_east_superregion": 2,
+   "north_pacific_sea_superregion": 1,
    "persia_superregion": 4,
    "north_america_superregion": 1,
    "north_european_sea_superregion": 1
@@ -14716,8 +14716,8 @@
    "niger_region": 1,
    "guinea_region": 1,
    "south_africa_region": 1,
-   "coromandel_region": 1,
    "deccan_region": 1,
+   "coromandel_region": 1,
    "baltic_sea_region": 1,
    "north_german_region": 1,
    "russia_region": 1
@@ -14785,8 +14785,8 @@
    "niger_region": 2,
    "guinea_region": 2,
    "south_africa_region": 2,
-   "coromandel_region": 2,
    "deccan_region": 2,
+   "coromandel_region": 2,
    "baltic_sea_region": 1,
    "north_german_region": 2,
    "russia_region": 10,
@@ -14863,8 +14863,8 @@
    "niger_region": 1,
    "guinea_region": 1,
    "south_africa_region": 1,
-   "coromandel_region": 1,
    "deccan_region": 1,
+   "coromandel_region": 1,
    "baltic_sea_region": 1,
    "north_german_region": 1,
    "russia_region": 1

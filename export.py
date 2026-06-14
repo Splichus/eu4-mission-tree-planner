@@ -4,7 +4,7 @@ import json, itertools, os
 
 nat = json.load(open("nations.json"))
 FORMABLE = {"SCA","MGE","YUA","GLH","ILK","RUM","AUH","QNG","PLC","SPA","MUG","GBR",
-            "GER","ITA","HLR","ROM","NED","HND","RFR","TIM","PRU","HSA","ADU"}
+            "GER","ITA","HLR","ROM","NED","HND","RFR","TIM","PRU","HSA","ADU","AVE"}
 MIN_MISSIONS = 30
 
 def core_set(d):
@@ -36,6 +36,15 @@ for t, d in sorted(nat.items(), key=lambda kv: -kv[1]["missions"]):
         groups[fp].append(t)
     else:
         groups[fp] = [t]; order.append((fp, t, d))
+
+# Drop formable "recolours" whose entire mission set is a subset of a real (non-formable)
+# nation -- they add nothing (e.g. Great Britain subset of England, Angevin subset of England).
+# Spain/Commonwealth/Scandinavia survive: they are SUPERSETS of their start nation, not subsets.
+_nonform_series = [set(d["series"]) for fp, t, d in order if t not in FORMABLE]
+_before = len(order)
+order = [(fp, t, d) for fp, t, d in order
+         if not (t in FORMABLE and any(set(d["series"]) <= ns for ns in _nonform_series))]
+print(f"dropped {_before - len(order)} formable recolours (subset of a real nation)")
 
 info, cands = {}, []
 for fp, t, d in order:
